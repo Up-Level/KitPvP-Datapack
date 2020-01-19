@@ -8,7 +8,7 @@ execute as @a[scores={class=7}] run function kitpvp:classes/07-shieldbearer
 execute as @a[scores={class=8}] run function kitpvp:classes/08-endermissionary
 execute as @a[scores={class=9}] run function kitpvp:classes/09-hunter
 execute as @a[scores={class=10}] run function kitpvp:classes/10-speedygonzales
-execute as @a[scores={class=10}] run function kitpvp:classes/11-shotgunner
+execute as @a[scores={class=11}] run function kitpvp:classes/11-shotgunner
 
 execute if score map settings matches 1 run function kitpvp:maps/01-four-corners
 execute if score map settings matches 2 run function kitpvp:maps/02-jungle
