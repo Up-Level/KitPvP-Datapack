@@ -1,7 +1,7 @@
 # Lives Gamemode Runtime
 scoreboard players remove @a[scores={dead=1,gm02-lives=1..}] gm02-lives 1
 
-execute if entity @a[scores={gm02-lives=0}] run tellraw @a [{"selector":"@a[scores={gm02-lives=0}]"}, " has been Eliminated!"]
+execute if entity @a[scores={gm02-lives=0}] run tellraw @a ["",{"selector":"@a[scores={gm02-lives=0}]","bold":true,"color":"red"},{"text":" has been Eliminated!","bold":true,"color":"red"}]
 execute as @a[scores={gm02-lives=0}] run scoreboard players set @s gm02-lives -1
 execute as @a[scores={gm02-lives=-1}] run gamemode spectator @s
 

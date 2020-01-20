@@ -14,3 +14,5 @@ scoreboard objectives setdisplay sidebar optIn
 
 scoreboard players set run gm01-general 0
 scoreboard players set gamemode-running settings 0
+
+gamerule fallDamage true
