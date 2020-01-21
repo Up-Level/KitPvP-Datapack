@@ -5,5 +5,4 @@ execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:wooden
 replaceitem entity @s inventory.8 tipped_arrow{CustomPotionEffects:[{Id:19,Amplifier:2,Duration:45}]}
 replaceitem entity @s armor.chest chainmail_chestplate{Unbreakable:1b}
 replaceitem entity @s armor.legs leather_leggings{Unbreakable:1b}
-execute unless score map settings matches 1 run replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b}
-execute if score map settings matches 1 run replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:100}]}
+replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}

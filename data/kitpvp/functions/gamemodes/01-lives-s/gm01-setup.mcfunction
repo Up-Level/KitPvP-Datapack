@@ -1,6 +1,6 @@
 # Lives Gamemode Setup
 execute if score map settings matches 1 run spreadplayers -1 -1 30 200 false @a[scores={optIn=1}]
-execute if score map settings matches 2 run spreadplayers -87 -3016 30 50 false @a[scores={optIn=1}]
+execute if score map settings matches 2 run spreadplayers 1981 -21 15 100 false @a[scores={optIn=1}]
 tellraw @a[scores={optIn=1}] {"text":"This gamemode is Lives. Everyone has 3 lives, and the last person standing wins.","color":"gold"}
 gamemode adventure @a[scores={optIn=1}]
 
