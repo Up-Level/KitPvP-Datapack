@@ -5,3 +5,5 @@ replaceitem entity @s inventory.8 tipped_arrow{CustomPotionEffects:[{Id:7,Amplif
 replaceitem entity @s armor.chest leather_chestplate{Unbreakable:1b}
 replaceitem entity @s armor.legs leather_leggings{Unbreakable:1b}
 replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
+
+effect give @s strength 1 0 true
