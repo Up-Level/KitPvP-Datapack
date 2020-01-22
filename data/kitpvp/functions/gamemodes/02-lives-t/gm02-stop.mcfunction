@@ -20,6 +20,7 @@ gamemode adventure @a[scores={optIn=1}]
 clear @a[scores={optIn=1}]
 
 scoreboard players set * gm02-lives 3
+scoreboard players reset * optIn
 scoreboard objectives setdisplay list wins
 scoreboard objectives setdisplay sidebar optIn
 
