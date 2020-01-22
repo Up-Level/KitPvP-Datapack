@@ -8,7 +8,7 @@ tp @a[scores={optIn=1}] @e[name="spawn",limit=1]
 gamemode adventure @a[scores={optIn=1}]
 clear @a[scores={optIn=1}]
 
-scoreboard players set @a[scores={optIn=1}] gm01-lives 3
+scoreboard players set * gm01-lives 3
 scoreboard objectives setdisplay list wins
 scoreboard objectives setdisplay sidebar optIn
 
