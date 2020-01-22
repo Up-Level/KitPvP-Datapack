@@ -1,4 +1,4 @@
-# Class 4 - Bow Space
+# Class 3 - Bow Space
 
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:bow"}]}] run replaceitem entity @s hotbar.0 minecraft:bow{Unbreakable:1b,Enchantments:[{id:"minecraft:flame",lvl:1},{id:"minecraft:infinity",lvl:1}]}
 replaceitem entity @s inventory.8 arrow

@@ -1,4 +1,4 @@
-# Class 9 - Hunter
+# Class 8 - Hunter
 
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:bow"}]}] run replaceitem entity @s hotbar.0 minecraft:bow{Unbreakable:1b,Enchantments:[{id:"minecraft:infinity",lvl:1}]}
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_sword"}]}] run replaceitem entity @s hotbar.1 minecraft:wooden_sword{Unbreakable:1}

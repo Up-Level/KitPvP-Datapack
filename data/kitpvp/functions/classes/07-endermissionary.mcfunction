@@ -1,4 +1,4 @@
-# Class 8 - Ender Missionary
+# Class 7 - Ender Missionary
 
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run replaceitem entity @s hotbar.0 minecraft:iron_axe{Unbreakable:1,Enchantments:[{id:"minecraft:knockback",lvl:2}]}
 replaceitem entity @s hotbar.1 minecraft:ender_pearl

@@ -1,4 +1,4 @@
-# Class 10 - Speedy Gonzales
+# Class 9 - Speedy Gonzales
 
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_sword"}]}] run replaceitem entity @s hotbar.0 iron_sword{Unbreakable:1b}
 replaceitem entity @s armor.chest leather_chestplate{Unbreakable:1}

@@ -1,4 +1,4 @@
-# Class 5 - Sword Space
+# Class 4 - Sword Space
 
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:bow"}]}] run replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b,Enchantments:[{id:"minecraft:fire_aspect",lvl:2}]}
 replaceitem entity @s armor.head glass
