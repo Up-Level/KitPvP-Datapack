@@ -68,6 +68,7 @@ team add none {"text":"None"}
 team modify none friendlyFire true
 team modify none deathMessageVisibility never
 team modify none nametagVisibility never
+team modify none seeFriendlyInvisibles false
 
 team remove red
 team add red {"text":"Red","color":"red"}
