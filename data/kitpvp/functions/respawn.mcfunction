@@ -16,4 +16,4 @@ execute if score map settings matches 2 run spreadplayers 1981 -21 15 100 false 
 execute if score map settings matches 3 run spreadplayers 4000 35 30 200 false @a[scores={respawnTimer=..0}]
 
 scoreboard players set @a[scores={respawnTimer=..0}] respawn 0
-scoreboard players set @a[scores={respawnTimer=..0}] respawnTimer 0
+scoreboard players reset @a[scores={respawnTimer=..0}] respawnTimer
