@@ -17,10 +17,10 @@ scoreboard objectives remove team
 scoreboard objectives add team dummy
 
 scoreboard objectives remove totalKills
-scoreboard objectives add totalKills playerKillCount {"text":"Total Kills"}
+scoreboard objectives add totalKills playerKillCount {"text":"Total Kills","color":"gold"}
 
 scoreboard objectives remove totalDeaths
-scoreboard objectives add totalDeaths deathCount {"text":"Total Deaths"}
+scoreboard objectives add totalDeaths deathCount {"text":"Total Deaths","color":"gold"}
 
 scoreboard objectives remove wins
 scoreboard objectives add wins dummy {"text":"Wins","color":"gold"}
@@ -33,9 +33,21 @@ scoreboard objectives setdisplay sidebar optIn
 scoreboard objectives remove ready
 scoreboard objectives add ready dummy
 
+scoreboard objectives remove menuTriggers
+scoreboard objectives add menuTriggers trigger
+
+scoreboard objectives remove classTriggers
+scoreboard objectives add classTriggers trigger
+
+scoreboard objectives remove respawnTimer
+scoreboard objectives add respawnTimer dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
+
+scoreboard objectives remove respawn
+scoreboard objectives add respawn dummy
 
 scoreboard objectives remove crouch
 scoreboard objectives add crouch dummy

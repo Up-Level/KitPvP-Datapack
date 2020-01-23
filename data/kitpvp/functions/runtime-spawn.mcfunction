@@ -1,7 +1,13 @@
-execute as @e[name="spawn"] run effect give @a[distance=..50] minecraft:resistance 5 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50] minecraft:weakness 5 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50] minecraft:regeneration 5 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50] minecraft:saturation 5 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:resistance 5 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:weakness 5 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:regeneration 5 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:saturation 5 255 true
+
+# Run Menu Triggers
+execute as @a unless score @s menuTriggers matches 0 run function kitpvp:configure/menu-triggers
+
+# Run Class Triggers
+execute as @a unless score @s classTriggers matches 0 run function kitpvp:configure/class-triggers
 
 scoreboard players set @a gm01-lives 3
 scoreboard players set @a gm02-lives 3
