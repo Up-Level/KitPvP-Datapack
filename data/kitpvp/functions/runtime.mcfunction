@@ -3,6 +3,15 @@ execute as @a run execute unless entity @s[nbt={Inventory:[{id:"minecraft:golden
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=item]
 
+# Kill arrows that have lived for 300 ticks
+scoreboard players set @e[type=minecraft:arrow,tag=!arrowChecked] arrowTime 300
+tag @e[type=arrow,tag=!arrowChecked] add arrowChecked
+scoreboard players remove @e[type=minecraft:arrow] arrowTime 1
+kill @e[type=minecraft:arrow,scores={arrowTime=..0}]
+
+# Crossbow arrows don't fall
+execute as @e[type=minecraft:arrow,nbt={ShotFromCrossbow:1b}] run data modify entity @s NoGravity set value 1
+
 # Runtime during gamemode
 execute if score gamemode-running settings matches 1 run function kitpvp:runtime-gamemode
 

@@ -45,6 +45,9 @@ scoreboard objectives add respawnTimer dummy
 scoreboard objectives remove crossbowsHeld
 scoreboard objectives add crossbowsHeld dummy
 
+scoreboard objectives remove arrowTime
+scoreboard objectives add arrowTime dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
