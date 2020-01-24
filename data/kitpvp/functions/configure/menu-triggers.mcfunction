@@ -4,6 +4,9 @@ scoreboard players enable @a menuTriggers
 execute as @a if score @s menuTriggers matches 1 run scoreboard players reset @s optIn
 execute as @a if score @s menuTriggers matches 2 run scoreboard players set @s optIn 1
 
+# Start Gamemode is 3
+execute as @a if score @s menuTriggers matches 3 run function kitpvp:configure/start-gamemode
+
 # Map control is 101 - 199
 execute as @a if score @s menuTriggers matches 101 run scoreboard players set map settings 1
 execute as @a if score @s menuTriggers matches 102 run scoreboard players set map settings 2
