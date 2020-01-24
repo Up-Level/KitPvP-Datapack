@@ -21,3 +21,4 @@ execute if score map settings matches 3 run function kitpvp:maps/03-cargo
 
 execute if score run gm01-general matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-runtime
 execute if score run gm02-general matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-runtime
+execute if score run gm03-general matches 1 run function kitpvp:gamemodes/03-deathmatch-s/gm03-runtime
