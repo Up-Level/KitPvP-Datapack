@@ -1,4 +1,4 @@
-# Class 11 - Brute
+# Class 12 - Brute
 
 replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 

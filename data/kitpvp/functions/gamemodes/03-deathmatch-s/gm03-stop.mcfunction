@@ -9,7 +9,7 @@ execute unless score playersWon gm03-general = ready settings run scoreboard pla
 playsound minecraft:entity.firework_rocket.twinkle master @a[scores={optIn=1}]
 playsound minecraft:ui.toast.challenge_complete master @a[scores={gm03-kills-copy=0}] ~ ~ ~ 1.25
 
-scoreboard players set * survivalistLevel 0
+scoreboard players set * killsSinceDeath 0
 
 tp @a[scores={optIn=1}] @e[name="spawn",limit=1]
 gamemode adventure @a[scores={optIn=1}]

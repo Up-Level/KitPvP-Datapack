@@ -17,7 +17,7 @@ execute if score winner gm02-general matches 4 run title @a[scores={optIn=1}] ti
 playsound minecraft:ui.toast.challenge_complete master @a[scores={gm02-lives=1..}] ~ ~ ~ 1.25
 playsound minecraft:entity.firework_rocket.twinkle master @a[scores={optIn=1}]
 
-scoreboard players set * survivalistLevel 0
+scoreboard players set * killsSinceDeath 0
 tp @a[scores={optIn=1}] @e[name="spawn",limit=1]
 gamemode adventure @a[scores={optIn=1}]
 clear @a[scores={optIn=1}]

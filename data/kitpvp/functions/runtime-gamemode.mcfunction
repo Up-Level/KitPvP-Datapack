@@ -11,6 +11,7 @@ execute as @a[scores={class=10,optIn=1,respawn=0}] run function kitpvp:classes/1
 execute as @a[scores={class=11,optIn=1,respawn=0}] run function kitpvp:classes/11-sniper
 execute as @a[scores={class=12,optIn=1,respawn=0}] run function kitpvp:classes/12-brute
 execute as @a[scores={class=13,optIn=1,respawn=0}] run function kitpvp:classes/13-survivalist
+execute as @a[scores={class=14,optIn=1,respawn=0}] run function kitpvp:classes/14-berserker
 
 # Remove 1 kill if fell out of map
 execute as @a[scores={playerY=..0}] if score gamemode settings matches 3 run scoreboard players remove @s gm03-kills 1

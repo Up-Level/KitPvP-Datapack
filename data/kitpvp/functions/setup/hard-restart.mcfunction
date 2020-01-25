@@ -51,13 +51,16 @@ scoreboard objectives add crossbowsHeld dummy
 scoreboard objectives remove arrowTime
 scoreboard objectives add arrowTime dummy
 
-scoreboard objectives remove survivalistLevel
-scoreboard objectives add survivalistLevel playerKillCount
+scoreboard objectives remove killsSinceDeath
+scoreboard objectives add killsSinceDeath playerKillCount
 
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
+
+scoreboard objectives remove killBin
+scoreboard objectives add killBin playerKillCount
 
 scoreboard objectives remove respawn
 scoreboard objectives add respawn dummy
