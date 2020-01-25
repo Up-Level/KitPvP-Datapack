@@ -22,10 +22,6 @@ scoreboard objectives add totalKills playerKillCount {"text":"Total Kills","colo
 scoreboard objectives remove totalDeaths
 scoreboard objectives add totalDeaths deathCount {"text":"Total Deaths","color":"gold"}
 
-scoreboard objectives remove wins
-scoreboard objectives add wins dummy {"text":"Wins","color":"gold"}
-scoreboard objectives setdisplay list wins
-
 scoreboard objectives remove optIn
 scoreboard objectives add optIn dummy {"text":"Ready","color":"gold"}
 scoreboard objectives setdisplay sidebar optIn
