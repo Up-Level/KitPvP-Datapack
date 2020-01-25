@@ -1,7 +1,7 @@
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:resistance 5 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:weakness 5 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:regeneration 5 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:saturation 5 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:resistance 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:weakness 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:regeneration 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:saturation 2 255 true
 
 # Run Menu Triggers
 execute as @a unless score @s menuTriggers matches 0 run function kitpvp:configure/menu-triggers

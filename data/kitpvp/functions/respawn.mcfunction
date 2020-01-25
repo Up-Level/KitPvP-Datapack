@@ -1,9 +1,9 @@
 execute as @a[scores={respawn=1}] run scoreboard players remove @s respawnTimer 1
 
-effect give @a[scores={respawn=1}] minecraft:resistance 5 255 true
-effect give @a[scores={respawn=1}] minecraft:weakness 5 255 true
-effect give @a[scores={respawn=1}] minecraft:regeneration 5 255 true
-effect give @a[scores={respawn=1}] minecraft:saturation 5 255 true
+effect give @a[scores={respawn=1}] minecraft:resistance 2 255 true
+effect give @a[scores={respawn=1}] minecraft:weakness 2 255 true
+effect give @a[scores={respawn=1}] minecraft:regeneration 2 255 true
+effect give @a[scores={respawn=1}] minecraft:saturation 2 255 true
 effect give @a[scores={respawn=1}] minecraft:invisibility 1 255 true
 
 tp @a[scores={respawn=1}] -1000 64 -1000
