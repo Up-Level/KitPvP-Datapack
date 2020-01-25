@@ -16,6 +16,9 @@ scoreboard players set gamemode-running settings 0
 scoreboard objectives remove team
 scoreboard objectives add team dummy
 
+scoreboard objectives remove playerY
+scoreboard objectives add playerY dummy
+
 scoreboard objectives remove totalKills
 scoreboard objectives add totalKills playerKillCount {"text":"Total Kills","color":"gold"}
 

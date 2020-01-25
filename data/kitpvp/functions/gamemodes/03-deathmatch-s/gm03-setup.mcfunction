@@ -24,10 +24,11 @@ scoreboard objectives add gm03-deaths deathCount {"text":"Deaths","color":"gold"
 
 scoreboard objectives remove gm03-general
 scoreboard objectives add gm03-general dummy
+scoreboard players set one gm03-general 1
 scoreboard players set ticks gm03-general 6000
 scoreboard players set twenty gm03-general 20
-scoreboard players set players gm03-general 0
 scoreboard players set run gm03-general 1
+scoreboard players set playersWon gm03-general 0
 
 scoreboard players set gamemode-running settings 1
 scoreboard players set gamemode-bin settings 0
