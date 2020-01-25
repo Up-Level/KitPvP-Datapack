@@ -24,5 +24,8 @@ execute if score gamemode-running settings matches 0 run function kitpvp:runtime
 # Kill player if they are below y0 and change their kills by -1
 execute as @a[scores={playerY=..0}] run kill @s
 
+# Put all players with no team into the "none" team
+execute as @a[team=] run team join none @s
+
 # On death, do these commands
 execute as @a[scores={dead=1}] run function kitpvp:on-death
