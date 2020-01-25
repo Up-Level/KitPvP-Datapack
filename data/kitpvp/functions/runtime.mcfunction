@@ -18,5 +18,8 @@ execute if score gamemode-running settings matches 1 run function kitpvp:runtime
 # Runtime not during gamemode
 execute if score gamemode-running settings matches 0 run function kitpvp:runtime-spawn
 
+# Kill player if they are below y0 and change their kills by -1
+execute as @a at @s[y=-10,distance=..10] run kill @s
+
 # On death, do these commands
 execute as @a[scores={dead=1}] run function kitpvp:on-death

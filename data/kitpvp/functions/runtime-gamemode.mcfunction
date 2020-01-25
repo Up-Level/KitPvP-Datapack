@@ -10,6 +10,11 @@ execute as @a[scores={class=9,optIn=1,respawn=0}] run function kitpvp:classes/09
 execute as @a[scores={class=10,optIn=1,respawn=0}] run function kitpvp:classes/10-gunner
 execute as @a[scores={class=11,optIn=1,respawn=0}] run function kitpvp:classes/11-sniper
 
+# Remove 1 kill if fell out of map
+execute as @a at @s[y=-10,distance=..10] if score gamemode settings matches 1 run scoreboard players remove @s gm01-kills 1
+execute as @a at @s[y=-10,distance=..10] if score gamemode settings matches 2 run scoreboard players remove @s gm02-kills 1
+execute as @a at @s[y=-10,distance=..10] if score gamemode settings matches 3 run scoreboard players remove @s gm03-kills 1
+
 # Run Class Triggers
 execute as @a unless score @s classTriggers matches 0 if score @s respawn matches 1 run function kitpvp:configure/class-triggers
 
