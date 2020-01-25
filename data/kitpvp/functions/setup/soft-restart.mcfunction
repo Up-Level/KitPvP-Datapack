@@ -61,35 +61,40 @@ team modify none friendlyFire true
 team modify none deathMessageVisibility never
 team modify none nametagVisibility never
 team modify none seeFriendlyInvisibles false
+team modify none collisionRule always
 
 team remove red
 team add red {"text":"Red","color":"red"}
 team modify red friendlyFire false
-team modify red deathMessageVisibility hideForOtherTeams
+team modify red deathMessageVisibility never
 team modify red nametagVisibility hideForOtherTeams
 team modify red seeFriendlyInvisibles true
+team modify red collisionRule pushOtherTeams
 team modify red color red
 
 team remove blue
 team add blue {"text":"Blue","color":"blue"}
 team modify blue friendlyFire false
-team modify blue deathMessageVisibility hideForOtherTeams
+team modify blue deathMessageVisibility never
 team modify blue nametagVisibility hideForOtherTeams
 team modify blue seeFriendlyInvisibles true
+team modify blue collisionRule pushOtherTeams
 team modify blue color blue
 
 team remove green
 team add green {"text":"Green","color":"green"}
 team modify green friendlyFire false
-team modify green deathMessageVisibility hideForOtherTeams
+team modify green deathMessageVisibility never
 team modify green nametagVisibility hideForOtherTeams
 team modify green seeFriendlyInvisibles true
+team modify green collisionRule pushOtherTeams
 team modify green color green
 
 team remove yellow
 team add yellow {"text":"Yellow","color":"yellow"}
 team modify yellow friendlyFire false
-team modify yellow deathMessageVisibility hideForOtherTeams
+team modify yellow deathMessageVisibility never
 team modify yellow nametagVisibility hideForOtherTeams
 team modify yellow seeFriendlyInvisibles true
+team modify yellow collisionRule pushOtherTeams
 team modify yellow color yellow
