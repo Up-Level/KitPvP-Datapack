@@ -15,8 +15,9 @@ execute if score winner gm02-general matches 3 run title @a[scores={optIn=1}] ti
 execute if score winner gm02-general matches 4 run title @a[scores={optIn=1}] title {"text":"Yellow Team has Won!","color":"red"}
 
 playsound minecraft:ui.toast.challenge_complete master @a[scores={gm02-lives=1..}] ~ ~ ~ 1.25
-
 playsound minecraft:entity.firework_rocket.twinkle master @a[scores={optIn=1}]
+
+scoreboard players set * survivalistLevel 0
 tp @a[scores={optIn=1}] @e[name="spawn",limit=1]
 gamemode adventure @a[scores={optIn=1}]
 clear @a[scores={optIn=1}]
