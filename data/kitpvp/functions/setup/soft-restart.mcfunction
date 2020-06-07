@@ -51,9 +51,9 @@ scoreboard objectives add arrowTime dummy
 scoreboard objectives remove killsSinceDeath
 scoreboard objectives add killsSinceDeath playerKillCount
 
-scoreboard objectives remove ArrowMotion0 dummy
-scoreboard objectives remove ArrowMotion1 dummy
-scoreboard objectives remove ArrowMotion2 dummy
+scoreboard objectives remove ArrowMotion0
+scoreboard objectives remove ArrowMotion1
+scoreboard objectives remove ArrowMotion2
 
 scoreboard objectives add ArrowMotion0 dummy
 scoreboard objectives add ArrowMotion1 dummy

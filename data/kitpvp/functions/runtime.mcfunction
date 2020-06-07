@@ -12,9 +12,9 @@ execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run execut
 execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run execute store result score @s ArrowMotion1 run data get entity @s Motion[1] 1000
 execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run execute store result score @s ArrowMotion2 run data get entity @s Motion[2] 1000
 
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run scoreboard players operation crossbow-arrow-speed-multiplier settings *= @s ArrowMotion0
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run scoreboard players operation crossbow-arrow-speed-multiplier settings *= @s ArrowMotion1
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run scoreboard players operation crossbow-arrow-speed-multiplier settings *= @s ArrowMotion2
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run scoreboard players operation @s ArrowMotion0 *= crossbow-arrow-speed-multiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run scoreboard players operation @s ArrowMotion1 *= crossbow-arrow-speed-multiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] run scoreboard players operation @s ArrowMotion2 *= crossbow-arrow-speed-multiplier settings
 
 execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] store result entity @s Motion[0] double 0.001 run scoreboard players get @s ArrowMotion0
 execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!arrowChecked] store result entity @s Motion[1] double 0.001 run scoreboard players get @s ArrowMotion1
