@@ -12,6 +12,7 @@ scoreboard players set map settings 0
 scoreboard players set gamemode settings 0
 scoreboard players set gamemode-bin settings 0
 scoreboard players set gamemode-running settings 0
+scoreboard players set crossbow-arrow-speed-multiplier settings 2
 
 scoreboard objectives remove team
 scoreboard objectives add team dummy
@@ -54,6 +55,13 @@ scoreboard objectives add arrowTime dummy
 scoreboard objectives remove killsSinceDeath
 scoreboard objectives add killsSinceDeath playerKillCount
 
+scoreboard objectives remove ArrowMotion0 dummy
+scoreboard objectives remove ArrowMotion1 dummy
+scoreboard objectives remove ArrowMotion2 dummy
+
+scoreboard objectives add ArrowMotion0 dummy
+scoreboard objectives add ArrowMotion1 dummy
+scoreboard objectives add ArrowMotion2 dummy
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
