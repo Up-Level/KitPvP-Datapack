@@ -1,9 +1,7 @@
 # Deathmatch Gamemode Setup
-execute if score map settings matches 1 run spreadplayers -1 -1 30 200 false @a[scores={optIn=1}]
-execute if score map settings matches 2 run spreadplayers 1981 -21 15 100 false @a[scores={optIn=1}]
-execute if score map settings matches 3 run spreadplayers 4000 35 30 200 false @a[scores={optIn=1}]
+function kitpvp:gamemodes/generic-setup
+
 tellraw @a[scores={optIn=1}] {"text":"This gamemode is Deathmatch. Whoever gets the most kills in 5 minutes wins.","color":"gold"}
-gamemode adventure @a[scores={optIn=1}]
 
 scoreboard players set @a[scores={optIn=1}] respawn 0
 

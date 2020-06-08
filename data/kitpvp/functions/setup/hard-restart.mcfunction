@@ -63,6 +63,26 @@ scoreboard objectives add ArrowMotion0 dummy
 scoreboard objectives add ArrowMotion1 dummy
 scoreboard objectives add ArrowMotion2 dummy
 
+scoreboard objectives remove UUID0
+scoreboard objectives remove UUID1
+scoreboard objectives remove UUID2
+scoreboard objectives remove UUID3
+
+scoreboard objectives add UUID0 dummy
+scoreboard objectives add UUID1 dummy
+scoreboard objectives add UUID2 dummy
+scoreboard objectives add UUID3 dummy
+
+scoreboard objectives remove ProjectileUUID0
+scoreboard objectives remove ProjectileUUID1
+scoreboard objectives remove ProjectileUUID2
+scoreboard objectives remove ProjectileUUID3
+
+scoreboard objectives add ProjectileUUID0 dummy
+scoreboard objectives add ProjectileUUID1 dummy
+scoreboard objectives add ProjectileUUID2 dummy
+scoreboard objectives add ProjectileUUID3 dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
