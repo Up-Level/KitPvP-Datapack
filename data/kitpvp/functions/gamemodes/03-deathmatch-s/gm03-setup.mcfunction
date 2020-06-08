@@ -1,4 +1,4 @@
-# Lives Gamemode Setup
+# Deathmatch Gamemode Setup
 execute if score map settings matches 1 run spreadplayers -1 -1 30 200 false @a[scores={optIn=1}]
 execute if score map settings matches 2 run spreadplayers 1981 -21 15 100 false @a[scores={optIn=1}]
 execute if score map settings matches 3 run spreadplayers 4000 35 30 200 false @a[scores={optIn=1}]

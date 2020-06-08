@@ -1,4 +1,4 @@
-# Lives Gamemode Stop
+# Deathmatch Gamemode Stop
 execute as @a[scores={optIn=1}] if score @s gm03-kills-copy matches 0 run scoreboard players add playersWon gm03-general 1
 
 execute if score playersWon gm03-general matches 1 run title @a[scores={optIn=1}] title [{"selector":"@a[scores={gm03-kills-copy=0}]"}, " has Won!"]
