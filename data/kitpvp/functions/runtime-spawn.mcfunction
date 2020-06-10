@@ -18,6 +18,9 @@ scoreboard players set @a gm02-lives 3
 execute if score gamemode settings matches 1 run team join none @a
 
 execute if score gamemode-bin settings matches 1 run scoreboard players set @a[scores={class=0}] class 6
+
 execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-setup
 execute if score gamemode settings matches 2 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-setup
 execute if score gamemode settings matches 3 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/03-deathmatch-s/gm03-setup
+execute if score gamemode settings matches 4 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/04-deathmatch-t/gm04-setup
+execute if score gamemode settings matches 5 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/05-juggernaut/gm05-setup

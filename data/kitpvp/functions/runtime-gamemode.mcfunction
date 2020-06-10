@@ -12,6 +12,9 @@ execute as @a[scores={class=11,optIn=1,respawn=0}] run function kitpvp:classes/1
 execute as @a[scores={class=12,optIn=1,respawn=0}] run function kitpvp:classes/12-brute
 execute as @a[scores={class=13,optIn=1,respawn=0}] run function kitpvp:classes/13-survivalist
 execute as @a[scores={class=14,optIn=1,respawn=0}] run function kitpvp:classes/14-berserker
+execute as @a[scores={class=15,optIn=1,respawn=0}] run function kitpvp:classes/15-chef
+
+execute as @a[scores={class=99,optIn=1,respawn=0}] run function kitpvp:classes/99-juggernaut
 
 # Remove 1 kill if fell out of map
 execute as @a[scores={playerY=..0}] if score gamemode settings matches 3 run scoreboard players remove @s gm03-kills 1
@@ -29,3 +32,5 @@ execute if score map settings matches 3 run function kitpvp:maps/03-cargo
 execute if score run gm01-general matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-runtime
 execute if score run gm02-general matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-runtime
 execute if score run gm03-general matches 1 run function kitpvp:gamemodes/03-deathmatch-s/gm03-runtime
+execute if score run gm04-general matches 1 run function kitpvp:gamemodes/04-deathmatch-t/gm04-runtime
+execute if score run gm05-general matches 1 run function kitpvp:gamemodes/05-juggernaut/gm05-runtime

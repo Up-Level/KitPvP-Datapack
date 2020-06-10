@@ -16,5 +16,7 @@ execute as @a if score @s menuTriggers matches 103 run scoreboard players set ma
 execute as @a if score @s menuTriggers matches 201 run scoreboard players set gamemode settings 1
 execute as @a if score @s menuTriggers matches 202 run scoreboard players set gamemode settings 2
 execute as @a if score @s menuTriggers matches 203 run scoreboard players set gamemode settings 3
+execute as @a if score @s menuTriggers matches 204 run scoreboard players set gamemode settings 4
+execute as @a if score @s menuTriggers matches 205 run scoreboard players set gamemode settings 5
 
 execute as @a unless score @s menuTriggers matches 0 run scoreboard players set @s menuTriggers 0
