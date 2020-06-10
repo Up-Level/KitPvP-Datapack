@@ -1,6 +1,7 @@
 # General runtime commands
 execute as @a run execute unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
+kill @e[type=spectral_arrow,nbt={inGround:1b}]
 kill @e[type=item]
 
 # Kill arrows that have lived for 300 ticks, Multiply crossbow speed and set no gravity
