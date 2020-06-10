@@ -14,6 +14,7 @@ execute as @a[scores={class=13,optIn=1,respawn=0}] run function kitpvp:classes/1
 execute as @a[scores={class=14,optIn=1,respawn=0}] run function kitpvp:classes/14-berserker
 execute as @a[scores={class=15,optIn=1,respawn=0}] run function kitpvp:classes/15-chef
 execute as @a[scores={class=16,optIn=1,respawn=0}] run function kitpvp:classes/16-cowboy
+execute as @a[scores={class=17,optIn=1,respawn=0}] run function kitpvp:classes/17-viking
 
 execute as @a[scores={class=99,optIn=1,respawn=0}] run function kitpvp:classes/99-juggernaut
 
