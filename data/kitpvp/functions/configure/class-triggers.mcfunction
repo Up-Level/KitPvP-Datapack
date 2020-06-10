@@ -17,5 +17,6 @@ execute as @a if score @s classTriggers matches 13 run scoreboard players set @s
 execute as @a if score @s classTriggers matches 14 run scoreboard players set @s class 14
 execute as @a if score @s classTriggers matches 15 run scoreboard players set @s class 15
 execute as @a if score @s classTriggers matches 15 run scoreboard players set @s chef-fork -1
+execute as @a if score @s classTriggers matches 16 run scoreboard players set @s class 16
 
 execute as @a unless score @s classTriggers matches 0 run scoreboard players set @s classTriggers 0

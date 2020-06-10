@@ -13,6 +13,7 @@ scoreboard players set gamemode settings 0
 scoreboard players set gamemode-bin settings 0
 scoreboard players set gamemode-running settings 0
 scoreboard players set crossbow-arrow-speed-multiplier settings 2
+scoreboard players set fishing-rod-speed-multiplier settings 2
 
 scoreboard objectives remove cooldown
 scoreboard objectives add cooldown dummy

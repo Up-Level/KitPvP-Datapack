@@ -18,6 +18,7 @@ tag @e[type=egg,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=ender_pearl,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=firework_rocket,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=fireball,tag=!projectileChecked,tag=!projectile] add projectile
+tag @e[type=fishing_bobber,tag=!projectileChecked,tag=!projectile] add projectile
 
 execute as @e[tag=!projectileChecked,tag=projectile] store result score @s ProjectileUUID0 run data get entity @s Owner[0]
 execute as @e[tag=!projectileChecked,tag=projectile] store result score @s ProjectileUUID1 run data get entity @s Owner[1]
@@ -41,6 +42,11 @@ execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=pr
 # execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
 # execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
 # execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
+
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion0 *= fishing-rod-speed-multiplier settings
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion1 *= fishing-rod-speed-multiplier settings 
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion2 *= fishing-rod-speed-multiplier settings
+
 
 execute as @e[type=!potion,tag=!projectileChecked,tag=projectile] store result entity @s Motion[0] double 0.001 run scoreboard players get @s projMotion0
 execute as @e[type=!potion,tag=!projectileChecked,tag=projectile] store result entity @s Motion[1] double 0.001 run scoreboard players get @s projMotion1
