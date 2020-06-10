@@ -12,7 +12,7 @@ scoreboard objectives add gm05-juggernaut dummy
 scoreboard players set @r[scores={optIn=1}] gm05-juggernaut 1
 
 team join juggernaut @a[scores={gm05-juggernaut=1}]
-scoreboard players set @a[scores={gm05-juggernaut=1}] class 99
+scoreboard players set @a[scores={gm05-juggernaut=1}] class 100
 clear @a[scores={gm05-juggernaut=1}]
 attribute @a[scores={gm05-juggernaut=1},limit=1] minecraft:generic.knockback_resistance base set 10
 

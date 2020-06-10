@@ -16,7 +16,7 @@ execute as @a[scores={class=15,optIn=1,respawn=0}] run function kitpvp:classes/1
 execute as @a[scores={class=16,optIn=1,respawn=0}] run function kitpvp:classes/16-cowboy
 execute as @a[scores={class=17,optIn=1,respawn=0}] run function kitpvp:classes/17-viking
 
-execute as @a[scores={class=99,optIn=1,respawn=0}] run function kitpvp:classes/99-juggernaut
+execute as @a[scores={class=100,optIn=1,respawn=0}] run function kitpvp:classes/100-juggernaut
 
 # Remove 1 kill if fell out of map
 execute as @a[scores={playerY=..0}] if score gamemode settings matches 3 run scoreboard players remove @s gm03-kills 1
@@ -30,6 +30,7 @@ execute if entity @a[scores={respawn=1}] run function kitpvp:respawn
 execute if score map settings matches 1 run function kitpvp:maps/01-four-corners
 execute if score map settings matches 2 run function kitpvp:maps/02-sheerdrop
 execute if score map settings matches 3 run function kitpvp:maps/03-cargo
+execute if score map settings matches 4 run function kitpvp:maps/04-arena
 
 execute if score run gm01-general matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-runtime
 execute if score run gm02-general matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-runtime

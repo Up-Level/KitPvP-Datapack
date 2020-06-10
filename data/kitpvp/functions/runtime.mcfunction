@@ -1,5 +1,5 @@
 # General runtime commands
-execute as @a run execute unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]},gamemode=adventure] run replaceitem entity @s hotbar.8 minecraft:golden_carrot
+execute as @a run execute unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=item]
 

@@ -2,6 +2,7 @@
 execute if score map settings matches 1 run spreadplayers -1 -1 30 200 false @a[scores={optIn=1}]
 execute if score map settings matches 2 run spreadplayers 1981 -21 15 100 false @a[scores={optIn=1}]
 execute if score map settings matches 3 run spreadplayers 4000 35 30 200 false @a[scores={optIn=1}]
+execute if score map settings matches 4 run spreadplayers 6000 64 30 200 under 67 false @a[scores={optIn=1}]
 
 # Set player's gamemode to adventure if they're not already
 gamemode adventure @a[scores={optIn=1}]
