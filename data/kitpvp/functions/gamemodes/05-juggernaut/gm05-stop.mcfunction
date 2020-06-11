@@ -1,10 +1,11 @@
 # Juggernaut Gamemode Stop
 execute if score players gm05-general = playersTeam gm05-general if score playersJuggernaut gm05-general matches 0 run scoreboard players set winner gm05-general 0
 execute if score players gm05-general = playersJuggernaut gm05-general if score playersTeam gm05-general matches 0 run scoreboard players set winner gm05-general 1
-execute if score ticks gm05-general matches 0 run scoreboard players set winner gm05-general 1
+execute if score ticks gm05-general matches 0 run scoreboard players set winner gm05-general 2
 
 execute if score winner gm05-general matches 0 run title @a[scores={optIn=1}] title "The Attackers have Won!"
 execute if score winner gm05-general matches 1 run title @a[scores={optIn=1}] title "The Juggernaut has Won!"
+execute if score winner gm05-general matches 2 run title @a[scores={optIn=1}] title "The Game was a Draw."
 
 execute if score winner gm05-general matches 0 run scoreboard players add @a[team=juggernautTeam] wins 1
 execute if score winner gm05-general matches 1 run scoreboard players add @a[team=juggernaut] wins 1
