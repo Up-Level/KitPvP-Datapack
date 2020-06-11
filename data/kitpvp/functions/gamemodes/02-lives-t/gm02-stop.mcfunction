@@ -10,9 +10,9 @@ execute if score winner gm02-general matches 3 run scoreboard players add @a[tea
 execute if score winner gm02-general matches 4 run scoreboard players add @a[team=yellow] wins 1
 
 execute if score winner gm02-general matches 1 run title @a[scores={optIn=1}] title {"text":"Red Team has Won!","color":"red"}
-execute if score winner gm02-general matches 2 run title @a[scores={optIn=1}] title {"text":"Blue Team has Won!","color":"red"}
-execute if score winner gm02-general matches 3 run title @a[scores={optIn=1}] title {"text":"Green Team has Won!","color":"red"}
-execute if score winner gm02-general matches 4 run title @a[scores={optIn=1}] title {"text":"Yellow Team has Won!","color":"red"}
+execute if score winner gm02-general matches 2 run title @a[scores={optIn=1}] title {"text":"Blue Team has Won!","color":"blue"}
+execute if score winner gm02-general matches 3 run title @a[scores={optIn=1}] title {"text":"Green Team has Won!","color":"green"}
+execute if score winner gm02-general matches 4 run title @a[scores={optIn=1}] title {"text":"Yellow Team has Won!","color":"yellow"}
 
 playsound minecraft:ui.toast.challenge_complete master @a[scores={gm02-lives=1..}] ~ ~ ~ 1.25
 playsound minecraft:entity.firework_rocket.twinkle master @a[scores={optIn=1}]
