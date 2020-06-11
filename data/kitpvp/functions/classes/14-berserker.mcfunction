@@ -6,4 +6,3 @@ replaceitem entity @s armor.chest iron_chestplate{Unbreakable:1b}
 replaceitem entity @s armor.feet iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
 execute as @a[scores={killBin=1..,class=14}] run effect give @s regeneration 1 255 true
-scoreboard players set @a[scores={killBin=1..}] killBin 0

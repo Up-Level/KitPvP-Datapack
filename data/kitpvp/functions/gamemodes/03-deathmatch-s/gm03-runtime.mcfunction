@@ -1,7 +1,7 @@
 # Deathmatch Gamemode Runtime
 scoreboard players remove ticks gm03-general 1
 scoreboard players operation Time-Seconds gm03-time = ticks gm03-general
-scoreboard players operation Time-Seconds gm03-time /= twenty gm03-general
+scoreboard players operation Time-Seconds gm03-time /= twenty number
 
 execute as @a run scoreboard players operation @s gm03-kills-copy = @s gm03-kills
 scoreboard players set highest gm03-kills-copy 0
