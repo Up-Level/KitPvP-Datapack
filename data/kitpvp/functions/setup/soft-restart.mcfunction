@@ -22,6 +22,7 @@ scoreboard players set rocket-boots cooldown 150
 
 scoreboard objectives remove number
 scoreboard objectives add number dummy
+scoreboard players set negative-twenty number -20
 scoreboard players set zero number 0
 scoreboard players set one number 1
 scoreboard players set twelve number 12

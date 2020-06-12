@@ -23,6 +23,7 @@ scoreboard objectives add gm04-deaths deathCount {"text":"Deaths","color":"gold"
 scoreboard objectives remove gm04-general
 scoreboard objectives add gm04-general dummy
 scoreboard players set ticks gm04-general 6000
+scoreboard players set seconds gm04-general 300
 scoreboard players set run gm04-general 1
 scoreboard players set winner gm04-general 0
 
@@ -31,7 +32,7 @@ scoreboard objectives add gm04-teamKills dummy
 scoreboard players set killsRed gm04-teamKills 0
 scoreboard players set killsBlue gm04-teamKills 0
 scoreboard players set killsGreen gm04-teamKills 0
-scoreboard players set killsYellow gm04-teamKills0
+scoreboard players set killsYellow gm04-teamKills 0
 
 scoreboard players set gamemode-running settings 1
 scoreboard players set gamemode-bin settings 0
