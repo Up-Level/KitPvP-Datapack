@@ -20,5 +20,6 @@ execute as @a if score @s classTriggers matches 15 run scoreboard players set @s
 execute as @a if score @s classTriggers matches 16 run scoreboard players set @s class 16
 execute as @a if score @s classTriggers matches 17 run scoreboard players set @s class 17
 execute as @a if score @s classTriggers matches 18 run scoreboard players set @s class 18
+execute as @a if score @s classTriggers matches 19 run scoreboard players set @s class 19
 
 execute as @a unless score @s classTriggers matches 0 run scoreboard players set @s classTriggers 0

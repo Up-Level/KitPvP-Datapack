@@ -103,6 +103,9 @@ scoreboard objectives add ProjectileUUID1 dummy
 scoreboard objectives add ProjectileUUID2 dummy
 scoreboard objectives add ProjectileUUID3 dummy
 
+scoreboard objectives remove crouchTime
+scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
@@ -113,8 +116,8 @@ scoreboard objectives add killBin playerKillCount
 scoreboard objectives remove respawn
 scoreboard objectives add respawn dummy
 
-scoreboard objectives remove crouch
-scoreboard objectives add crouch dummy
+scoreboard objectives remove crouchBin
+scoreboard objectives add crouchBin minecraft.custom:minecraft.sneak_time
 
 scoreboard objectives remove dropTrident
 scoreboard objectives add dropTrident minecraft.dropped:minecraft.trident

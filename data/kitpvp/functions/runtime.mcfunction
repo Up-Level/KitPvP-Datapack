@@ -21,3 +21,6 @@ execute as @a[team=] run team join none @s
 
 # On death, do these commands
 execute as @a[scores={dead=1}] run function kitpvp:on-death
+
+# Reset crouchBin
+scoreboard players set @a crouchBin 0
