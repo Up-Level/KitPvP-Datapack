@@ -22,6 +22,11 @@ execute as @a store result score @s UUID2 run data get entity @s UUID[2]
 execute as @a store result score @s UUID3 run data get entity @s UUID[3]
 
 # Reset Chef Scoreboards
-scoreboard players set @a[scores={optIn=1}] chef-fork 1
+scoreboard players set @a[scores={optIn=1}] cdChefFork 1
 scoreboard players set @a[scores={optIn=1}] dropTrident 0
 scoreboard players set @a[scores={optIn=1}] throwTrident 0
+
+# Reset Rocket Boots Scoreboards
+scoreboard players set @a[scores={optIn=1}] cdRocketBoots 0
+scoreboard players set @a[scores={optIn=1}] rocketBootsTimer 0
+scoreboard players set @a[scores={optIn=1}] canUseElytra 0

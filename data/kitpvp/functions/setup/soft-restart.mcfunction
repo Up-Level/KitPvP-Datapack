@@ -18,6 +18,7 @@ scoreboard players set fishing-rod-speed-multiplier settings 2
 scoreboard objectives remove cooldown
 scoreboard objectives add cooldown dummy
 scoreboard players set chef-fork cooldown 100
+scoreboard players set rocket-boots cooldown 150
 
 scoreboard objectives remove number
 scoreboard objectives add number dummy
@@ -25,6 +26,12 @@ scoreboard players set zero number 0
 scoreboard players set one number 1
 scoreboard players set twelve number 12
 scoreboard players set twenty number 20
+
+scoreboard objectives remove rocketBootsTimer
+scoreboard objectives add rocketBootsTimer dummy
+
+scoreboard objectives remove canUseElytra
+scoreboard objectives add canUseElytra dummy
 
 scoreboard objectives remove team
 scoreboard objectives add team dummy
@@ -69,8 +76,11 @@ scoreboard objectives add killsSinceDeath playerKillCount
 scoreboard objectives remove classProjectile
 scoreboard objectives add classProjectile dummy
 
-scoreboard objectives remove chef-fork
-scoreboard objectives add chef-fork dummy
+scoreboard objectives remove cdChefFork
+scoreboard objectives add cdChefFork dummy
+
+scoreboard objectives remove cdRocketBoots
+scoreboard objectives add cdRocketBoots dummy
 
 scoreboard objectives remove projMotion0
 scoreboard objectives remove projMotion1

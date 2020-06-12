@@ -1,4 +1,4 @@
-# Class 99 Juggernaut
+# Class 99 - Juggernaut
 
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_sword"}]}] run replaceitem entity @s hotbar.0 minecraft:netherite_sword{Unbreakable:1b}
 execute as @s run execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run replaceitem entity @s hotbar.1 minecraft:iron_axe{Unbreakable:1b}

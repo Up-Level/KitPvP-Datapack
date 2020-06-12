@@ -6,7 +6,7 @@ execute at @a[name=Leo_is_a_Legend,scores={dead=1}] run playsound minecraft:ambi
 execute at @a[name=Leo_is_a_Legend,scores={dead=1}] run particle minecraft:smoke ~ ~1 ~ 0.4 0.4 0.4 0.2 100 force
 
 scoreboard players set @a[scores={dead=1}] killsSinceDeath 0
-scoreboard players set @a[scores={dead=1}] chef-fork 1
+scoreboard players set @a[scores={dead=1}] cdChefFork 1
 tellraw @a ["",{"selector":"@a[scores={dead=1}]","color":"red"},{"text":" has Died!","color":"red"}]
 
 # Send player to respawn area if gamemode is running
