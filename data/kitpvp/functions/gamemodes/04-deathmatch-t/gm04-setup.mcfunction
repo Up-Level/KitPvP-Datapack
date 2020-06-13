@@ -5,10 +5,10 @@ tellraw @a[scores={optIn=1}] {"text":"This gamemode is Team Deathmatch. Whicheve
 
 scoreboard players set @a[scores={optIn=1}] respawn 0
 
-scoreboard objectives remove gm04-time
-scoreboard objectives add gm04-time dummy {"text":"Time Remaining","color":"gold"}
-scoreboard players set Time-Seconds gm04-time 300
-scoreboard objectives setdisplay sidebar gm04-time
+scoreboard objectives remove gm04-display
+scoreboard objectives add gm04-display dummy {"text":"Team Deathmatch","color":"gold"}
+scoreboard players set Time-Remaining gm04-display 300
+scoreboard objectives setdisplay sidebar gm04-display
 
 scoreboard objectives remove gm04-kills
 scoreboard objectives add gm04-kills playerKillCount {"text":"Kills","color":"gold"}

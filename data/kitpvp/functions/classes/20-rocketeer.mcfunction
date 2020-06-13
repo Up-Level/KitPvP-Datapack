@@ -16,7 +16,6 @@ execute if entity @s[scores={crouchTime=5..50}] at @s run playsound minecraft:bl
 
 execute if entity @s[scores={crouchTime=50}] at @s run particle minecraft:flame ~ ~0.1 ~ 1.25 0.01 1.25 0.025 150 force
 
-
 scoreboard players set @s[scores={crouchTime=50..}] rocketBootsTimer 20
 scoreboard players operation @s[scores={crouchTime=50..}] cdRocketBoots = rocket-boots cooldown
 
