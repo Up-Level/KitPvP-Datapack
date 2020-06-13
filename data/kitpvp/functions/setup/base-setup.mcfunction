@@ -1,5 +1,5 @@
-# Hard Restart Resets everything, coordinate armor stands will have to be moved again.
-tellraw @a {"text":"KitPvP has been hard restarted. Coordinate armor stands will need to be moved again and all scoreboards have been reset.","color":"gold"}
+# Generic Setup to be ran in other restart functions.
+
 playsound minecraft:block.note_block.pling master @a
 
 # Integer Scoreboards
@@ -22,6 +22,7 @@ scoreboard players set rocket-boots cooldown 150
 
 scoreboard objectives remove number
 scoreboard objectives add number dummy
+scoreboard players set negative-twenty number -20
 scoreboard players set zero number 0
 scoreboard players set one number 1
 scoreboard players set twelve number 12
@@ -44,10 +45,6 @@ scoreboard objectives add totalKills playerKillCount {"text":"Total Kills","colo
 
 scoreboard objectives remove totalDeaths
 scoreboard objectives add totalDeaths deathCount {"text":"Total Deaths","color":"gold"}
-
-scoreboard objectives remove wins
-scoreboard objectives add wins dummy {"text":"Wins","color":"gold"}
-scoreboard objectives setdisplay list wins
 
 scoreboard objectives remove optIn
 scoreboard objectives add optIn dummy {"text":"Ready","color":"gold"}
@@ -117,9 +114,6 @@ scoreboard objectives add ProjectileUUID3 dummy
 scoreboard objectives remove crouchTime
 scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
 
-scoreboard objectives remove giveClass
-scoreboard objectives add giveClass dummy
-
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
@@ -142,15 +136,8 @@ scoreboard objectives add hadTrident dummy
 scoreboard objectives remove playerLeft
 scoreboard objectives add playerLeft minecraft.custom:minecraft.leave_game
 
-# Add Coordinate Stands
-kill @e[type=minecraft:armor_stand,nbt={Marker:1b}]
-
-execute at @p run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"spawn\"}"}
-execute at @p run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"active-map\"}"}
-
-execute at @p run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"map-01\"}"}
-execute at @p run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"map-02\"}"}
-execute at @p run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"map-03\"}"}
+scoreboard objectives remove giveClass
+scoreboard objectives add giveClass dummy
 
 # Add Teams
 team remove none
