@@ -1,25 +1,5 @@
-execute as @a[scores={class=1,optIn=1,respawn=0}] run function kitpvp:classes/01-test
-execute as @a[scores={class=2,optIn=1,respawn=0}] run function kitpvp:classes/02-scout
-execute as @a[scores={class=3,optIn=1,respawn=0}] run function kitpvp:classes/03-bowspace
-execute as @a[scores={class=4,optIn=1,respawn=0}] run function kitpvp:classes/04-swordspace
-execute as @a[scores={class=5,optIn=1,respawn=0}] run function kitpvp:classes/05-legionnaire
-execute as @a[scores={class=6,optIn=1,respawn=0}] run function kitpvp:classes/06-shieldbearer
-execute as @a[scores={class=7,optIn=1,respawn=0}] run function kitpvp:classes/07-endermissionary
-execute as @a[scores={class=8,optIn=1,respawn=0}] run function kitpvp:classes/08-hunter
-execute as @a[scores={class=9,optIn=1,respawn=0}] run function kitpvp:classes/09-speedygonzales
-execute as @a[scores={class=10,optIn=1,respawn=0}] run function kitpvp:classes/10-gunner
-execute as @a[scores={class=11,optIn=1,respawn=0}] run function kitpvp:classes/11-sniper
-execute as @a[scores={class=12,optIn=1,respawn=0}] run function kitpvp:classes/12-brute
-execute as @a[scores={class=13,optIn=1,respawn=0}] run function kitpvp:classes/13-survivalist
-execute as @a[scores={class=14,optIn=1,respawn=0}] run function kitpvp:classes/14-berserker
-execute as @a[scores={class=15,optIn=1,respawn=0}] run function kitpvp:classes/15-chef
-execute as @a[scores={class=16,optIn=1,respawn=0}] run function kitpvp:classes/16-cowboy
-execute as @a[scores={class=17,optIn=1,respawn=0}] run function kitpvp:classes/17-viking
-execute as @a[scores={class=18,optIn=1,respawn=0}] run function kitpvp:classes/18-seeker
-execute as @a[scores={class=19,optIn=1,respawn=0}] run function kitpvp:classes/19-valkyrie
-execute as @a[scores={class=20,optIn=1,respawn=0}] run function kitpvp:classes/20-rocketeer
-
-execute as @a[scores={class=100,optIn=1,respawn=0}] run function kitpvp:classes/100-juggernaut
+# Run Class Runtime
+execute as @a[scores={optIn=1,respawn=0},gamemode=!spectator] run function kitpvp:class-runtime
 
 # Remove 1 kill if fell out of map
 execute as @a[scores={playerY=..0}] if score gamemode settings matches 3 run scoreboard players remove @s gm03-kills 1

@@ -12,7 +12,7 @@ scoreboard players set map settings 0
 scoreboard players set gamemode settings 0
 scoreboard players set gamemode-bin settings 0
 scoreboard players set gamemode-running settings 0
-scoreboard players set crossbow-arrow-speed-multiplier settings 2
+scoreboard players set crossbow-arrow-speed-multiplier settings 1
 scoreboard players set fishing-rod-speed-multiplier settings 2
 
 scoreboard objectives remove cooldown
@@ -116,6 +116,9 @@ scoreboard objectives add ProjectileUUID3 dummy
 
 scoreboard objectives remove crouchTime
 scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
+
+scoreboard objectives remove giveClass
+scoreboard objectives add giveClass dummy
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead

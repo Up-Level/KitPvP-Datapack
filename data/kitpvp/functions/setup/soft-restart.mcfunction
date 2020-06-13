@@ -12,7 +12,7 @@ scoreboard players set map settings 0
 scoreboard players set gamemode settings 0
 scoreboard players set gamemode-bin settings 0
 scoreboard players set gamemode-running settings 0
-scoreboard players set crossbow-arrow-speed-multiplier settings 2
+scoreboard players set crossbow-arrow-speed-multiplier settings 1
 scoreboard players set fishing-rod-speed-multiplier settings 2
 
 scoreboard objectives remove cooldown
@@ -135,6 +135,9 @@ scoreboard objectives add hadTrident dummy
 
 scoreboard objectives remove playerLeft
 scoreboard objectives add playerLeft minecraft.custom:minecraft.leave_game
+
+scoreboard objectives remove giveClass
+scoreboard objectives add giveClass dummy
 
 # Add Teams
 team remove none

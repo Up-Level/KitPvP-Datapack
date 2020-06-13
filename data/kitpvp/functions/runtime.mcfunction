@@ -22,6 +22,9 @@ execute as @a[team=] run team join none @s
 # On death, do these commands
 execute as @a[scores={dead=1}] run function kitpvp:on-death
 
+# Give a Player if they have a giveClass value
+execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
+
 # Reset CrouchTime if not crouching
 execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0
 
