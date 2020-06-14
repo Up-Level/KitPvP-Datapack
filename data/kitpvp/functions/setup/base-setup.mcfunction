@@ -23,6 +23,7 @@ scoreboard players set rocket-boots cooldown 150
 scoreboard objectives remove number
 scoreboard objectives add number dummy
 scoreboard players set negative-twenty number -20
+scoreboard players set negative-one number -1
 scoreboard players set zero number 0
 scoreboard players set one number 1
 scoreboard players set twelve number 12
@@ -30,6 +31,9 @@ scoreboard players set twenty number 20
 
 scoreboard objectives remove rocketBootsTimer
 scoreboard objectives add rocketBootsTimer dummy
+
+scoreboard objectives remove rbFizzleTimer
+scoreboard objectives add rbFizzleTimer dummy
 
 scoreboard objectives remove canUseElytra
 scoreboard objectives add canUseElytra dummy

@@ -12,9 +12,12 @@ execute if score winner gm05-general matches 1 run scoreboard players add @a[tea
 
 playsound minecraft:ui.toast.challenge_complete master @a[scores={gm05-lives=1..}] ~ ~ ~ 1.25
 
+team join none @a[scores={optIn=1}]
+
 scoreboard players set @a gm05-lives 1
 scoreboard players reset @a[scores={gm05-juggernaut=1}] class
 attribute @a[scores={gm05-juggernaut=1},limit=1] minecraft:generic.max_health base set 20
+attribute @a[scores={gm05-juggernaut=1},limit=1] minecraft:generic.knockback_resistance base set 0
 
 scoreboard players set run gm05-general 0
 function kitpvp:gamemodes/generic-stop

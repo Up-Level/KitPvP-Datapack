@@ -15,4 +15,4 @@ execute as @a[scores={optIn=1}] if score @s gm03-kills-copy matches 0 run scoreb
 
 execute if score ticks gm03-general <= zero number if score playersInLead gm03-general matches 1 run function kitpvp:gamemodes/03-deathmatch-s/gm03-stop
 
-execute if score ticks gm03-general <= zero number run title @a[scores={optIn=1}] actionbar {"text":"Overtime!","color":"gold"}
+execute if score ticks gm03-general <= negative-one number run title @a[scores={optIn=1}] actionbar {"text":"Overtime!","color":"gold"}

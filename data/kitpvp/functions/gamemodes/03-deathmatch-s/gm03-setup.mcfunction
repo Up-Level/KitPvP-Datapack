@@ -29,3 +29,5 @@ scoreboard players set playersInLead gm03-general 0
 
 scoreboard players set gamemode-running settings 1
 scoreboard players set gamemode-bin settings 0
+
+team join none @a[scores={optIn=1}]

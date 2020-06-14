@@ -15,6 +15,7 @@ gamerule mobGriefing false
 gamerule randomTickSpeed 0
 gamerule showDeathMessages false
 gamerule spawnRadius 0
+gamerule doImmediateRespawn true
 
 # Setup Wins scoreboard (not done in scoreboard-setup to avoid resetting wins while testing)
 scoreboard objectives remove wins

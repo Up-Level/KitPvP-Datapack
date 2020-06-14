@@ -14,6 +14,7 @@ execute if score map settings matches 1 run function kitpvp:maps/01-four-corners
 execute if score map settings matches 2 run function kitpvp:maps/02-sheerdrop
 execute if score map settings matches 3 run function kitpvp:maps/03-cargo
 execute if score map settings matches 4 run function kitpvp:maps/04-arena
+execute if score map settings matches 5 run function kitpvp:maps/05-survival-beginnings
 
 execute if score run gm01-general matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-runtime
 execute if score run gm02-general matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-runtime

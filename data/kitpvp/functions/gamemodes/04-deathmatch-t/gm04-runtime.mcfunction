@@ -36,4 +36,4 @@ execute if score ticks gm04-general <= zero number if score killsBlue gm04-kills
 execute if score ticks gm04-general <= zero number if score killsGreen gm04-kills-copy matches 0 if score killsBlue gm04-kills-copy < zero number if score killsRed gm04-kills-copy < zero number if score killsYellow gm04-kills-copy < zero number run function kitpvp:gamemodes/04-deathmatch-t/gm04-stop
 execute if score ticks gm04-general <= zero number if score killsYellow gm04-kills-copy matches 0 if score killsBlue gm04-kills-copy < zero number if score killsGreen gm04-kills-copy < zero number if score killsRed gm04-kills-copy < zero number run function kitpvp:gamemodes/04-deathmatch-t/gm04-stop
 
-execute if score ticks gm04-general <= zero number run title @a[scores={optIn=1}] actionbar {"text":"Overtime!","color":"gold"}
+execute if score ticks gm04-general <= negative-one number run title @a[scores={optIn=1}] actionbar {"text":"Overtime!","color":"gold"}
