@@ -1,21 +1,19 @@
 # Lives Gamemode Stop
-execute if score players-red gm02-general >= one gm02-general if score players-blue gm02-general matches 0 if score players-green gm02-general matches 0 if score players-yellow gm02-general matches 0 run scoreboard players set winner gm02-general 1
-execute if score players-blue gm02-general >= one gm02-general if score players-red gm02-general matches 0 if score players-green gm02-general matches 0 if score players-yellow gm02-general matches 0 run scoreboard players set winner gm02-general 2
-execute if score players-green gm02-general >= one gm02-general if score players-red gm02-general matches 0 if score players-blue gm02-general matches 0 if score players-yellow gm02-general matches 0 run scoreboard players set winner gm02-general 3
-execute if score players-yellow gm02-general >= one gm02-general if score players-red gm02-general matches 0 if score players-blue gm02-general matches 0 if score players-green gm02-general matches 0 run scoreboard players set winner gm02-general 4
+execute if score redPlayers gm_general >= one number if score bluePlayers gm_general matches 0 if score greenPlayers gm_general matches 0 if score yellowPlayers gm_general matches 0 run scoreboard players set winner gm_general 1
+execute if score bluePlayers gm_general >= one number if score redPlayers gm_general matches 0 if score greenPlayers gm_general matches 0 if score yellowPlayers gm_general matches 0 run scoreboard players set winner gm_general 2
+execute if score greenPlayers gm_general >= one number if score redPlayers gm_general matches 0 if score bluePlayers gm_general matches 0 if score yellowPlayers gm_general matches 0 run scoreboard players set winner gm_general 3
+execute if score yellowPlayers gm_general >= one number if score redPlayers gm_general matches 0 if score bluePlayers gm_general matches 0 if score greenPlayers gm_general matches 0 run scoreboard players set winner gm_general 4
 
-execute if score winner gm02-general matches 1 run scoreboard players add @a[team=red] wins 1
-execute if score winner gm02-general matches 2 run scoreboard players add @a[team=blue] wins 1
-execute if score winner gm02-general matches 3 run scoreboard players add @a[team=green] wins 1
-execute if score winner gm02-general matches 4 run scoreboard players add @a[team=yellow] wins 1
+execute if score winner gm_general matches 1 run scoreboard players add @a[team=red] wins 1
+execute if score winner gm_general matches 2 run scoreboard players add @a[team=blue] wins 1
+execute if score winner gm_general matches 3 run scoreboard players add @a[team=green] wins 1
+execute if score winner gm_general matches 4 run scoreboard players add @a[team=yellow] wins 1
 
-execute if score winner gm02-general matches 1 run title @a[scores={optIn=1}] title {"text":"Red Team has Won!","color":"red"}
-execute if score winner gm02-general matches 2 run title @a[scores={optIn=1}] title {"text":"Blue Team has Won!","color":"blue"}
-execute if score winner gm02-general matches 3 run title @a[scores={optIn=1}] title {"text":"Green Team has Won!","color":"green"}
-execute if score winner gm02-general matches 4 run title @a[scores={optIn=1}] title {"text":"Yellow Team has Won!","color":"yellow"}
+execute if score winner gm_general matches 1 run title @a[scores={optIn=1}] title {"text":"Red Team has Won!","color":"red"}
+execute if score winner gm_general matches 2 run title @a[scores={optIn=1}] title {"text":"Blue Team has Won!","color":"blue"}
+execute if score winner gm_general matches 3 run title @a[scores={optIn=1}] title {"text":"Green Team has Won!","color":"green"}
+execute if score winner gm_general matches 4 run title @a[scores={optIn=1}] title {"text":"Yellow Team has Won!","color":"yellow"}
 
-playsound minecraft:ui.toast.challenge_complete master @a[scores={gm02-lives=1..}] ~ ~ ~ 1.25
+playsound minecraft:ui.toast.challenge_complete master @a[scores={gm_lives=1..}] 0 65 1000 1 1 1
 
-scoreboard players set @a gm02-lives 3
-scoreboard players set run gm02-general 0
-function kitpvp:gamemodes/generic-stop
+function kitpvp:gamemodes/_common/stop

@@ -6,10 +6,14 @@ replaceitem entity @s[scores={canUseElytra=0}] armor.chest chainmail_chestplate{
 replaceitem entity @s[scores={canUseElytra=1}] armor.chest elytra{Unbreakable:1b}
 replaceitem entity @s armor.feet minecraft:netherite_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
-scoreboard players remove @s cdRocketBoots 1
+execute if entity @s[scores={inLiquid=1}] run scoreboard players set @s rbFizzleTimer 40
 
 scoreboard players set @s[scores={cdRocketBoots=0..}] crouchTime 0
+scoreboard players set @s[scores={rbFizzleTimer=0..}] crouchTime 0
 scoreboard players set @s[scores={canUseElytra=1}] crouchTime 0
+
+execute if entity @s[scores={rbFizzleTimer=0..}] at @s run particle minecraft:bubble_pop ~ ~ ~ 0.25 0.1 0.25 0.025 5 force
+execute if entity @s[scores={rbFizzleTimer=0..}] at @s run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 0.25 2
 
 execute if entity @s[scores={crouchTime=5..50}] at @s run particle minecraft:flame ~ ~0.1 ~ .5 0.1 .5 0.025 5 force
 execute if entity @s[scores={crouchTime=5..50}] at @s run playsound minecraft:block.lava.extinguish ambient @a ~ ~ ~ 0.1 0.8
@@ -29,5 +33,8 @@ execute if entity @s[scores={rocketBootsTimer=20}] at @s run effect give @s mine
 execute if entity @s[scores={rocketBootsTimer=0}] run scoreboard players set @s canUseElytra 1
 
 execute if entity @s[nbt={OnGround:1b},scores={canUseElytra=1}] run scoreboard players set @s canUseElytra 0
+execute if entity @s[scores={inLiquid=1,canUseElytra=1}] run scoreboard players set @s canUseElytra 0
 
-scoreboard players remove @s rocketBootsTimer 1
+scoreboard players remove @s[scores={rocketBootsTimer=0..}] rocketBootsTimer 1
+scoreboard players remove @s[scores={cdRocketBoots=0..}] cdRocketBoots 1
+scoreboard players remove @s[scores={rbFizzleTimer=0..}] rbFizzleTimer 1

@@ -20,8 +20,6 @@ replaceitem entity @a[scores={optIn=1}] hotbar.1 written_book{pages:['["",{"text
 scoreboard players set @a gm01-lives 3
 scoreboard players set @a gm02-lives 3
 
-execute if score gamemode settings matches 1 run team join none @a
-
 execute if score gamemode-bin settings matches 1 run scoreboard players set @a[scores={class=0}] class 6
 
 execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-setup

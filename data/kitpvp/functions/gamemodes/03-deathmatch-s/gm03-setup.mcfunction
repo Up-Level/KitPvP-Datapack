@@ -1,33 +1,19 @@
 # Deathmatch Gamemode Setup
-function kitpvp:gamemodes/generic-setup
+team join none @a[scores={optIn=1}]
+
+function kitpvp:gamemodes/_common/setup
 
 tellraw @a[scores={optIn=1}] {"text":"This gamemode is Deathmatch. Whoever gets the most kills in 5 minutes wins.","color":"gold"}
 
-scoreboard players set @a[scores={optIn=1}] respawn 0
+scoreboard objectives modify gm_sidebar displayname {"text":"Deathmatch","color":"gold"}
+scoreboard players set Time-Remaining gm_sidebar 300
+scoreboard objectives setdisplay sidebar gm_sidebar
+scoreboard objectives setdisplay list gm_kills
 
-scoreboard objectives remove gm03-time
-scoreboard objectives add gm03-time dummy {"text":"Time Remaining","color":"gold"}
-scoreboard players set Time-Seconds gm03-time 300
-scoreboard objectives setdisplay sidebar gm03-time
+scoreboard objectives remove gm_kills-copy
+scoreboard objectives add gm_kills-copy dummy
 
-scoreboard objectives remove gm03-kills
-scoreboard objectives add gm03-kills playerKillCount {"text":"Kills","color":"gold"}
-scoreboard objectives setdisplay list gm03-kills
-
-scoreboard objectives remove gm03-kills-copy
-scoreboard objectives add gm03-kills-copy dummy
-
-scoreboard objectives remove gm03-deaths
-scoreboard objectives add gm03-deaths deathCount {"text":"Deaths","color":"gold"}
-
-scoreboard objectives remove gm03-general
-scoreboard objectives add gm03-general dummy
-scoreboard players set ticks gm03-general 6000
-scoreboard players set seconds gm03-general 300
-scoreboard players set run gm03-general 1
-scoreboard players set playersInLead gm03-general 0
-
-scoreboard players set gamemode-running settings 1
-scoreboard players set gamemode-bin settings 0
-
-team join none @a[scores={optIn=1}]
+scoreboard players set ticks gm_general 6000
+scoreboard players set seconds gm_general 300
+scoreboard players set run gm_general 3
+scoreboard players set playersInLead gm_general 0

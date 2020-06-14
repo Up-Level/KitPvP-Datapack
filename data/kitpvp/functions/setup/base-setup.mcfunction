@@ -143,6 +143,9 @@ scoreboard objectives add playerLeft minecraft.custom:minecraft.leave_game
 scoreboard objectives remove giveClass
 scoreboard objectives add giveClass dummy
 
+scoreboard objectives remove inLiquid
+scoreboard objectives add inLiquid dummy
+
 # Add Teams
 team remove none
 team add none {"text":"None"}

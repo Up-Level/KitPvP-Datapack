@@ -4,6 +4,10 @@ kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
 kill @e[type=item]
 
+# Detect if player is in a liquid or a waterlogged block
+execute as @a at @s if block ~ ~ ~ #kitpvp:waterloggable[waterlogged=true] run scoreboard players set @s inLiquid 1
+execute as @a at @s if block ~ ~ ~ #kitpvp:liquidblocks run scoreboard players set @s inLiquid 1
+
 # Kill arrows that have lived for 300 ticks, Multiply crossbow speed and set no gravity
 function kitpvp:projectiles
 
@@ -28,5 +32,6 @@ execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
 # Reset CrouchTime if not crouching
 execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0
 
-# Reset crouchBin
+# Reset Binary Scoreboards
 scoreboard players set @a crouchBin 0
+scoreboard players set @a inLiquid 0
