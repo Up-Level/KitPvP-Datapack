@@ -6,8 +6,8 @@ replaceitem entity @s armor.feet iron_boots{Unbreakable:1b,Enchantments:[{id:"mi
 
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_sword"}]}] run replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
 
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] if entity @s[scores={cdBoat=..-1}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{Unbreakable:1b,display:{Name:'{"text":"Create Boat"}'}}
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick"}]}] run replaceitem entity @s hotbar.2 minecraft:warped_fungus_on_a_stick{Unbreakable:1b,display:{Name:'{"text":"Destroy Boat"}'}}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] if entity @s[scores={cdBoat=..-1}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{Unbreakable:1b,display:{Name:'{"text":"Create Boat"}'},CustomModelData:1}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick"}]}] run replaceitem entity @s hotbar.2 minecraft:warped_fungus_on_a_stick{Unbreakable:1b,display:{Name:'{"text":"Destroy Boat"}'},CustomModelData:1}
 
 execute unless entity @s[scores={cdBoat=..-1}] run clear @s minecraft:carrot_on_a_stick
 
