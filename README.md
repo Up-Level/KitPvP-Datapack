@@ -6,7 +6,9 @@ Eventually, we might make this server public if the project goes far enough.
 
 ## Server Credit
 * Up-Level - Creator, Developer
-* TetTheGreedy - Developer, Map Maper
-* Leo_is_a_Legend - Map Maker
-* HourLongZero - Map Maker
-* Blackbird7342 - Map Maker
+* TetTheGreedy - Developer, Builder
+* Leo_is_a_Legend - Builder
+* HourLongZero - Builder
+* Blackbird7342 - Builder
+* CloudJumper607 - Builder
+* WhiteLightninJa - Builder
