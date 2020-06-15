@@ -9,6 +9,7 @@ execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores=
 execute as @e[type=minecraft:potion] at @s run data modify entity @s Owner set from entity @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},limit=1,sort=nearest] Owner
 
 kill @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15}]
+kill @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=21}]
 
 tag @e[type=arrow,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=trident,tag=!projectileChecked,tag=!projectile] add projectile
@@ -44,7 +45,7 @@ execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=pr
 # execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
 
 execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion0 *= fishing-rod-speed-multiplier settings
-execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion1 *= fishing-rod-speed-multiplier settings 
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion1 *= fishing-rod-speed-multiplier settings
 execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion2 *= fishing-rod-speed-multiplier settings
 
 
