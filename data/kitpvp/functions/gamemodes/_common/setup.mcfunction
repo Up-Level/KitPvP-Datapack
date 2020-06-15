@@ -12,13 +12,10 @@ execute if score map settings matches 5 run spreadplayers 8000 0 5 100 false @a[
 gamemode adventure @a[scores={optIn=1}]
 
 # Get Player UUIDs
-execute as @a store result score @s UUID0 run data get entity @s UUID[0]
-execute as @a store result score @s UUID1 run data get entity @s UUID[1]
-execute as @a store result score @s UUID2 run data get entity @s UUID[2]
-execute as @a store result score @s UUID3 run data get entity @s UUID[3]
+function kitpvp:utility/get-uuids
 
 # Reset Player Scoreboards
-execute as @a[scores={optIn=1}] run function kitpvp:reset-player-scoreboards
+execute as @a[scores={optIn=1}] run function kitpvp:utility/reset-player-scoreboards
 scoreboard players set @a[scores={optIn=1}] respawn 0
 
 # Initiate Common Gamemode Scoreboards

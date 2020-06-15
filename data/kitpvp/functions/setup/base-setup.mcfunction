@@ -1,6 +1,6 @@
 # Generic Setup to be ran in other restart functions.
 
-playsound minecraft:block.note_block.pling master @a
+playsound minecraft:block.note_block.pling master @a 0 65 1000 10000 1 1
 
 # Integer Scoreboards
 scoreboard objectives remove class
@@ -15,11 +15,6 @@ scoreboard players set gamemode-running settings 0
 scoreboard players set crossbow-arrow-speed-multiplier settings 1
 scoreboard players set fishing-rod-speed-multiplier settings 2
 
-scoreboard objectives remove cooldown
-scoreboard objectives add cooldown dummy
-scoreboard players set chef-fork cooldown 100
-scoreboard players set rocket-boots cooldown 150
-
 scoreboard objectives remove number
 scoreboard objectives add number dummy
 scoreboard players set negative-twenty number -20
@@ -29,8 +24,7 @@ scoreboard players set one number 1
 scoreboard players set twelve number 12
 scoreboard players set twenty number 20
 
-scoreboard objectives remove rocketBootsTimer
-scoreboard objectives add rocketBootsTimer dummy
+function kitpvp:setup/cooldowns-setup
 
 scoreboard objectives remove rbFizzleTimer
 scoreboard objectives add rbFizzleTimer dummy
@@ -81,12 +75,6 @@ scoreboard objectives add killsSinceDeath playerKillCount
 scoreboard objectives remove classProjectile
 scoreboard objectives add classProjectile dummy
 
-scoreboard objectives remove cdChefFork
-scoreboard objectives add cdChefFork dummy
-
-scoreboard objectives remove cdRocketBoots
-scoreboard objectives add cdRocketBoots dummy
-
 scoreboard objectives remove projMotion0
 scoreboard objectives remove projMotion1
 scoreboard objectives remove projMotion2
@@ -114,6 +102,16 @@ scoreboard objectives add ProjectileUUID0 dummy
 scoreboard objectives add ProjectileUUID1 dummy
 scoreboard objectives add ProjectileUUID2 dummy
 scoreboard objectives add ProjectileUUID3 dummy
+
+scoreboard objectives remove compareUUID0
+scoreboard objectives remove compareUUID0
+scoreboard objectives remove compareUUID0
+scoreboard objectives remove compareUUID0
+
+scoreboard objectives add compareUUID0 dummy
+scoreboard objectives add compareUUID1 dummy
+scoreboard objectives add compareUUID2 dummy
+scoreboard objectives add compareUUID3 dummy
 
 scoreboard objectives remove crouchTime
 scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
@@ -145,6 +143,12 @@ scoreboard objectives add giveClass dummy
 
 scoreboard objectives remove inLiquid
 scoreboard objectives add inLiquid dummy
+
+scoreboard objectives remove carrotStickBin
+scoreboard objectives add carrotStickBin minecraft.used:minecraft.carrot_on_a_stick
+
+scoreboard objectives remove fungusStickBin
+scoreboard objectives add fungusStickBin minecraft.used:minecraft.warped_fungus_on_a_stick
 
 # Add Teams
 team remove none

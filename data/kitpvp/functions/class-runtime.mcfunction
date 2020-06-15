@@ -18,5 +18,7 @@ execute as @s[scores={class=17}] run function kitpvp:classes/17-viking
 execute as @s[scores={class=18}] run function kitpvp:classes/18-seeker
 execute as @s[scores={class=19}] run function kitpvp:classes/19-valkyrie
 execute as @s[scores={class=20}] run function kitpvp:classes/20-rocketeer
+execute as @s[scores={class=21}] run function kitpvp:classes/21-spearman
+execute as @s[scores={class=22}] run function kitpvp:classes/22-pirate
 
 execute as @s[scores={class=100}] run function kitpvp:classes/100-juggernaut

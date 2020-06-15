@@ -5,7 +5,7 @@ execute at @a[name=!Leo_is_a_Legend,scores={dead=1}] run playsound minecraft:ent
 execute at @a[name=Leo_is_a_Legend,scores={dead=1}] run playsound minecraft:ambient.cave master @a ~ ~ ~ 10000000 0.25
 execute at @a[name=Leo_is_a_Legend,scores={dead=1}] run particle minecraft:smoke ~ ~1 ~ 0.4 0.4 0.4 0.2 100 force
 
-execute as @a[scores={dead=1}] run function kitpvp:reset-player-scoreboards
+execute as @a[scores={dead=1}] run function kitpvp:utility/reset-player-scoreboards
 
 tellraw @a ["",{"selector":"@a[scores={dead=1}]","color":"red"},{"text":" has Died!","color":"red"}]
 

@@ -32,6 +32,10 @@ execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
 # Reset CrouchTime if not crouching
 execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0
 
+execute as @a unless entity @s[scores={giveClass=1}] run scoreboard players set @s giveClass 0
+
 # Reset Binary Scoreboards
 scoreboard players set @a crouchBin 0
 scoreboard players set @a inLiquid 0
+scoreboard players set @a carrotStickBin 0
+scoreboard players set @a fungusStickBin 0

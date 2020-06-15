@@ -11,7 +11,7 @@ replaceitem entity @a[scores={respawn=1}] hotbar.0 written_book{pages:['["",{"te
 
 clear @a[scores={respawnTimer=..0}]
 
-execute as @a[scores={respawnTimer=..5}] run function kitpvp:reset-player-scoreboards
+execute as @a[scores={respawnTimer=..5}] run function kitpvp:utility/reset-player-scoreboards
 
 execute if score map settings matches 1 run spreadplayers -1 -1 5 200 false @a[scores={respawnTimer=..0},team=none]
 execute if score map settings matches 2 run spreadplayers 1981 -21 5 100 false @a[scores={respawnTimer=..0},team=none]

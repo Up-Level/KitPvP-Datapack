@@ -1,2 +1,2 @@
-team join none @p
-tellraw @p {"text":"Left Team."}
+team join none @s
+tellraw @s {"text":"Left Team."}
