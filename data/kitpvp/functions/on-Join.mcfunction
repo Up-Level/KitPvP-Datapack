@@ -1,2 +1,2 @@
-say hello
+kick @s
 tag @s add join
