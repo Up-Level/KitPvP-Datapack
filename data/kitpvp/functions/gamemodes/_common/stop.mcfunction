@@ -13,5 +13,3 @@ scoreboard players set gamemode-running settings 0
 function kitpvp:utility/delete-entities
 
 gamerule fallDamage true
-
-tag @a[tag=livePlayer] remove livePlayer
