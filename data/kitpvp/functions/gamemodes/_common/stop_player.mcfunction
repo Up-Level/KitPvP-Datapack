@@ -1,6 +1,5 @@
 scoreboard players set @s killsSinceDeath 0
 gamemode adventure @s
-team join none @s
 clear @s
 effect clear @s
 tp @s @e[name="spawn",limit=1]
