@@ -28,6 +28,9 @@ scoreboard players operation killsBlue gm_kills-copy -= highest gm_kills-copy
 scoreboard players operation killsGreen gm_kills-copy -= highest gm_kills-copy
 scoreboard players operation killsYellow gm_kills-copy -= highest gm_kills-copy
 
+execute store result score players gm_general if entity @a[scores={optIn=1}]
+execute if score players gm_general <= one number run function kitpvp:gamemodes/04-deathmatch-t/gm04-stop
+
 execute if score ticks gm_general <= zero number if score killsRed gm_kills-copy matches 0 if score killsBlue gm_kills-copy < zero number if score killsGreen gm_kills-copy < zero number if score killsYellow gm_kills-copy < zero number run function kitpvp:gamemodes/04-deathmatch-t/gm04-stop
 execute if score ticks gm_general <= zero number if score killsBlue gm_kills-copy matches 0 if score killsRed gm_kills-copy < zero number if score killsGreen gm_kills-copy < zero number if score killsYellow gm_kills-copy < zero number run function kitpvp:gamemodes/04-deathmatch-t/gm04-stop
 execute if score ticks gm_general <= zero number if score killsGreen gm_kills-copy matches 0 if score killsBlue gm_kills-copy < zero number if score killsRed gm_kills-copy < zero number if score killsYellow gm_kills-copy < zero number run function kitpvp:gamemodes/04-deathmatch-t/gm04-stop
