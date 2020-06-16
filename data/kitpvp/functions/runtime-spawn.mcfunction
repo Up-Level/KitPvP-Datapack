@@ -29,3 +29,4 @@ execute if score gamemode settings matches 2 if score gamemode-bin settings matc
 execute if score gamemode settings matches 3 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/03-deathmatch-s/gm03-setup
 execute if score gamemode settings matches 4 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/04-deathmatch-t/gm04-setup
 execute if score gamemode settings matches 5 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/05-juggernaut/gm05-setup
+execute if score gamemode settings matches 6 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/06-gungame/gm06-setup

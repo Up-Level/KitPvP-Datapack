@@ -21,6 +21,7 @@ execute if score run gm_general matches 2 run function kitpvp:gamemodes/02-lives
 execute if score run gm_general matches 3 run function kitpvp:gamemodes/03-deathmatch-s/gm03-runtime
 execute if score run gm_general matches 4 run function kitpvp:gamemodes/04-deathmatch-t/gm04-runtime
 execute if score run gm_general matches 5 run function kitpvp:gamemodes/05-juggernaut/gm05-runtime
+execute if score run gm_general matches 6 run function kitpvp:gamemodes/06-gungame/gm06-runtime
 
 # Reset KillBin
 scoreboard players set @a[scores={killBin=1..}] killBin 0
