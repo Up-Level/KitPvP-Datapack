@@ -1,6 +1,8 @@
 function kitpvp:utility/get-uuid
 function kitpvp:utility/reset-player-scoreboards
 
+execute at @e[name="spawn",limit=1] run spawnpoint @s ~ ~ ~
+
 # Destroy battle loggers
 tag @s[scores={optIn=1},tag=livePlayer] add inGame
 scoreboard players reset @s[tag=inGame] optIn
