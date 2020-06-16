@@ -1,4 +1,4 @@
-playsound minecraft:entity.firework_rocket.twinkle master @a[scores={optIn=1}] 0 65 1000 100000000
+playsound minecraft:entity.firework_rocket.twinkle master @a[scores={optIn=1}] 0 65 1000 1000000 1 1
 
 scoreboard players set * killsSinceDeath 0
 gamemode adventure @a[scores={optIn=1}]
@@ -17,3 +17,5 @@ scoreboard players set gamemode-running settings 0
 function kitpvp:utility/delete-entities
 
 gamerule fallDamage true
+
+tag @a[tag=livePlayer] remove livePlayer

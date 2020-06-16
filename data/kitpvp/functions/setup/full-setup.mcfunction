@@ -17,6 +17,8 @@ gamerule showDeathMessages false
 gamerule spawnRadius 0
 gamerule doImmediateRespawn true
 
+difficulty normal
+
 # Setup Wins scoreboard (not done in scoreboard-setup to avoid resetting wins while testing)
 scoreboard objectives remove wins
 scoreboard objectives add wins dummy

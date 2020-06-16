@@ -22,7 +22,7 @@ execute at @e[name="spawn"] run replaceitem entity @a[distance=..150,scores={giv
 scoreboard players set @a gm01-lives 3
 scoreboard players set @a gm02-lives 3
 
-execute if score gamemode-bin settings matches 1 run scoreboard players set @a[scores={class=0}] class 6
+scoreboard players set @a[scores={class=0}] class 6
 
 execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-setup
 execute if score gamemode settings matches 2 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-setup

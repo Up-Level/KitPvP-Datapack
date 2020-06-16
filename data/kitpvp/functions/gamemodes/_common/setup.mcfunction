@@ -1,3 +1,6 @@
+# Set all players who opted in to have the livePlayer tag
+tag @a[scores={optIn=1}] add livePlayer
+
 # Clear Inventory
 clear @a[scores={optIn=1}]
 

@@ -10,8 +10,8 @@ execute if score winner gm_general matches 2 run title @a[scores={optIn=1}] titl
 execute if score winner gm_general matches 0 run scoreboard players add @a[team=juggernautTeam] wins 1
 execute if score winner gm_general matches 1 run scoreboard players add @a[team=juggernaut] wins 1
 
-playsound minecraft:ui.toast.challenge_complete master @a[scores={gm_lives=1..}] 0 65 1000 1 1 1
-playsound minecraft:hostile.oryx_death player @a[scores={optIn=1}] 0 65 1000 1 1 1
+playsound minecraft:ui.toast.challenge_complete master @a[scores={gm_lives=1..}] 0 65 1000000 1 1 1
+execute if score winner gm_general matches 0 run playsound minecraft:hostile.oryx_death player @a[scores={optIn=1}] 0 65 1000 1000000 0.5 1
 
 team join none @a[scores={optIn=1}]
 
