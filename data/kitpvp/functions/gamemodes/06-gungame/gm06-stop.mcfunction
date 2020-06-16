@@ -1,4 +1,4 @@
-# Deathmatch Gamemode Stop
+# Gungame Gamemode Stop
 title @a[scores={optIn=1}] title [{"selector":"@a[scores={class=23}]"}, " has Won!"]
 scoreboard players add @a[scores={class=23}] wins 1
 

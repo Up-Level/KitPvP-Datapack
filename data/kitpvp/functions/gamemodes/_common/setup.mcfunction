@@ -34,7 +34,6 @@ scoreboard players set players gm_general 0
 scoreboard players set run gm_general 1
 scoreboard players set ticks gm_general 20000
 scoreboard players set seconds gm_general 1000
-scoreboard players set totalSeconds 1000
 
 scoreboard objectives remove gm_sidebar
 scoreboard objectives add gm_sidebar dummy

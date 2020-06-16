@@ -3,6 +3,9 @@ execute as @a[scores={optIn=1,respawn=0},gamemode=!spectator] run function kitpv
 
 # Remove 1 kill if fell out of map
 execute as @a[scores={playerY=..0}] if score gamemode settings matches 3 run scoreboard players remove @s gm_kills 1
+execute as @a[scores={playerY=..0}] if score gamemode settings matches 4 run scoreboard players remove @s gm_kills 1
+execute as @a[scores={playerY=..0}] if score gamemode settings matches 6 run scoreboard players remove @s gm_kills 1
+execute as @a[scores={playerY=..0}] if score gamemode settings matches 6 run scoreboard players set @s killBin -1
 execute as @a[scores={playerY=..0}] run kill @s
 
 # Run Class Triggers

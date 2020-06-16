@@ -1,4 +1,4 @@
-# Deathmatch Gamemode Setup
+# Gungame Gamemode Setup
 team join none @a[scores={optIn=1}]
 
 function kitpvp:gamemodes/_common/setup
