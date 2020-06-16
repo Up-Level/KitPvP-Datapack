@@ -14,4 +14,6 @@ bossbar set 0 players
 scoreboard players set run gm_general 0
 scoreboard players set gamemode-running settings 0
 
+function kitpvp:utility/delete-entities
+
 gamerule fallDamage true

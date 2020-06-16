@@ -11,8 +11,8 @@ execute if score map settings matches 5 run spreadplayers 8000 0 5 100 false @a[
 # Set player's gamemode to adventure if they're not already
 gamemode adventure @a[scores={optIn=1}]
 
-# Get Player UUIDs
 function kitpvp:utility/get-uuids
+function kitpvp:utility/delete-entities
 
 # Reset Player Scoreboards
 execute as @a[scores={optIn=1}] run function kitpvp:utility/reset-player-scoreboards
