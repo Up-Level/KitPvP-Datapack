@@ -26,6 +26,9 @@ scoreboard players set twenty number 20
 
 function kitpvp:setup/cooldowns-setup
 
+scoreboard objectives remove gamemodeStart
+scoreboard objectives add gamemodeStart dummy
+
 scoreboard objectives remove rbFizzleTimer
 scoreboard objectives add rbFizzleTimer dummy
 

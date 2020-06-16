@@ -3,6 +3,8 @@ execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure]
 execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:regeneration 2 255 true
 execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:saturation 2 255 true
 
+execute if score timer gamemodeStart > negative-one number run function kitpvp:configure/start-timer
+
 # Kill player if they are below y0
 execute as @a[scores={playerY=..0}] run kill @s
 
