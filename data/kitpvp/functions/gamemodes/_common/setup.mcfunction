@@ -3,6 +3,7 @@ tag @a[scores={optIn=1}] add livePlayer
 
 # Clear Inventory
 clear @a[scores={optIn=1}]
+effect clear @a[scores={optIn=1}]
 
 # Teleport Players to the Map
 execute if score map settings matches 1 run spreadplayers -1 -1 5 200 false @a[scores={optIn=1},team=none]
