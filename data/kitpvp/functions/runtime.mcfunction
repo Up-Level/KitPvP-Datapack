@@ -20,9 +20,6 @@ execute if score gamemode-running settings matches 1 run function kitpvp:runtime
 # Runtime not during gamemode
 execute if score gamemode-running settings matches 0 run function kitpvp:runtime-spawn
 
-# Put all players with no team into the "none" team
-execute as @a[team=] run team join none @s
-
 # On death, do these commands
 execute as @a[scores={dead=1}] run function kitpvp:on-death
 

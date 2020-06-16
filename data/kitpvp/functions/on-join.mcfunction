@@ -1,6 +1,8 @@
 function kitpvp:utility/get-uuid
 function kitpvp:utility/reset-player-scoreboards
 
+team join none @s
+
 execute at @e[name="spawn",limit=1] run spawnpoint @s ~ ~ ~
 
 # Destroy battle loggers
