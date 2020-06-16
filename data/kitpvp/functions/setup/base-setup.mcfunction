@@ -150,6 +150,9 @@ scoreboard objectives add carrotStickBin minecraft.used:minecraft.carrot_on_a_st
 scoreboard objectives remove fungusStickBin
 scoreboard objectives add fungusStickBin minecraft.used:minecraft.warped_fungus_on_a_stick
 
+scoreboard objectives remove joinBin
+scoreboard objectives add joinBin minecraft.custom:minecraft.leave_game
+
 # Add Teams
 team remove none
 team add none {"text":"None"}
