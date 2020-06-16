@@ -19,5 +19,3 @@ scoreboard objectives add cdBoat dummy
 
 scoreboard objectives remove rocketBootsTimer
 scoreboard objectives add rocketBootsTimer dummy
-
-execute as @a run function kitpvp:utility/reset-player-scoreboards

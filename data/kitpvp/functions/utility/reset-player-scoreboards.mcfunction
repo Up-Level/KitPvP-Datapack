@@ -1,5 +1,5 @@
 # Reset Chef Scoreboards
-scoreboard players set @s cdChefFork 1
+scoreboard players set @s cdChefFork 0
 
 # Reset Rocket Boots Scoreboards
 scoreboard players set @s cdRocketBoots 0
