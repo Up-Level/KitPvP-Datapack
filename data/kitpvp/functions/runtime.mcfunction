@@ -35,8 +35,8 @@ execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0
 execute as @a unless entity @s[scores={giveClass=1}] run scoreboard players set @s giveClass 0
 
 # Check if play has joined and run on-join
-tag @a[scores={joinBin=1..}] remove join
-execute as @a[tag=!join] run function kitpvp:on-join
+tag @a[scores={joinBin=1..}] remove joined
+execute as @a[tag=!joined] run function kitpvp:on-join
 
 # Reset Binary Scoreboards
 scoreboard players set @a joinBin 0

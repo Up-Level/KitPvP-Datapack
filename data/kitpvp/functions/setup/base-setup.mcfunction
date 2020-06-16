@@ -214,3 +214,6 @@ team modify juggernaut nametagVisibility hideForOtherTeams
 team modify juggernaut seeFriendlyInvisibles true
 team modify juggernaut collisionRule pushOtherTeams
 team modify juggernaut color black
+
+# Make all players run the on-join function to avoid issues.
+scoreboard players set @a joinBin 1
