@@ -26,6 +26,11 @@ scoreboard objectives setdisplay list gm_kills
 scoreboard players set playersTeam gm_general 0
 scoreboard players set playersJuggernaut gm_general 0
 
+scoreboard players set seconds gm_general 500
 scoreboard players set run gm_general 5
 scoreboard players set winner gm_general 0
-scoreboard players set ticks gm_general 10000
+
+scoreboard players operation ticks gm_general = seconds gm_general
+scoreboard players operation ticks gm_general *= twenty number
+
+function kitpvp:gamemodes/_common/bossbar

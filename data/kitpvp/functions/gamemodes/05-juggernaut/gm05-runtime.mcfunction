@@ -2,7 +2,9 @@
 scoreboard players remove ticks gm_general 1
 scoreboard players operation seconds gm_general = ticks gm_general
 execute if score ticks gm_general >= zero number run scoreboard players operation seconds gm_general /= twenty number
-scoreboard players operation Time-Remaining gm_sidebar = seconds gm_general
+
+bossbar set 0 name [{"text":"Time Remaining: ","color":"gold"},{"score":{"objective":"gm_general","name":"seconds"},"color":"gold"},{"text":" seconds","color":"gold"}]
+execute store result bossbar minecraft:0 value run scoreboard players get seconds gm_general
 
 scoreboard players remove @a[scores={dead=1,gm_lives=1..}] gm_lives 1
 
