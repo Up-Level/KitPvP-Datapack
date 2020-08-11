@@ -23,10 +23,11 @@ execute if score map settings matches 5 run spreadplayers 8000 0 5 100 true @a[s
 gamemode adventure @a[scores={optIn=1}]
 function kitpvp:utility/delete-entities
 execute as @a[scores={optIn=1}] run function kitpvp:utility/reset-player-scoreboards
-scoreboard players set @a[scores={optIn=1}] respawn 0
+scoreboard players set @a[scores={optIn=1}] dead 1
 scoreboard players set @a[scores={optIn=1}] gm_lives 1
 
-say lol new round
+playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] 0 65 1000 1000000 2 1
+tellraw @a[scores={optIn=1}] {"text":"A new Round is starting...","color":"gold"}
 
 # If a team has reached 3 points stop the game
 execute if score Red-Score gm_sidebar = three number run function kitpvp:gamemodes/203-elimination/203-stop

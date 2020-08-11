@@ -6,8 +6,7 @@ execute at @a[name=Leo_is_a_Legend,scores={dead=1}] run playsound minecraft:ambi
 execute at @a[name=Leo_is_a_Legend,scores={dead=1}] run particle minecraft:smoke ~ ~1 ~ 0.4 0.4 0.4 0.2 100 force
 
 execute as @a[scores={dead=1}] run function kitpvp:utility/reset-player-scoreboards
-
-tellraw @a ["",{"selector":"@a[scores={dead=1}]","color":"red"},{"text":" has Died!","color":"red"}]
+execute as @a[scores={dead=1}] run tellraw @a [{"selector":"@s","color":"red"},{"text":" has Died!","color":"red"}]
 
 # Send player to respawn area if gamemode is running
 execute as @a[scores={dead=1,optIn=1}] if score gamemode-running settings matches 1 run scoreboard players set @s respawn 1
