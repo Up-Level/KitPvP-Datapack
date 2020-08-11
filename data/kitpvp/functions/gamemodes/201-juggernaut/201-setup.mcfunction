@@ -15,9 +15,7 @@ scoreboard players set @a[scores={gm_juggernaut=1}] class 100
 clear @a[scores={gm_juggernaut=1}]
 attribute @a[scores={gm_juggernaut=1},limit=1] minecraft:generic.knockback_resistance base set 10
 
-scoreboard objectives modify gm_sidebar displayname {"text":"Juggernaut","color":"gold"}
-scoreboard players set Time-Remaining gm_sidebar 300
-scoreboard objectives setdisplay sidebar gm_sidebar
+scoreboard objectives setdisplay sidebar
 
 scoreboard players set @a[scores={optIn=1}] gm_lives 1
 

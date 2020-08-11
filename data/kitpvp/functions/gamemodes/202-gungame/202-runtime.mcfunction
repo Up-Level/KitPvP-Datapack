@@ -8,6 +8,6 @@ effect clear @a[scores={optIn=1,killBin=1..}]
 # Just in case
 scoreboard players set @a[scores={optIn=1,killBin=1..}] killBin 0
 
-execute if entity @a[scores={optIn=1,class=23}] run function kitpvp:gamemodes/06-gungame/gm06-stop
+execute if entity @a[scores={optIn=1,class=23}] run function kitpvp:gamemodes/202-gungame/202-stop
 
 execute as @a[scores={optIn=1}] run title @s actionbar [{"text":"You are class ","color":"gold"},{"score":{"name":"@s","objective":"gm_kills"}},"/22"]

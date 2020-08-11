@@ -27,6 +27,6 @@ execute if score players gm_general matches 10 run attribute @a[scores={gm_jugge
 execute if score players gm_general matches 11 run attribute @a[scores={gm_juggernaut=1},limit=1] minecraft:generic.max_health base set 56
 execute if score players gm_general >= twelve number run attribute @a[scores={gm_juggernaut=1},limit=1] minecraft:generic.max_health base set 60
 
-execute if score players gm_general = playersTeam gm_general if score playersJuggernaut gm_general matches 0 run function kitpvp:gamemodes/05-juggernaut/gm05-stop
-execute if score players gm_general = playersJuggernaut gm_general if score playersTeam gm_general matches 0 run function kitpvp:gamemodes/05-juggernaut/gm05-stop
-execute if score ticks gm_general matches 0 run function kitpvp:gamemodes/05-juggernaut/gm05-stop
+execute if score players gm_general = playersTeam gm_general if score playersJuggernaut gm_general matches 0 run function kitpvp:gamemodes/201-juggernaut/201-stop
+execute if score players gm_general = playersJuggernaut gm_general if score playersTeam gm_general matches 0 run function kitpvp:gamemodes/201-juggernaut/201-stop
+execute if score ticks gm_general matches 0 run function kitpvp:gamemodes/201-juggernaut/201-stop

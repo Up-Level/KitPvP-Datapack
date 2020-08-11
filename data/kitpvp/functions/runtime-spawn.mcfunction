@@ -26,9 +26,9 @@ scoreboard players set @a gm02-lives 3
 
 scoreboard players set @a[scores={class=0}] class 6
 
-execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/01-lives-s/gm01-setup
-execute if score gamemode settings matches 2 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/02-lives-t/gm02-setup
-execute if score gamemode settings matches 3 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/03-deathmatch-s/gm03-setup
-execute if score gamemode settings matches 4 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/04-deathmatch-t/gm04-setup
-execute if score gamemode settings matches 5 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/05-juggernaut/gm05-setup
-execute if score gamemode settings matches 6 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/06-gungame/gm06-setup
+execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/001-lives-s/001-setup
+execute if score gamemode settings matches 2 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/101-lives-t/101-setup
+execute if score gamemode settings matches 3 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/002-deathmatch-s/002-setup
+execute if score gamemode settings matches 4 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/102-deathmatch-t/102-setup
+execute if score gamemode settings matches 5 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/201-juggernaut/201-setup
+execute if score gamemode settings matches 6 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/202-gungame/202-setup
