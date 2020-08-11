@@ -21,10 +21,13 @@ scoreboard players set negative-twenty number -20
 scoreboard players set negative-one number -1
 scoreboard players set zero number 0
 scoreboard players set one number 1
+scoreboard players set three number 3
 scoreboard players set twelve number 12
 scoreboard players set twenty number 20
 
 function kitpvp:setup/cooldowns-setup
+
+scoreboard objectives setdisplay list wins
 
 scoreboard objectives remove gamemodeStart
 scoreboard objectives add gamemodeStart dummy

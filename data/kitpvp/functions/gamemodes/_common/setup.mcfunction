@@ -9,7 +9,7 @@ execute if score map settings matches 3 run spreadplayers 4000 35 5 200 false @a
 execute if score map settings matches 4 run spreadplayers 6000 0 5 30 under 67 false @a[scores={optIn=1},team=none]
 execute if score map settings matches 5 run spreadplayers 8000 0 5 100 false @a[scores={optIn=1},team=none]
 
-# Set player's gamemode to adventure if they're not already
+# Set players' gamemode to adventure if they're not already
 gamemode adventure @a[scores={optIn=1}]
 
 function kitpvp:utility/delete-entities
