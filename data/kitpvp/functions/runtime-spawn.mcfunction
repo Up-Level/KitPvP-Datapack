@@ -1,7 +1,7 @@
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:resistance 2 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:weakness 2 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:regeneration 2 255 true
-execute as @e[name="spawn"] run effect give @a[distance=..50,gamemode=adventure] minecraft:saturation 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..150,gamemode=adventure] minecraft:resistance 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..150,gamemode=adventure] minecraft:weakness 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..150,gamemode=adventure] minecraft:regeneration 2 255 true
+execute as @e[name="spawn"] run effect give @a[distance=..150,gamemode=adventure] minecraft:saturation 2 255 true
 
 execute if score timer gamemodeStart > negative-one number run function kitpvp:configure/start-timer
 

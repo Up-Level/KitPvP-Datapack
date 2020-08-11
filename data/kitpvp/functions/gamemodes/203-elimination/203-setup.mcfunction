@@ -14,6 +14,14 @@ scoreboard objectives setdisplay list gm_kills
 scoreboard objectives modify gm_sidebar displayname {"text":"Elimination","color":"gold"}
 scoreboard objectives setdisplay sidebar gm_sidebar
 
+scoreboard players set seconds gm_general 150
+scoreboard players set timeToCapture gm_general 60
+scoreboard players set captureTime gm_general 0
 scoreboard players set winner gm_general 0
 scoreboard players set winnerOfRound gm_general 0
 scoreboard players set run gm_general 7
+
+scoreboard players operation ticks gm_general = seconds gm_general
+scoreboard players operation ticks gm_general *= twenty number
+
+function kitpvp:gamemodes/_common/bossbar
