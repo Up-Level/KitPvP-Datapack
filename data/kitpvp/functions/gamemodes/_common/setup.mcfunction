@@ -38,8 +38,8 @@ scoreboard players set seconds gm_general 1000
 scoreboard objectives remove gm_sidebar
 scoreboard objectives add gm_sidebar dummy
 
-scoreboard players setdisplay sidebar
-scoreboard players setdisplay list
+scoreboard objectives setdisplay sidebar
+scoreboard objectives setdisplay list
 
 # Set Gamemode to Running
 scoreboard players set gamemode-running settings 1
