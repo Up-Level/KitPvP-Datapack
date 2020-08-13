@@ -20,7 +20,7 @@ execute if entity @s[team=green] unless entity @a[tag=seeked] run tag @a[scores=
 execute if entity @s[team=yellow] unless entity @a[tag=seeked] run tag @a[scores={optIn=1},team=!yellow,sort=nearest,limit=1,gamemode=!spectator] add seeked
 
 #Jugg
-execute if entity @s[team=juggernautTeam] run tag @ascores={optIn=1},team=juggernaut,sort=nearest,limit=1,gamemode=!spectator] add seeked
+execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernaut,sort=nearest,limit=1,gamemode=!spectator] add seeked
 
 execute in overworld run replaceitem block 0 83 1990 container.0 minecraft:compass{LodestoneDimension:"minecraft:overworld",LodestonePos:{X: 0,Y: 0,Z: 0}, LodestoneTracked:0b}
 
