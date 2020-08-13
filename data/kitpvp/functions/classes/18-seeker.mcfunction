@@ -28,4 +28,4 @@ execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.X flo
 execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.Y float 1 run data get entity @a[tag=seeked,limit=1,sort=nearest] Pos[1]
 execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.Z float 1 run data get entity @a[tag=seeked,limit=1,sort=nearest] Pos[2]
 
-execute in overworld loot replace entity @s hotbar.4 1 mine 0 83 1990 air{drop_contents:1b}
+execute in overworld run loot replace entity @s hotbar.4 1 mine 0 83 1990 air{drop_contents:1b}
