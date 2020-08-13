@@ -14,10 +14,10 @@ tag @s add self
 execute if entity @s[team=none] run tag @a[tag=!self,scores={optIn=1},team=none,sort=nearest,limit=1,gamemode=!spectator] add seeked
 
 #Teams
-execute if entity @s[team=red] unless @a[tag=seeked] run tag @a[scores={optIn=1},team=!red,sort=nearest,limit=1,gamemode=!spectator] add seeked
-execute if entity @s[team=blue] unless @a[tag=seeked] run tag @a[scores={optIn=1},team=!blue,sort=nearest,limit=1,gamemode=!spectator] add seeked
-execute if entity @s[team=green] unless @a[tag=seeked] run tag @a[scores={optIn=1},team=!green,sort=nearest,limit=1,gamemode=!spectator] add seeked
-execute if entity @s[team=yellow] unless @a[tag=seeked] run tag @a[scores={optIn=1},team=!yellow,sort=nearest,limit=1,gamemode=!spectator] add seeked
+execute if entity @s[team=red] unless entity @a[tag=seeked] run tag @a[scores={optIn=1},team=!red,sort=nearest,limit=1,gamemode=!spectator] add seeked
+execute if entity @s[team=blue] unless entity @a[tag=seeked] run tag @a[scores={optIn=1},team=!blue,sort=nearest,limit=1,gamemode=!spectator] add seeked
+execute if entity @s[team=green] unless entity @a[tag=seeked] run tag @a[scores={optIn=1},team=!green,sort=nearest,limit=1,gamemode=!spectator] add seeked
+execute if entity @s[team=yellow] unless entity @a[tag=seeked] run tag @a[scores={optIn=1},team=!yellow,sort=nearest,limit=1,gamemode=!spectator] add seeked
 
 #Jugg
 execute if entity @s[team=juggernautTeam] run tag @ascores={optIn=1},team=juggernaut,sort=nearest,limit=1,gamemode=!spectator] add seeked
