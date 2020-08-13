@@ -6,8 +6,8 @@ execute if score ticks gm_general > zero number run scoreboard players operation
 execute unless score ticks gm_general <= zero number run bossbar set 0 name [{"score":{"objective":"gm_general","name":"seconds"},"color":"gold"},{"text":" seconds until the Control Point is unlocked.","color":"gold"}]
 execute unless score ticks gm_general <= zero number store result bossbar minecraft:0 value run scoreboard players get seconds gm_general
 
-execute if score ticks gm_general matches 0 run function gamemodes/203-elimination/203-control-point-setup
-execute if score ticks gm_general matches -1 run function gamemodes/203-elimination/203-control-point
+execute if score ticks gm_general matches 0 run function kitpvp:gamemodes/203-elimination/203-control-point-setup
+execute if score ticks gm_general matches -1 run function kitpvp:gamemodes/203-elimination/203-control-point
 
 scoreboard players remove @a[scores={dead=1,gm_lives=1..}] gm_lives 1
 

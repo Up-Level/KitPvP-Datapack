@@ -223,3 +223,7 @@ team modify juggernaut color black
 
 # Make all players run the on-join function to avoid issues.
 scoreboard players set @a joinBin 1
+
+kill @e[name=point-corner]
+kill @e[name=active-point]
+bossbar set 0 players

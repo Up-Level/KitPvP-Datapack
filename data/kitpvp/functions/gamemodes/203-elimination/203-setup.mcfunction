@@ -15,7 +15,7 @@ scoreboard objectives modify gm_sidebar displayname {"text":"Elimination","color
 scoreboard objectives setdisplay sidebar gm_sidebar
 
 scoreboard players set seconds gm_general 150
-scoreboard players set timeToCapture gm_general 60
+scoreboard players set timeToCapture gm_general 100
 scoreboard players set captureTime gm_general 0
 scoreboard players set winner gm_general 0
 scoreboard players set winnerOfRound gm_general 0

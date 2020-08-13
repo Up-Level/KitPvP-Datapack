@@ -4,7 +4,15 @@ execute if score winnerOfRound gm_general matches 2 run scoreboard players add B
 execute if score winnerOfRound gm_general matches 3 run scoreboard players add Green-Score gm_sidebar 1
 execute if score winnerOfRound gm_general matches 4 run scoreboard players add Yellow-Score gm_sidebar 1
 
+execute if score winnerOfRound gm_general matches 1 run tellraw @a[scores={optIn=1}] [{"text":"Red Team ","color":"red"},{"text":"has won the round!","color":"gold"}]
+execute if score winnerOfRound gm_general matches 2 run tellraw @a[scores={optIn=1}] [{"text":"Blue Team ","color":"blue"},{"text":"has won the round!","color":"gold"}]
+execute if score winnerOfRound gm_general matches 3 run tellraw @a[scores={optIn=1}] [{"text":"Green Team ","color":"green"},{"text":"has won the round!","color":"gold"}]
+execute if score winnerOfRound gm_general matches 4 run tellraw @a[scores={optIn=1}] [{"text":"Yellow Team ","color":"yellow"},{"text":"has won the round!","color":"gold"}]
+
 scoreboard players set winnerOfRound gm_general 0
+
+kill @e[name=point-corner]
+kill @e[name=active-point]
 
 # Teleport Teams to the Map
 execute if score map settings matches 1 run spreadplayers -1 -1 5 200 true @a[scores={optIn=1},team=!none]
@@ -13,12 +21,20 @@ execute if score map settings matches 3 run spreadplayers 4000 35 5 200 true @a[
 execute if score map settings matches 4 run spreadplayers 6000 0 5 30 under 67 true @a[scores={optIn=1},team=!none]
 execute if score map settings matches 5 run spreadplayers 8000 0 5 100 true @a[scores={optIn=1},team=!none]
 
+scoreboard players set ticks gm_general 3000
+bossbar set 0 color blue
+bossbar set 0 max 150
+bossbar set 0 value 150
+
 # Refresh players for next round
+scoreboard players set @a[scores={optIn=1}] respawn 1
+scoreboard players set @a[scores={optIn=1}] respawnTimer 200
+scoreboard players set @a[scores={optIn=1}] gm_lives 1
 gamemode adventure @a[scores={optIn=1}]
+clear @a[scores={optIn=1}]
+effect clear @a[scores={optIn=1}]
 function kitpvp:utility/delete-entities
 execute as @a[scores={optIn=1}] run function kitpvp:utility/reset-player-scoreboards
-scoreboard players set @a[scores={optIn=1}] dead 1
-scoreboard players set @a[scores={optIn=1}] gm_lives 1
 
 playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] 0 65 1000 1000000 2 1
 tellraw @a[scores={optIn=1}] {"text":"A new Round is starting...","color":"gold"}
