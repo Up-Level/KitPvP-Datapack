@@ -21,6 +21,4 @@ execute if score winner gm_general matches 4 run title @a[scores={optIn=1}] titl
 
 playsound minecraft:ui.toast.challenge_complete master @a[scores={gm_lives=1..}] 0 65 1000 1 1 1
 
-kill @e[name=active-point]
-
 function kitpvp:gamemodes/_common/stop
