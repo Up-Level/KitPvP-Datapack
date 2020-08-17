@@ -13,5 +13,5 @@ scoreboard players set gamemode-running settings 0
 function kitpvp:utility/delete-entities
 
 gamerule fallDamage true
-
+time set 18000
 scoreboard players set @a respawn 0
