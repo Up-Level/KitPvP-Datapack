@@ -5,7 +5,7 @@ execute as @s[scores={class=4}] run function kitpvp:classes/04-swordspace
 execute as @s[scores={class=5}] run function kitpvp:classes/05-legionnaire
 execute as @s[scores={class=6}] run function kitpvp:classes/06-shieldbearer
 execute as @s[scores={class=7}] run function kitpvp:classes/07-endermissionary
-execute as @s[scores={class=8}] run function kitpvp:classes/08-hunter
+execute as @s[scores={class=8}] run function kitpvp:classes/08
 execute as @s[scores={class=9}] run function kitpvp:classes/09-speedygonzales
 execute as @s[scores={class=10}] run function kitpvp:classes/10-gunner
 execute as @s[scores={class=11}] run function kitpvp:classes/11-sniper
