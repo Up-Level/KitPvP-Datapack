@@ -35,4 +35,4 @@ execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.Y flo
 execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.Z float 1 run data get entity @a[tag=chosen,limit=1,sort=nearest] Pos[2]
 
 execute if entity @e[tag=chosen] in overworld run loot replace entity @s hotbar.4 1 mine 0 83 1990 air{drop_contents:1b}
-execute unless entity @e[tag=chosen] run replaceitem entity @s hotbar.4 compass{LodestoneDimension:"minecraft:overworld", LodestonePos:{X: 0,Y: 0,Z: 0}, LodestoneTracked:1b}
+execute unless entity @e[tag=chosen] run replaceitem entity @s hotbar.4 compass{LodestoneDimension:"minecraft:fake_dimension_lol", LodestonePos:{X: 420,Y: 69,Z: 420}, LodestoneTracked:1b}
