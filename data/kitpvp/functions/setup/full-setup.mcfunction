@@ -33,3 +33,5 @@ summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":
 summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-03"}'}
 summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-04"}'}
 summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-05"}'}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-06"}'}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-07"}'}

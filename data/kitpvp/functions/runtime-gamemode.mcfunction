@@ -19,7 +19,8 @@ execute if score map settings matches 2 run function kitpvp:maps/02-sheerdrop
 execute if score map settings matches 3 run function kitpvp:maps/03-cargo
 execute if score map settings matches 4 run function kitpvp:maps/04-arena
 execute if score map settings matches 5 run function kitpvp:maps/05-survival-beginnings
-execute if score map settings matches 5 run function kitpvp:maps/06-temple
+execute if score map settings matches 6 run function kitpvp:maps/06-temple
+execute if score map settings matches 7 run function kitpvp:maps/07-enchanted-forest
 #endregion
 
 #region Run gamemode runtimes
