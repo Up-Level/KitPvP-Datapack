@@ -27,7 +27,7 @@ execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=!yellow] add 
 execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernaut] add targets
 
 #Select out lucky winner
-execute at @s tag @e[tag=targets,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen
+execute at @s run tag @e[tag=targets,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen
 
 execute in overworld run replaceitem block 0 83 1990 container.0 minecraft:compass{LodestoneDimension:"minecraft:overworld",LodestonePos:{X: 0,Y: 0,Z: 0}, LodestoneTracked:0b,display:{Name:'[{"text":"Player Tracker","italic":false}]',Lore:['[{"text":"Points toward the nearest Enemy player.","italic":false,"color":"gray"}]']}}
 
