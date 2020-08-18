@@ -159,6 +159,9 @@ scoreboard objectives add fungusStickBin minecraft.used:minecraft.warped_fungus_
 scoreboard objectives remove joinBin
 scoreboard objectives add joinBin minecraft.custom:minecraft.leave_game
 
+scoreboard objectives remove seeEffects
+scoreboard objectives add seeEffects dummy
+
 # Add Teams
 team remove none
 team add none {"text":"None"}
