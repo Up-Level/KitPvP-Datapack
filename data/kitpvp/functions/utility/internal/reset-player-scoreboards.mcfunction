@@ -15,6 +15,7 @@ scoreboard players set @s cdBoat 0
 # Other Scorebaords
 scoreboard players set @s crouchTime 0
 scoreboard players set @s killsSinceDeath 0
+scoreboard players set @s timeSinceCombat 0
 
 scoreboard players set @s dropTrident 0
 scoreboard players set @s throwTrident 0

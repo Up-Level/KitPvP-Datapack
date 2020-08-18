@@ -122,6 +122,9 @@ scoreboard objectives add compareUUID3 dummy
 scoreboard objectives remove crouchTime
 scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
 
+scoreboard objectives remove timeSinceCombat
+scoreboard objectives add timeSinceCombat dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
@@ -158,6 +161,9 @@ scoreboard objectives add fungusStickBin minecraft.used:minecraft.warped_fungus_
 
 scoreboard objectives remove joinBin
 scoreboard objectives add joinBin minecraft.custom:minecraft.leave_game
+
+scoreboard objectives remove damageDealtBin
+scoreboard objectives add damageDealtBin minecraft.custom:minecraft.damage_dealt
 
 scoreboard objectives remove seeEffects
 scoreboard objectives add seeEffects dummy
