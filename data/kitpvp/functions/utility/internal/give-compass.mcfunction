@@ -4,7 +4,8 @@ tag @a remove chosen
 
 tag @s add self
 
-execute if block 0 83 1990 air run setblock 0 83 1990 minecraft:shulker_box
+#Make Shlker Box if its not there MARK
+execute unless block 0 83 1990 minecraft:shulker_box run setblock 0 83 1990 minecraft:shulker_box
 
 #No team
 execute if entity @s[team=none] run tag @a[tag=!self,scores={optIn=1},team=none] add targets
