@@ -11,9 +11,9 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick
 
 execute unless entity @s[scores={cdBoat=..-1}] run clear @s minecraft:carrot_on_a_stick
 
-execute if entity @s[scores={fungusStickBin=1..}] run function kitpvp:utility/destroy-boat
+execute if entity @s[scores={fungusStickBin=1..}] run function kitpvp:utility/internal/destroy-boat
 
-execute if entity @s[scores={carrotStickBin=1..,cdBoat=..-1}] run function kitpvp:utility/destroy-boat
+execute if entity @s[scores={carrotStickBin=1..,cdBoat=..-1}] run function kitpvp:utility/internal/destroy-boat
 
 execute if entity @s[scores={carrotStickBin=1..,cdBoat=..-1}] run scoreboard players reset @e compareUUID0
 execute if entity @s[scores={carrotStickBin=1..,cdBoat=..-1}] run scoreboard players reset @e compareUUID1

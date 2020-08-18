@@ -1,5 +1,5 @@
-function kitpvp:utility/get-uuid
-function kitpvp:utility/reset-player-scoreboards
+function kitpvp:utility/internal/get-uuid
+function kitpvp:utility/internal/reset-player-scoreboards
 
 team join none @s
 

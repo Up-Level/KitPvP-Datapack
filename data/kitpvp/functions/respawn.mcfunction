@@ -11,21 +11,11 @@ execute unless score gamemode settings matches 6 run replaceitem entity @a[score
 
 clear @a[scores={respawnTimer=..0}]
 
-execute as @a[scores={respawnTimer=..5}] run function kitpvp:utility/reset-player-scoreboards
+execute as @a[scores={respawnTimer=..5}] run function kitpvp:utility/internal/reset-player-scoreboards
 
-#region Teleport players to map
-execute if score map settings matches 1 run spreadplayers -1 -1 5 200 false @a[scores={respawnTimer=..0},team=none]
-execute if score map settings matches 2 run spreadplayers 1981 -21 5 100 false @a[scores={respawnTimer=..0},team=none]
-execute if score map settings matches 3 run spreadplayers 4000 35 5 200 false @a[scores={respawnTimer=..0},team=none]
-execute if score map settings matches 4 run spreadplayers 6000 0 5 30 under 67 false @a[scores={respawnTimer=..0},team=none]
-execute if score map settings matches 5 run spreadplayers 8000 0 5 100 false @a[scores={respawnTimer=..0},team=none]
-
-execute if score map settings matches 1 run spreadplayers -1 -1 5 200 true @a[scores={respawnTimer=..0},team=!none]
-execute if score map settings matches 2 run spreadplayers 1981 -21 5 100 true @a[scores={respawnTimer=..0},team=!none]
-execute if score map settings matches 3 run spreadplayers 4000 35 5 200 true @a[scores={respawnTimer=..0},team=!none]
-execute if score map settings matches 4 run spreadplayers 6000 0 5 30 under 67 true @a[scores={respawnTimer=..0},team=!none]
-execute if score map settings matches 5 run spreadplayers 8000 0 5 100 true @a[scores={respawnTimer=..0},team=!none]
-#endregion
+# Teleport players to map
+execute as @a[scores={respawnTimer=..0},team=none] run function kitpvp:utility/internal/solo-map-tp
+execute as @a[scores={respawnTimer=..0},team=!none] run function kitpvp:utility/internal/teams-map-tp
 
 scoreboard players set @a[scores={respawnTimer=..0}] respawn 0
 scoreboard players reset @a[scores={respawnTimer=..0}] respawnTimer
