@@ -173,6 +173,12 @@ scoreboard players set CloudJumper607 opped 1
 scoreboard players set WhiteLightninJa opped 1
 scoreboard players set Blackbird7342 opped 1
 
+scoreboard objectives remove debug
+scoreboard objectives add debug dummy
+
+scoreboard players set UpLevel debug 1
+scoreboard players set TetTheGreedy debug 1
+
 # Add Teams
 team remove none
 team add none {"text":"None"}
