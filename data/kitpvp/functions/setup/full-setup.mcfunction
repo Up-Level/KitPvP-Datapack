@@ -26,10 +26,10 @@ scoreboard objectives add wins dummy
 # Add Coordinate Stands
 kill @e[type=minecraft:armor_stand,nbt={Marker:1b}]
 
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"spawn\"}"}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"spawn"}'}
 
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"point-01\"}"}
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"point-02\"}"}
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"point-03\"}"}
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"point-04\"}"}
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:"{\"text\":\"point-05\"}"}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-01"}'}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-02"}'}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-03"}'}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-04"}'}
+summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-05"}'}

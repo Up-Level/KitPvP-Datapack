@@ -35,9 +35,10 @@ execute as @a unless entity @s[scores={giveClass=1}] run scoreboard players set 
 tag @a[scores={joinBin=1..}] remove joined
 execute as @a[tag=!joined] run function kitpvp:on-join
 
-# Reset Binary Scoreboards
+#region Reset Binary Scoreboards
 scoreboard players set @a joinBin 0
 scoreboard players set @a crouchBin 0
 scoreboard players set @a inLiquid 0
 scoreboard players set @a carrotStickBin 0
 scoreboard players set @a fungusStickBin 0
+#endregion
