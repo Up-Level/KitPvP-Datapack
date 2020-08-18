@@ -26,7 +26,7 @@ scoreboard objectives add wins dummy
 # Add Coordinate Stands
 kill @e[type=minecraft:armor_stand,nbt={Marker:1b}]
 
-summon armor_stand 0 64 0 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"spawn"}'}
+summon armor_stand 0.5 100.00 2000.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"spawn"}'}
 summon armor_stand -48 109 2082 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"spectate-spot"}'}
 
 summon armor_stand -0.5 125.00 -0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-01"}'}
