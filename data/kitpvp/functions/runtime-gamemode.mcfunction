@@ -13,8 +13,8 @@ execute as @a unless score @s classTriggers matches 0 if score @s respawn matche
 
 execute if entity @a[scores={respawn=1}] run function kitpvp:respawn
 
-execute as @a if score @s damageDealtBin matches 0 run scoreboard players add @s timeSinceCombat 1
-execute as @a if score @s damageDealtBin > zero number run scoreboard players set @s timeSinceCombat 0
+execute as @a[tag=livePlayer] if score @s damageDealtBin matches 0 run scoreboard players add @s timeSinceCombat 1
+execute as @a[tag=livePlayer] if score @s damageDealtBin > zero number run scoreboard players set @s timeSinceCombat 0
 
 #region Run map specific commands
 execute if score map settings matches 1 run function kitpvp:maps/01-four-corners
