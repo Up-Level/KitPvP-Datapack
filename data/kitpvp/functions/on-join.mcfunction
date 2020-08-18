@@ -11,6 +11,7 @@ execute if entity @s[tag=inGame] run tellraw @a [{"selector":"@s","color":"light
 execute at @s[tag=inGame] run playsound minecraft:hostile.oryx_death master @a ~ ~ ~ 10000000000000 1
 scoreboard players reset @s optIn
 team join none @s
+execute if entity @s[tag=spectator] run function kitpvp:gamemodes/_common/stop_player
 tag @s remove inGame
 
 tag @s add joined
