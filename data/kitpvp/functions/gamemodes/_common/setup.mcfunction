@@ -5,6 +5,11 @@ effect clear @a[scores={optIn=1}]
 #Teleport Players to the Map
 execute as @a[scores={optIn=1},team=none] run function kitpvp:utility/internal/solo-map-tp
 
+# Set up spectators
+scoreboard players reset @a[tag=spectator] optIn
+gamemode spectator @a[tag=spectator]
+execute as @a[tag=spectator] run tp @s @r[scores={optIn=1}]
+
 # Set players' gamemode to adventure if they're not already
 gamemode adventure @a[scores={optIn=1}]
 

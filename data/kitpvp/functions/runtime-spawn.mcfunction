@@ -24,6 +24,15 @@ execute at @e[name=spawn] run replaceitem entity @a[distance=..150,tag=!noSpawnB
 
 scoreboard players set @a[scores={class=0}] class 6
 
+# Players can spectate by being near an armor stand
+execute at @e[name=spectate-spot] run tellraw @a[tag=!spectator,distance=..2] {"text":"You are now a spectator.","color":"gold"}
+execute at @e[name=spectate-spot] run tellraw @a[tag=spectator,distance=2..] {"text":"You will no longer spectate.","color":"gold"}
+
+execute at @e[name=spectate-spot] run tag @a[tag=!spectator,distance=..2] add spectator
+execute at @e[name=spectate-spot] run tag @a[tag=spectator,distance=2..] remove spectator
+
+scoreboard players reset @a[tag=spectator] optIn
+
 #region Run gamemode setup functions
 execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/001-lives-s/001-setup
 execute if score gamemode settings matches 2 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/101-lives-t/101-setup
