@@ -2,7 +2,7 @@
 
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:netherite_sword"}]}] run replaceitem entity @s hotbar.0 minecraft:netherite_sword{Unbreakable:1b}
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_axe"}]}] run replaceitem entity @s hotbar.1 minecraft:iron_axe{Unbreakable:1b}
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:bow"}]}] run replaceitem entity @s hotbar.2 bow{Unbreakable:1b,Enchantments:[{id:"minecraft:infinity",lvl:1}]}
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:bow"}]}] run replaceitem entity @s hotbar.2 bow{Unbreakable:1b}
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:shield"}]}] run replaceitem entity @s weapon.offhand minecraft:shield{Unbreakable:1b}
 replaceitem entity @s inventory.8 arrow
 
