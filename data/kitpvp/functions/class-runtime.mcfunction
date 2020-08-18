@@ -1,3 +1,5 @@
+execute as @s run function kitpvp:classes/00-common
+
 execute as @s[scores={class=1}] run function kitpvp:classes/01-test
 execute as @s[scores={class=2}] run function kitpvp:classes/02-scout
 execute as @s[scores={class=3}] run function kitpvp:classes/03-bowspace
