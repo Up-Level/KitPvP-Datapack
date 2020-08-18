@@ -162,6 +162,17 @@ scoreboard objectives add joinBin minecraft.custom:minecraft.leave_game
 scoreboard objectives remove seeEffects
 scoreboard objectives add seeEffects dummy
 
+scoreboard objectives remove opped
+scoreboard objectives add opped dummy
+
+scoreboard players set TetTheGreedy opped 1
+scoreboard players set UpLevel opped 1
+scoreboard players set HourLongZero opped 1
+scoreboard players set Leo_is_a_Legend opped 1
+scoreboard players set CloudJumper607 opped 1
+scoreboard players set WhiteLightninJa opped 1
+scoreboard players set Blackbird7342 opped 1
+
 # Add Teams
 team remove none
 team add none {"text":"None"}
