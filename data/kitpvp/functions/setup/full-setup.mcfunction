@@ -36,3 +36,4 @@ summon armor_stand 6000.5 64.00 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName
 summon armor_stand 7985.50 66.00 -1.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-05"}'}
 summon armor_stand 9000.5 72.00 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-06"}'}
 summon armor_stand 10045.5 78.00 24.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-07"}'}
+summon armor_stand 11986.5 64 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-08"}'}

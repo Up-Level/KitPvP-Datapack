@@ -8,3 +8,4 @@ execute if score map settings matches 4 run tellraw @a {"text":"Map 4 - Arena se
 execute if score map settings matches 5 run tellraw @a {"text":"Map 5 - Survival Beginnings selected. (Large)", "color":"gold"}
 execute if score map settings matches 6 run tellraw @a {"text":"Map 6 - Temple selected. (Medium)", "color":"gold"}
 execute if score map settings matches 7 run tellraw @a {"text":"Map 7 - Enchanted Forest selected. (Extra Large)", "color":"gold"}
+execute if score map settings matches 8 run tellraw @a {"text":"Map 8 - Gulag selected. (Medium)", "color":"gold"}
