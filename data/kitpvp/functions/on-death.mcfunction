@@ -12,4 +12,6 @@ execute as @a[scores={dead=1}] run tellraw @a [{"selector":"@s","color":"red"},{
 execute as @a[scores={dead=1,optIn=1}] if score gamemode-running settings matches 1 run scoreboard players set @s respawn 1
 scoreboard players set @a[scores={respawn=1,dead=1}] respawnTimer 200
 
+scoreboard players set @a[scores={dead=1}] timeAlive 0
+
 scoreboard players set @a[scores={dead=1}] dead 0

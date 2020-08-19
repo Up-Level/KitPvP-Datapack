@@ -8,6 +8,9 @@ execute as @a[scores={playerY=..0}] if score gamemode settings matches 6 run sco
 execute as @a[scores={playerY=..0}] if score gamemode settings matches 6 run scoreboard players set @s killBin -1
 execute as @a[scores={playerY=..0}] run kill @s
 
+# Increase timeAlive
+scoreboard players add @a[tag=livePlayer,scores={respawn=0}] timeAlive 1
+
 # Run Class Triggers
 execute as @a unless score @s classTriggers matches 0 if score @s respawn matches 1 run function kitpvp:configure/class-triggers
 

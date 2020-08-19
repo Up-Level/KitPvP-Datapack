@@ -13,11 +13,14 @@ execute as @a[tag=spectator] run tp @s @r[scores={optIn=1}]
 # Set players' gamemode to adventure if they're not already
 gamemode adventure @a[scores={optIn=1}]
 
-function kitpvp:utility/internal/delete-entites
+execute as @a run attribute @s generic.knockback_resistance base set 0
+
+function kitpvp:utility/internal/delete-entities
 
 # Reset Player Scoreboards
 execute as @a[scores={optIn=1}] run function kitpvp:utility/internal/reset-player-scoreboards
 scoreboard players set @a[scores={optIn=1}] respawn 0
+scoreboard players set @a[scores={optIn=1}] timeAlive 0
 
 # Initiate Common Gamemode Scoreboards
 scoreboard objectives remove gm_kills

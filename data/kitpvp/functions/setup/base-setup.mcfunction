@@ -129,6 +129,9 @@ scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
 scoreboard objectives remove timeSinceCombat
 scoreboard objectives add timeSinceCombat dummy
 
+scoreboard objectives remove timeAlive
+scoreboard objectives add timeAlive dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
