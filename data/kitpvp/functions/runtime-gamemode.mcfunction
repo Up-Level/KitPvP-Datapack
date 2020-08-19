@@ -19,7 +19,7 @@ execute as @a[tag=livePlayer] if score @s damageDealtBin > zero number run score
 #region Run map specific commands
 execute if score map settings matches 1 positioned 0 100 0 run function kitpvp:maps/01-four-corners
 execute if score map settings matches 2 positioned 2000 100 0 run function kitpvp:maps/02-sheerdrop
-execute if score map settings matches 3 positioned 4000 100 0 function kitpvp:maps/03-cargo
+execute if score map settings matches 3 positioned 4000 100 0 run function kitpvp:maps/03-cargo
 execute if score map settings matches 4 positioned 6000 100 0 run function kitpvp:maps/04-arena
 execute if score map settings matches 5 positioned 8000 100 0 run function kitpvp:maps/05-survival-beginnings
 execute if score map settings matches 6 positioned 9000 100 0 run function kitpvp:maps/06-temple
