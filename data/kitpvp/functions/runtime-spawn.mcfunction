@@ -9,8 +9,7 @@ execute as @a unless score @s menuTriggers matches 0 run function kitpvp:configu
 # Run Class Triggers
 execute as @a unless score @s classTriggers matches 0 run function kitpvp:configure/class-triggers
 
-execute as @e[name=spawn] as @a[distance=..150] run function kitpvp:runtime-spawn-player
-
+execute at @e[name=spawn] as @a[distance=..150] run function kitpvp:runtime-spawn-player
 
 #region Run gamemode setup functions
 execute if score gamemode settings matches 1 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/001-lives-s/001-setup
