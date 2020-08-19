@@ -1,4 +1,4 @@
 # Map 3 - Cargo
 
 time set 0
-kill @a[scores={playerY=..7700},distance..500]
+kill @a[scores={playerY=..7700},distance..500,gamemode=adventure]
