@@ -41,8 +41,12 @@ scoreboard objectives add canUseElytra dummy
 scoreboard objectives remove team
 scoreboard objectives add team dummy
 
+scoreboard objectives remove playerX
 scoreboard objectives remove playerY
+scoreboard objectives remove playerZ
+scoreboard objectives add playerX dummy
 scoreboard objectives add playerY dummy
+scoreboard objectives add playerZ dummy
 
 scoreboard objectives remove totalKills
 scoreboard objectives add totalKills playerKillCount {"text":"Total Kills","color":"gold"}

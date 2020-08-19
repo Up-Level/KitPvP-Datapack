@@ -14,8 +14,10 @@ execute as @a at @s if block ~ ~ ~ #kitpvp:liquidblocks run scoreboard players s
 # Kill arrows that have lived for 300 ticks, Multiply crossbow speed and set no gravity
 function kitpvp:projectiles
 
-# Keep player Y on scoreboard
+# Keep player position on scoreboard
+execute as @a store result score @s playerX run data get entity @s Pos[0] 100
 execute as @a store result score @s playerY run data get entity @s Pos[1] 100
+execute as @a store result score @s playerZ run data get entity @s Pos[2] 100
 
 # Runtime during gamemode
 execute if score gamemode-running settings matches 1 run function kitpvp:runtime-gamemode
