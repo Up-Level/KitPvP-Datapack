@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:chest",
+  "type": "minecraft:chest",
 	"pools": [
 		{
 			"rolls": 1,
@@ -9,7 +9,7 @@
 					"name": "minecraft:player_head",
 					"functions": [
 						{
-							"function":    "minecraft:fill_player_head",
+							"function": "minecraft:fill_player_head",
 							"entity": "this"
 						}
 					]
