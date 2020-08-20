@@ -24,5 +24,3 @@ execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=jugge
 execute at @s run tag @e[tag=targets,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen
 
 execute in overworld as @a[tag=chosen] run loot replace block 0 83 1990 container.1 loot kitpvp:get_player_head
-
-execute in minecraft:overworld run data modify storage minecraft:player_name Name set from block 0 83 1990 Items.tag.SkullOwner
