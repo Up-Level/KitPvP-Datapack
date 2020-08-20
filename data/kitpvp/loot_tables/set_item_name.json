@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "entity": "this",
-              "name": ["",{"nbt":"Items[0].tag.SkullOwner","block":"~ ~ ~"}]
+              "name": ["",{"nbt":"Items[0].tag.SkullOwner","block":"0 83 1989"}]
             }
           ]
         }
