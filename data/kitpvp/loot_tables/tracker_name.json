@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_name",
               "entity": "this",
-              "name": ["",{"italic":"false","text":"Player Tracker(","extra":[{"nbt":"Items[1].tag.SkullOwner","block":"0 83 1990","extra":[{"text":")"}]}]}]
+              "name": ["",{"italic":"false","text":"Player Tracker(","extra":[{"nbt":"Items[1].tag.SkullOwner.Name","block":"0 83 1990","extra":[{"text":")"}]}]}]
             },{
               "function": "minecraft:set_lore",
               "entity": "this",
