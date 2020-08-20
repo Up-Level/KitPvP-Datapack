@@ -1,5 +1,5 @@
 tag @a remove self
-tag @a remove targets
+tag @a remove targets_enemy
 tag @a remove chosen_enemy
 
 tag @s add self
@@ -8,14 +8,14 @@ tag @s add self
 execute in overworld unless block 0 83 1990 minecraft:shulker_box run setblock 0 83 1990 minecraft:shulker_box
 
 #No team
-execute if entity @s[team=none] run tag @a[tag=!self,scores={optIn=1},team=none] add targets
-execute if entity @s[team=none] run tag @a[scores={optIn=1},team=!none] add targets
+execute if entity @s[team=none] run tag @a[tag=!self,scores={optIn=1},team=none] add targets_enemy
+execute if entity @s[team=none] run tag @a[scores={optIn=1},team=!none] add targets_enemy
 
 #Teams
-execute if entity @s[team=red] run tag @a[scores={optIn=1},team=!red] add targets
-execute if entity @s[team=blue] run tag @a[scores={optIn=1},team=!blue] add targets
-execute if entity @s[team=green] run tag @a[scores={optIn=1},team=!green] add targets
-execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=!yellow] add targets
+execute if entity @s[team=red] run tag @a[scores={optIn=1},team=!red] add targets_enemy
+execute if entity @s[team=blue] run tag @a[scores={optIn=1},team=!blue] add targets_enemy
+execute if entity @s[team=green] run tag @a[scores={optIn=1},team=!green] add targets_enemy
+execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=!yellow] add targets_enemy
 
 #Jugg
 execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernaut] add targets
