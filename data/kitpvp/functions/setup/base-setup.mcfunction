@@ -61,9 +61,6 @@ scoreboard objectives setdisplay sidebar optIn
 scoreboard objectives remove throwTrident
 scoreboard objectives add throwTrident dummy
 
-scoreboard objectives remove ready
-scoreboard objectives add ready dummy
-
 scoreboard objectives remove menuTriggers
 scoreboard objectives add menuTriggers trigger
 
@@ -172,8 +169,14 @@ scoreboard objectives add joinBin minecraft.custom:minecraft.leave_game
 scoreboard objectives remove damageDealtBin
 scoreboard objectives add damageDealtBin minecraft.custom:minecraft.damage_dealt
 
+scoreboard objectives remove damageTakenBin
+scoreboard objectives add damageTakenBin minecraft.custom:minecraft.damage_taken
+
 scoreboard objectives remove seeEffects
 scoreboard objectives add seeEffects dummy
+
+scoreboard objectives remove dropRedDyeBin
+scoreboard objectives add dropRedDyeBin minecraft.dropped:red_dye
 
 scoreboard objectives remove opped
 scoreboard objectives add opped dummy

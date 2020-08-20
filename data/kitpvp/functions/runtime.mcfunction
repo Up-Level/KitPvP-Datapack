@@ -47,4 +47,6 @@ scoreboard players set @a inLiquid 0
 scoreboard players set @a carrotStickBin 0
 scoreboard players set @a fungusStickBin 0
 scoreboard players set @a damageDealtBin 0
+scoreboard players set @a damageTakenBin 0
+scoreboard players set @a dropRedDyeBin 0
 #endregion
