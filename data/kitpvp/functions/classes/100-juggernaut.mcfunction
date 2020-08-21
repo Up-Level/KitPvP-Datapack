@@ -11,5 +11,5 @@ replaceitem entity @s armor.chest netherite_chestplate{Unbreakable:1b}
 replaceitem entity @s armor.legs netherite_leggings{Unbreakable:1b}
 replaceitem entity @s armor.feet netherite_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:8}]}
 
-effect give @s slowness 1 0 true
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass -0.15 multiply_base
 effect give @s jump_boost 1 3 true

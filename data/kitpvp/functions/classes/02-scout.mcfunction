@@ -7,5 +7,6 @@ replaceitem entity @s armor.head leather_helmet{Unbreakable:1}
 replaceitem entity @s armor.chest leather_chestplate{Unbreakable:1}
 replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:4}]}
 
-effect give @s speed 1 1 true
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0.2 multiply_base
+
 effect give @s jump_boost 1 1 true
