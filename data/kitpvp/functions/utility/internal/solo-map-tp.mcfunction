@@ -6,3 +6,4 @@ execute if score map settings matches 5 run spreadplayers 8000 0 5 100 false @s
 execute if score map settings matches 6 run spreadplayers 9000 0 5 100 false @s
 execute if score map settings matches 7 run spreadplayers 10000 0 5 100 false @s
 execute if score map settings matches 8 run spreadplayers 12000 0 5 100 under 74 false @s
+execute if score map settings matches 9 run spreadplayers 14000 0 5 100 under 79 false @s
