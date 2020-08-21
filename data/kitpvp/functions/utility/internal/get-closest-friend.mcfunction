@@ -19,5 +19,5 @@ execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=jugge
 #Select out lucky winner
 execute at @s run tag @e[tag=targets_friend,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen_friend
 
-execute in overworld as @a[tag=chosen_friend] run loot replace block 0 83 1990 container.1 loot kitpvp:get_player_head
-execute in minecraft:overworld run data modify storage kitpvp:closest_friend Name set from block 0 83 1990 Items[1].tag.SkullOwner.Name
+execute in overworld as @a[tag=chosen_friend] run loot replace block 0 83 1990 container.3 loot kitpvp:get_player_head
+execute in minecraft:overworld run data modify storage kitpvp:closest_friend Name set from block 0 83 1990 Items[3].tag.SkullOwner.Name

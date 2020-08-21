@@ -4,8 +4,8 @@ function kitpvp:utility/internal/get-closest-enemy
 
 execute in overworld run replaceitem block 0 83 1990 container.0 minecraft:compass{CustomModelData:1,LodestoneDimension:"minecraft:overworld",LodestonePos:{X: 0,Y: 0,Z: 0}, LodestoneTracked:0b}
 
-execute in overworld as @e[name=spawn] run loot replace block 0 83 1990 container.2 loot kitpvp:tracker_name
-execute in overworld run data modify block 0 83 1990 Items[0].tag.display set from block 0 83 1990 Items[2].tag.display
+execute in overworld as @e[name=spawn] run loot replace block 0 83 1990 container.1 loot kitpvp:tracker_name
+execute in overworld run data modify block 0 83 1990 Items[0].tag.display set from block 0 83 1990 Items[1].tag.display
 
 execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.X float 1 run data get entity @a[tag=chosen_enemy,limit=1,sort=nearest] Pos[0]
 execute in overworld store result block 0 83 1990 Items[].tag.LodestonePos.Y float 1 run data get entity @a[tag=chosen_enemy,limit=1,sort=nearest] Pos[1]
