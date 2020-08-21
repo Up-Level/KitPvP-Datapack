@@ -9,6 +9,7 @@ execute if score winner gm_general matches 2 run title @a[scores={optIn=1}] titl
 execute if score winner gm_general matches 3 run title @a[scores={optIn=1}] title {"text":"Green Team has Won!","color":"green"}
 execute if score winner gm_general matches 4 run title @a[scores={optIn=1}] title {"text":"Yellow Team has Won!","color":"yellow"}
 
+scoreboard players set @a[tag=vip] class 0
 tag @a remove vip
 
 scoreboard players set run gm_general 0
