@@ -7,6 +7,7 @@ execute if score map settings matches 5 at @e[name=point-05] run summon armor_st
 execute if score map settings matches 6 at @e[name=point-06] run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"active-point"}'}
 execute if score map settings matches 7 at @e[name=point-07] run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"active-point"}'}
 execute if score map settings matches 8 at @e[name=point-08] run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"active-point"}'}
+execute if score map settings matches 9 at @e[name=point-09] run summon armor_stand ~ ~ ~ {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"active-point"}'}
 #endregion
 
 #region Create armor stands in a circle around the point

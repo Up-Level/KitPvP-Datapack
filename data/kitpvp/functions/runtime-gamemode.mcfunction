@@ -31,6 +31,9 @@ execute if score map settings matches 4 positioned 6000 100 0 run function kitpv
 execute if score map settings matches 5 positioned 8000 100 0 run function kitpvp:maps/05-survival-beginnings
 execute if score map settings matches 6 positioned 9000 100 0 run function kitpvp:maps/06-temple
 execute if score map settings matches 7 positioned 10000 100 0 run function kitpvp:maps/07-enchanted-forest
+execute if score map settings matches 8 positioned 12000 64 0 run function kitpvp:maps/08-gulag
+execute if score map settings matches 9 positioned 14000 64 0 run function kitpvp:maps/09-water-treatment
+
 #endregion
 
 #region Run gamemode runtimes
