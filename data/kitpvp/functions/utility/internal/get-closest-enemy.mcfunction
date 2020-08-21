@@ -21,7 +21,7 @@ execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=!yellow] add 
 execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernaut] add targets_enemy
 
 #Select out lucky winner
-execute at @s run tag @e[tag=targets,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen_enemy
+execute at @s run tag @e[tag=targets_enemy,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen_enemy
 
 execute in overworld as @a[tag=chosen_enemy] run loot replace block 0 83 1990 container.1 loot kitpvp:get_player_head
 execute in minecraft:overworld run data modify storage kitpvp:closest_enemy Name set from block 0 83 1990 Items[1].tag.SkullOwner.Name
