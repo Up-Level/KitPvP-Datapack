@@ -197,6 +197,9 @@ scoreboard objectives add debug dummy
 scoreboard players set UpLevel debug 1
 scoreboard players set TetTheGreedy debug 1
 
+# Reset Attributes
+execute as @a run attribute @s minecraft:generic.movement_speed modifier remove 0-0-0-0-0
+
 # Add Teams
 team remove none
 team add none {"text":"None"}
