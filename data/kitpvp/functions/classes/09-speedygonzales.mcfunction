@@ -4,4 +4,4 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_sword"}]}] run repl
 replaceitem entity @s armor.chest leather_chestplate{Unbreakable:1}
 replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
-effect give @s speed 1 3 true
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0.8 multiply_base

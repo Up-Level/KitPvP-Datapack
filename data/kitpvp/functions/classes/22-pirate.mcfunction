@@ -29,3 +29,5 @@ execute at @s[scores={carrotStickBin=1..,cdBoat=..-1}] run scoreboard players op
 execute if entity @s[scores={carrotStickBin=1..,cdBoat=..-1}] run scoreboard players operation @s cdBoat = boat cooldown
 
 scoreboard players remove @s[scores={cdBoat=0..}] cdBoat 1
+
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
