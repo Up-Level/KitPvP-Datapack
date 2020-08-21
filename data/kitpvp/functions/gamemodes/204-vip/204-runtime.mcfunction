@@ -24,22 +24,33 @@ scoreboard players operation killsYellow gm_kills-copy -= highest gm_kills-copy
 #endregion
 
 # Lose Condition
+execute store result score players gm_general if entity @a[tag=livePlayer]
+execute store result score redPlayers gm_general if entity @a[tag=livePlayer,team=red]
+execute store result score bluePlayers gm_general if entity @a[tag=livePlayer,team=blue]
+execute store result score greenPlayers gm_general if entity @a[tag=livePlayer,team=green]
+execute store result score yellowPlayers gm_general if entity @a[tag=livePlayer,team=yellow]
+
+execute if score redPlayers gm_general matches 0 run scoreboard players set redEliminated gm_general 1
+execute if score bluePlayers gm_general matches 0 run scoreboard players set blueEliminated gm_general 1
+execute if score greenPlayers gm_general matches 0 run scoreboard players set greenEliminated gm_general 1
+execute if score yellowPlayers gm_general matches 0 run scoreboard players set yellowEliminated gm_general 1
+
 execute if entity @a[team=red,tag=vip,scores={dead=1}] run scoreboard players set redEliminated gm_general 1
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run scoreboard players set blueEliminated gm_general 1
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run scoreboard players set greenEliminated gm_general 1
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run scoreboard players set yellowEliminated gm_general 1
+execute if entity @a[team=blue,tag=vip,scores={dead=1}] run scoreboard players set blueEliminated gm_general 1
+execute if entity @a[team=green,tag=vip,scores={dead=1}] run scoreboard players set greenEliminated gm_general 1
+execute if entity @a[team=yellow,tag=vip,scores={dead=1}] run scoreboard players set yellowEliminated gm_general 1
 
 # Display Eliminated text
 execute if entity @a[team=red,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Red Team has been Eliminated!","color":"red","bold":true}
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Blue Team has been Eliminated!","color":"blue","bold":true}
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Green Team has been Eliminated!","color":"green","bold":true}
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Yellow Team has been Eliminated!","color":"yellow","bold":true}
+execute if entity @a[team=blue,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Blue Team has been Eliminated!","color":"blue","bold":true}
+execute if entity @a[team=green,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Green Team has been Eliminated!","color":"green","bold":true}
+execute if entity @a[team=yellow,tag=vip,scores={dead=1}] run tellraw @a[scores={optIn=1}] {"text":"Yellow Team has been Eliminated!","color":"yellow","bold":true}
 
 # Remove livePlayer tag from eliminated teams
 execute if entity @a[team=red,tag=vip,scores={dead=1}] run tag @a[team=red,tag=livePlayer] remove livePlayer
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run tag @a[team=blue,tag=livePlayer] remove livePlayer
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run tag @a[team=green,tag=livePlayer] remove livePlayer
-execute if entity @a[team=red,tag=vip,scores={dead=1}] run tag @a[team=yellow,tag=livePlayer] remove livePlayer
+execute if entity @a[team=blue,tag=vip,scores={dead=1}] run tag @a[team=blue,tag=livePlayer] remove livePlayer
+execute if entity @a[team=green,tag=vip,scores={dead=1}] run tag @a[team=green,tag=livePlayer] remove livePlayer
+execute if entity @a[team=yellow,tag=vip,scores={dead=1}] run tag @a[team=yellow,tag=livePlayer] remove livePlayer
 
 # Set Eliminated players to spectator
 execute if score redEliminated gm_general matches 1 run gamemode spectator @a[team=red,scores={optIn=1}]

@@ -41,6 +41,7 @@ execute if score run gm_general matches 4 run function kitpvp:gamemodes/102-deat
 execute if score run gm_general matches 5 run function kitpvp:gamemodes/201-juggernaut/201-runtime
 execute if score run gm_general matches 6 run function kitpvp:gamemodes/202-gungame/202-runtime
 execute if score run gm_general matches 7 run function kitpvp:gamemodes/203-elimination/203-runtime
+execute if score run gm_general matches 8 run function kitpvp:gamemodes/204-vip/204-runtime
 #endregion
 
 # Reset KillBin

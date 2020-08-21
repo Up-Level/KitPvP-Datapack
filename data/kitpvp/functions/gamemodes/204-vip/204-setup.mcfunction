@@ -13,10 +13,10 @@ scoreboard players set Yellow-Kills gm_sidebar 0
 scoreboard objectives setdisplay sidebar gm_sidebar
 scoreboard objectives setdisplay list gm_kills
 
-tag @r[scores={optIn=1},team=red,tag=!vip] add vip
-tag @r[scores={optIn=1},team=blue,tag=!vip] add vip
-tag @r[scores={optIn=1},team=green,tag=!vip] add vip
-tag @r[scores={optIn=1},team=yellow,tag=!vip] add vip
+tag @r[scores={optIn=1},team=red,tag=!vip,limit=1] add vip
+tag @r[scores={optIn=1},team=blue,tag=!vip,limit=1] add vip
+tag @r[scores={optIn=1},team=green,tag=!vip,limit=1] add vip
+tag @r[scores={optIn=1},team=yellow,tag=!vip,limit=1] add vip
 
 scoreboard players set @a[tag=vip] class 101
 tellraw @a[tag=vip] {"text":"You are your team's VIP. Try not to die!","color":"gold"}
