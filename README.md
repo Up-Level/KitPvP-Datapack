@@ -1,10 +1,10 @@
 # KitPvP-Datapack
 A Minecraft KitPvP Datapack by Up-Level and Tet.
 
-This datapack is made for a KitPvP Server which runs only using functions. Balanced for post-1.9 combat, while allowing variety and strategy in between classes.
-Eventually, we might make this server public if the project goes far enough.
+This datapack is made for a KitPvP Server designed to use the pack. Balanced for 1.9+ combat, while allowing variety and strategy in between classes.
+Eventually, the server may become public if the project goes far enough.
 
-Note that this datapack is designed for a specific world with a specific resource pack. While the dependency on the resource pack will remain in the future the datapack could work on another world without much modification.
+Note that this datapack is designed for a specific world with a specific resource pack. While the dependency on the resource pack will remain in the future the datapack could later work on another world without much modification.
 
 ## Images
 Work in Progress Spawn/Lobby
