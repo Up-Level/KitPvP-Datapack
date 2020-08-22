@@ -11,3 +11,6 @@ scoreboard players set redKills gm_general 0
 scoreboard players set blueKills gm_general 0
 scoreboard players set greenKills gm_general 0
 scoreboard players set yellowKills gm_general 0
+
+# Put non-team players on the team with the lowest amount of players (that isn't 0)
+execute as @a[team=none,scores={optIn=1}] run function kitpvp:utility/internal/join-smallest-team
