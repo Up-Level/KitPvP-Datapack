@@ -1,3 +1,5 @@
+tellraw @a[scores={debug=1}] {"selector":"@s"}
+
 # Get number of players currently on a team
 execute store result score redPlayers team if entity @a[team=red,scores={optIn=1}]
 execute store result score bluePlayers team if entity @a[team=blue,scores={optIn=1}]
@@ -28,6 +30,9 @@ execute unless score lastTeamChoice team matches 4 if score yellowPlayers team m
 execute if score redPlayers team > zero number if score bluePlayers team > zero number if score greenPlayers team > zero number if score yellowPlayers team > zero number run scoreboard players set teamChoice team 1
 # If all teams have no players, join red
 execute if score redPlayers team <= zero number if score bluePlayers team <= zero number if score greenPlayers team <= zero number if score yellowPlayers team <= zero number run scoreboard players set teamChoice team 1
+
+tellraw @a[scores={debug=1}] {"score":{"name":"lastTeamChoice","objective":"team"}}
+tellraw @a[scores={debug=1}] {"score":{"name":"teamChoice","objective":"team"}}
 
 # Set Teams
 execute if score teamChoice team matches 1 run team join red @s
