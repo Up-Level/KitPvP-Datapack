@@ -3,12 +3,6 @@ execute if score timer gamemodeStart > negative-one number run function kitpvp:c
 # Kill player if they are below y0
 execute as @a[scores={playerY=..0}] run kill @s
 
-# Run Menu Triggers
-execute as @a unless score @s menuTriggers matches 0 run function kitpvp:configure/menu-triggers
-
-# Run Class Triggers
-execute as @a unless score @s classTriggers matches 0 run function kitpvp:configure/class-triggers
-
 execute at @e[name=spawn] as @a[distance=..150] run function kitpvp:runtime-spawn-player
 
 #region Run gamemode setup functions
