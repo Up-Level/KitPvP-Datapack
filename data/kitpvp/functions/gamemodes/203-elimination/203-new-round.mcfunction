@@ -17,6 +17,8 @@ kill @e[name=active-point]
 # Teleport Teams to the Map
 execute as @a[scores={optIn=1},team=!none] run function kitpvp:utility/internal/teams-map-tp
 
+function kitpvp:utility/internal/delete-entites
+
 scoreboard players set ticks gm_general 3000
 bossbar set 0 color blue
 bossbar set 0 max 150
@@ -29,7 +31,6 @@ scoreboard players set @a[scores={optIn=1}] gm_lives 1
 gamemode adventure @a[scores={optIn=1}]
 clear @a[scores={optIn=1}]
 effect clear @a[scores={optIn=1}]
-function kitpvp:utility/internal/delete-entites
 execute as @a[scores={optIn=1}] run function kitpvp:utility/internal/reset-player-scoreboards
 
 playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] 0 65 1000 1000000 2 1
