@@ -26,9 +26,9 @@ execute unless score lastTeamChoice team matches 3 if score greenPlayers team ma
 execute unless score lastTeamChoice team matches 4 if score yellowPlayers team matches 0 run scoreboard players set teamChoice team 4
 
 # If all teams have the same amount of players, join red
-execute if score redPlayers team > zero number if score bluePlayers team > zero number if score greenPlayers team > zero number if score yellowPlayers team > zero number run scoreboard players set teamChoice team 1
+execute if score teamChoice team 0 if score redPlayers team > zero number if score bluePlayers team > zero number if score greenPlayers team > zero number if score yellowPlayers team > zero number run scoreboard players set teamChoice team 1
 # If all teams have no players, join red
-execute if score redPlayers team <= zero number if score bluePlayers team <= zero number if score greenPlayers team <= zero number if score yellowPlayers team <= zero number run scoreboard players set teamChoice team 1
+execute if score teamChoice team 0 if score redPlayers team <= zero number if score bluePlayers team <= zero number if score greenPlayers team <= zero number if score yellowPlayers team <= zero number run scoreboard players set teamChoice team 1
 
 tellraw @a[scores={debug=1}] {"score":{"name":"lastTeamChoice","objective":"team"}}
 tellraw @a[scores={debug=1}] {"score":{"name":"teamChoice","objective":"team"}}
