@@ -1,4 +1,5 @@
 # Run Class Runtime
+execute as @s[scores={optIn=1,respawn=0}] run trigger classTriggers add 0
 execute as @a[scores={optIn=1,respawn=0},gamemode=!spectator] run function kitpvp:class-runtime
 
 # Remove 1 kill if fell out of map
@@ -15,7 +16,7 @@ execute as @a[scores={dropRedDyeBin=1}] run kill @s
 scoreboard players add @a[tag=livePlayer,scores={respawn=0}] timeAlive 1
 
 # Run Class Triggers
-execute as @a if entity @s[scores={Respawn=1}] run function kitpvp:configure/class-triggers
+execute as @a if entity @s[scores={respawn=1}] run function kitpvp:configure/class-triggers
 
 execute if entity @a[scores={respawn=1}] run function kitpvp:respawn
 
