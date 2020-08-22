@@ -1,5 +1,5 @@
 # Run Class Runtime
-execute as @s[scores={optIn=1,respawn=0}] run trigger classTriggers add 0
+execute as @a[scores={optIn=1,respawn=0}] run trigger classTriggers add 0
 execute as @a[scores={optIn=1,respawn=0},gamemode=!spectator] run function kitpvp:class-runtime
 
 # Remove 1 kill if fell out of map
