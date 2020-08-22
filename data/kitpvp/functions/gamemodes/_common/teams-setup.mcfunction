@@ -1,5 +1,5 @@
 # Teleport Teams to the Map
-execute as @a[scores={optIn=1},team=!none] run function kitpvp:utility/internal/teams-map-tp
+function kitpvp:utility/internal/teams-map-tp
 
 # Initiate Common Teams Gamemode Scoreboards
 scoreboard players set redPlayers gm_general 0

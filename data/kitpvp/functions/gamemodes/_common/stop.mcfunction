@@ -4,6 +4,7 @@ function kitpvp:utility/internal/delete-entites
 
 execute as @a[tag=spectator] run function kitpvp:gamemodes/_common/stop_player
 execute as @a[scores={optIn=1}] run function kitpvp:gamemodes/_common/stop_player
+execute as @a[tag=livePlayer] run function kitpvp:gamemodes/_common/stop_player
 
 scoreboard objectives setdisplay list wins
 scoreboard objectives setdisplay sidebar optIn

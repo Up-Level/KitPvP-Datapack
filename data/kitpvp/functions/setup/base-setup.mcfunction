@@ -125,8 +125,11 @@ scoreboard objectives add compareUUID3 dummy
 scoreboard objectives remove crouchTime
 scoreboard objectives add crouchTime minecraft.custom:minecraft.sneak_time
 
-scoreboard objectives remove timeSinceCombat
-scoreboard objectives add timeSinceCombat dummy
+scoreboard objectives remove sinceDealtDamage
+scoreboard objectives add sinceDealtDamage dummy
+
+scoreboard objectives remove sinceTakenDamage
+scoreboard objectives add sinceTakenDamage dummy
 
 scoreboard objectives remove timeAlive
 scoreboard objectives add timeAlive dummy

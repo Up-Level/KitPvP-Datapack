@@ -15,7 +15,7 @@ kill @e[name=point-corner]
 kill @e[name=active-point]
 
 # Teleport Teams to the Map
-execute as @a[scores={optIn=1},team=!none] run function kitpvp:utility/internal/teams-map-tp
+function kitpvp:utility/internal/teams-map-tp
 
 function kitpvp:utility/internal/delete-entites
 
