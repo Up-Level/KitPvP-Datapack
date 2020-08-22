@@ -1,8 +1,5 @@
 execute if score timer gamemodeStart > negative-one number run function kitpvp:configure/start-timer
 
-# Kill player if they are below y0
-execute as @a[scores={playerY=..0}] run kill @s
-
 execute at @e[name=spawn] as @a[distance=..150] run function kitpvp:runtime-spawn-player
 
 #region Run gamemode setup functions

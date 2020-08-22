@@ -2,14 +2,8 @@
 execute as @a[scores={optIn=1,respawn=0}] run trigger classTriggers add 0
 execute as @a[scores={optIn=1,respawn=0},gamemode=!spectator] run function kitpvp:class-runtime
 
-# Remove 1 kill if fell out of map
-execute as @a[scores={playerY=..0}] run scoreboard players remove @s gm_kills 1
-execute as @a[scores={playerY=..0}] if score gamemode settings matches 6 run scoreboard players set @s killBin -1
-execute as @a[scores={playerY=..0}] run kill @s
-
 # Remove 1 kill if suicided
-execute as @a[scores={dropRedDyeBin=1}] run scoreboard players remove @s gm_kills 1
-execute as @a[scores={dropRedDyeBin=1}] if score gamemode settings matches 6 run scoreboard players set @s killBin -1
+execute as @a[scores={dropRedDyeBin=1}] run function kitpvp:on-env-death
 execute as @a[scores={dropRedDyeBin=1}] run kill @s
 
 # Increase timeAlive
