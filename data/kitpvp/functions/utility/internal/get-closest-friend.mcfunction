@@ -16,6 +16,8 @@ execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=yellow] add t
 #Jugg
 execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernautTeam] add targets_friend
 
+execute if entity @s[team=juggernaut] run tag @a[scores={optIn=1},team=juggernaut] add targets_friend
+
 #Select out lucky winner
 execute at @s run tag @e[tag=targets_friend,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen_friend
 
