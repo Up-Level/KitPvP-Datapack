@@ -51,4 +51,5 @@ scoreboard players set @a damageTakenBin 0
 scoreboard players set @a dropRedDyeBin 0
 scoreboard players set @a usedBowBin 0
 scoreboard players set @a usedCrossbowBin 0
+scoreboard players set @a usedTridentBin 0
 #endregion

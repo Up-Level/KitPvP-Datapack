@@ -189,6 +189,9 @@ scoreboard objectives add usedBowBin minecraft.used:bow
 scoreboard objectives remove usedCrossbowBin
 scoreboard objectives add usedCrossbowBin minecraft.used:crossbow
 
+scoreboard objectives remove usedTridentBin
+scoreboard objectives add usedTridentBin minecraft.used:minecraft.trident
+
 scoreboard objectives remove opped
 scoreboard objectives add opped dummy
 
