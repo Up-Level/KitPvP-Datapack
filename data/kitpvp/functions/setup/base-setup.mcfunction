@@ -183,6 +183,12 @@ scoreboard objectives add seeEffects dummy
 scoreboard objectives remove dropRedDyeBin
 scoreboard objectives add dropRedDyeBin minecraft.dropped:red_dye
 
+scoreboard objectives remove usedBowBin
+scoreboard objectives add usedBowBin minecraft.used:bow
+
+scoreboard objectives remove usedCrossbowBin
+scoreboard objectives add usedCrossbowBin minecraft.used:crossbow
+
 scoreboard objectives remove opped
 scoreboard objectives add opped dummy
 

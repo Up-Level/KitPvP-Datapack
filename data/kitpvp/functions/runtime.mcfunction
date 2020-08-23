@@ -49,4 +49,6 @@ scoreboard players set @a fungusStickBin 0
 scoreboard players set @a damageDealtBin 0
 scoreboard players set @a damageTakenBin 0
 scoreboard players set @a dropRedDyeBin 0
+scoreboard players set @a usedBowBin 0
+scoreboard players set @a usedCrossbowBin 0
 #endregion
