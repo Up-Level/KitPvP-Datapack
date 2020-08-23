@@ -19,9 +19,6 @@ execute as @a store result score @s playerX run data get entity @s Pos[0] 100
 execute as @a store result score @s playerY run data get entity @s Pos[1] 100
 execute as @a store result score @s playerZ run data get entity @s Pos[2] 100
 
-# On death, do these commands
-execute as @a[scores={dead=1}] run function kitpvp:on-death
-
 # Runtime during gamemode
 execute if score gamemode-running settings matches 1 run function kitpvp:runtime-gamemode
 
@@ -30,6 +27,9 @@ function kitpvp:runtime-spawn
 
 # Give a Player if they have a giveClass value
 execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
+
+# On death, do these commands
+execute as @a[scores={dead=1}] run function kitpvp:on-death
 
 # Reset CrouchTime if not crouching
 execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0

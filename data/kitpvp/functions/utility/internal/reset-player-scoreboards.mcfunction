@@ -22,4 +22,4 @@ scoreboard players set @s sinceTakenDamage 0
 scoreboard players set @s dropTrident 0
 scoreboard players set @s throwTrident 0
 
-execute if entity @s[scores={class=22}] run function kitpvp:utility/internal/destroy-boat
+execute if entity @s run function kitpvp:utility/internal/destroy-boat
