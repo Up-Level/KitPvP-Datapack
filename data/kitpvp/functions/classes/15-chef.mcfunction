@@ -15,4 +15,6 @@ execute unless entity @s[scores={throwTrident=0}] run scoreboard players operati
 execute unless score @s cdChefFork matches -1 run scoreboard players remove @s[scores={cdChefFork=0..101}] cdChefFork 1
 execute if score @s cdChefFork > twenty number run clear @s minecraft:trident
 
+effect clear @s minecraft:hunger
+
 attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
