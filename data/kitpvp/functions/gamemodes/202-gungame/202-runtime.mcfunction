@@ -6,7 +6,6 @@ execute as @a[scores={optIn=1,killBin=1..}] unless score @s class matches 23 run
 clear @a[scores={optIn=1,killBin=1..}]
 effect clear @a[scores={optIn=1,killBin=1..}]
 # Just in case
-scoreboard players set @a[scores={optIn=1,killBin=1..}] killBin 0
 
 execute if entity @a[scores={optIn=1,class=23}] run function kitpvp:gamemodes/202-gungame/202-stop
 
