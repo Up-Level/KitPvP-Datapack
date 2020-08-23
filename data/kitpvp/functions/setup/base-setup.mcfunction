@@ -112,6 +112,9 @@ scoreboard objectives add ProjectileUUID1 dummy
 scoreboard objectives add ProjectileUUID2 dummy
 scoreboard objectives add ProjectileUUID3 dummy
 
+scoreboard objectives remove ProjectileTeam
+scoreboard objectives add ProjectileTeam dummy
+
 scoreboard objectives remove compareUUID0
 scoreboard objectives remove compareUUID0
 scoreboard objectives remove compareUUID0
