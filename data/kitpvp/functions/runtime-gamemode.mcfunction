@@ -46,3 +46,4 @@ execute if score run gm_general matches 8 run function kitpvp:gamemodes/204-vip/
 
 # Reset KillBin
 scoreboard players set @a[scores={killBin=1..}] killBin 0
+scoreboard players set @a[scores={killBin=..-1}] killBin 0
