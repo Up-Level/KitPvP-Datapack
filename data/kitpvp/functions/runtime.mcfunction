@@ -29,7 +29,7 @@ function kitpvp:runtime-spawn
 execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
 
 # On death, do these commands
-execute as @a[scores={dead=1}] run function kitpvp:on-death
+execute unless score gamemode-running settings matches 1 as @a[scores={dead=1}] run function kitpvp:on-death
 
 # Reset CrouchTime if not crouching
 execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0
