@@ -22,4 +22,7 @@ scoreboard players set @s sinceTakenDamage 0
 scoreboard players set @s dropTrident 0
 scoreboard players set @s throwTrident 0
 
+scoreboard players set @s hadTridentCount 1
+scoreboard players set @s tridentCount 1
+
 execute if entity @s run function kitpvp:utility/internal/destroy-boat

@@ -134,6 +134,12 @@ scoreboard objectives add sinceTakenDamage dummy
 scoreboard objectives remove timeAlive
 scoreboard objectives add timeAlive dummy
 
+scoreboard objectives remove tridentCount
+scoreboard objectives add tridentCount dummy
+
+scoreboard objectives remove hadTridentCount
+scoreboard objectives add hadTridentCount dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
@@ -149,9 +155,6 @@ scoreboard objectives add crouchBin minecraft.custom:minecraft.sneak_time
 
 scoreboard objectives remove dropTrident
 scoreboard objectives add dropTrident minecraft.dropped:minecraft.trident
-
-scoreboard objectives remove hadTrident
-scoreboard objectives add hadTrident dummy
 
 scoreboard objectives remove playerLeft
 scoreboard objectives add playerLeft minecraft.custom:minecraft.leave_game
