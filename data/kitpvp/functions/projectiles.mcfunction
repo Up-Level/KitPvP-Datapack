@@ -9,10 +9,12 @@ execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores=
 execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},team=juggernautTeam] at @s run effect give @a[team=!juggernautTeam,distance=..3] minecraft:hunger 5 127
 execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},team=juggernaut] at @s run effect give @a[team=!juggernaut,distance=..3] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},team=yellow] at @s run particle minecraft:dust 0 0.25 0 1.5 ~ ~ ~ 2 1 2 0.025 500 force
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15}] at @s run particle minecraft:dust 0 0.25 0 1.5 ~ ~ ~ 2 1 2 0.025 500 force
+
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15}] at @s run say we have landed the ship
 
 #execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15}] at @s run data modify entity @e[type=minecraft:potion,limit=1,sort=nearest] Owner set from entity @s Owner
-execute as @e[type=minecraft:potion] at @s run data modify entity @s Owner set from entity @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},limit=1,sort=nearest,distance=..3] Owner
+#execute as @e[type=minecraft:potion] at @s run data modify entity @s Owner set from entity @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},limit=1,sort=nearest,distance=..3] Owner
 
 kill @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile]
 
