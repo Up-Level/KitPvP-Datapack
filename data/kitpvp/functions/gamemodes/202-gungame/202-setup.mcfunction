@@ -7,9 +7,11 @@ tellraw @a[scores={optIn=1}] {"text":"This gamemode is Gungame. Each kill you ge
 
 scoreboard players set @a[scores={optIn=1}] class 2
 
-scoreboard objectives modify gm_sidebar displayname {"text":"Gungame","color":"gold"}
-scoreboard players set @a[scores={optIn=1}] gm_kills 1
+scoreboard objectives remove gm_displayClass
+scoreboard objectives add gm_displayClass dummy
+
+scoreboard objectives modify gm_sidebar displayname {"text":"Class","color":"gold"}
+scoreboard players set @a[scores={optIn=1}] gm_sidebar 1
 scoreboard objectives setdisplay sidebar gm_sidebar
-scoreboard objectives setdisplay sidebar gm_kills
 
 scoreboard players set run gm_general 6
