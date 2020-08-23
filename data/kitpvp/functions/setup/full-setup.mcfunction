@@ -24,7 +24,9 @@ scoreboard objectives remove wins
 scoreboard objectives add wins dummy
 
 # Add Coordinate Stands
+function kitpvp:utility/internal/forceload/load-all-maps
 kill @e[type=minecraft:armor_stand,nbt={Marker:1b}]
+function kitpvp:utility/internal/forceload/unload-all-maps
 
 summon armor_stand 0.5 100.00 2000.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"spawn"}'}
 summon armor_stand -48 109 2082 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"spectate-spot"}'}
