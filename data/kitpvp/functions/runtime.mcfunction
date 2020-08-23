@@ -19,14 +19,14 @@ execute as @a store result score @s playerX run data get entity @s Pos[0] 100
 execute as @a store result score @s playerY run data get entity @s Pos[1] 100
 execute as @a store result score @s playerZ run data get entity @s Pos[2] 100
 
+# On death, do these commands
+execute as @a[scores={dead=1}] run function kitpvp:on-death
+
 # Runtime during gamemode
 execute if score gamemode-running settings matches 1 run function kitpvp:runtime-gamemode
 
 # Runtime not during gamemode
 function kitpvp:runtime-spawn
-
-# On death, do these commands
-execute as @a[scores={dead=1}] run function kitpvp:on-death
 
 # Give a Player if they have a giveClass value
 execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
