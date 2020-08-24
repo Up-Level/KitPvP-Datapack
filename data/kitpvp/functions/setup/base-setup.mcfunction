@@ -185,6 +185,7 @@ scoreboard objectives add damageTakenBin minecraft.custom:minecraft.damage_taken
 
 scoreboard objectives remove seeEffects
 scoreboard objectives add seeEffects dummy
+scoreboard players set * seeEffects 1
 
 scoreboard objectives remove dropRedDyeBin
 scoreboard objectives add dropRedDyeBin minecraft.dropped:red_dye
