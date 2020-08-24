@@ -1,3 +1,5 @@
+execute as @a[nbt={Health:0.0f}] at @s run summon minecraft:zombie ~ ~ ~
+
 # Infected Gamemode Runtime
 scoreboard players remove ticks gm_general 1
 scoreboard players operation seconds gm_general = ticks gm_general
