@@ -1,5 +1,5 @@
 # Modify newly created and some old projectiles
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=0}] at @s run effect give @a[distance=..3] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=0}] at @s run effect give @a[distance=..4] minecraft:hunger 5 127
 
 execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=1}] at @s run effect give @a[team=!red,distance=..4] minecraft:hunger 5 127
 execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=2}] at @s run effect give @a[team=!blue,distance=..4] minecraft:hunger 5 127
