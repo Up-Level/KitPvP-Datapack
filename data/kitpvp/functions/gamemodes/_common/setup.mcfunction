@@ -17,6 +17,9 @@ execute as @a run attribute @s generic.knockback_resistance base set 0
 
 function kitpvp:utility/internal/delete-entities
 
+# Players not on a team should join the 'none' team
+team join none @a[team=]
+
 # Reset Player Scoreboards
 execute as @a[scores={optIn=1}] run function kitpvp:utility/internal/reset-player-scoreboards
 scoreboard players set @a[scores={optIn=1}] respawn 0

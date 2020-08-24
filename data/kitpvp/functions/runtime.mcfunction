@@ -5,7 +5,7 @@ kill @e[type=spectral_arrow,nbt={inGround:1b}]
 kill @e[type=item]
 
 #Im gonna put it here but rewritten
-execute as @e run function kitpvp:utility/internal/give-teleport-book
+execute as @a run function kitpvp:utility/internal/give-teleport-book
 
 # Detect if player is in a liquid or a waterlogged block
 execute as @a at @s if block ~ ~ ~ #kitpvp:waterloggable[waterlogged=true] run scoreboard players set @s inLiquid 1
