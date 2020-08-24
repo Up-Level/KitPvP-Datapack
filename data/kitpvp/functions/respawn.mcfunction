@@ -35,5 +35,7 @@ execute if score map settings matches 8 run spreadplayers 12000 0 5 100 under 74
 execute if score map settings matches 9 run spreadplayers 14000 0 5 100 under 79 true @a[scores={respawnTimer=..0},team=!none]
 #endregion
 
+execute as @a[scores={respawnTimer=..0},team=infected] run function kitpvp:gamemodes/205-infected/205-zombie-respawn
+
 scoreboard players set @a[scores={respawnTimer=..0}] respawn 0
 scoreboard players reset @a[scores={respawnTimer=..0}] respawnTimer
