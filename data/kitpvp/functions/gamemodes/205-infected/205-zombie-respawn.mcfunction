@@ -1,9 +1,9 @@
-execute as @e[tag=spawnpoint] run kill @s
+kill @e[tag=spawnPoint]
 
 execute unless entity @s[scores={playerAliveX=0,playerAliveY=0,playerAliveZ=0}] run summon minecraft:armor_stand ~ ~ ~ {Tags:["spawnPoint"],Marker:1b,Invisible:1b}
-execute store result entity @e[tag=spawnPoint,limit=1] Pos[0] float 0.01 run scoreboard players get @s playerAliveX
-execute store result entity @e[tag=spawnPoint,limit=1] Pos[1] float 0.01 run scoreboard players get @s playerAliveY
-execute store result entity @e[tag=spawnPoint,limit=1] Pos[2] float 0.01 run scoreboard players get @s playerAliveZ
+execute store result entity @e[tag=spawnPoint,limit=1] Pos[0] double 0.01 run scoreboard players get @s playerAliveX
+execute store result entity @e[tag=spawnPoint,limit=1] Pos[1] double 0.01 run scoreboard players get @s playerAliveY
+execute store result entity @e[tag=spawnPoint,limit=1] Pos[2] double 0.01 run scoreboard players get @s playerAliveZ
 tp @s @e[tag=spawnPoint,limit=1]
 
 scoreboard players set @s playerAliveX 0
