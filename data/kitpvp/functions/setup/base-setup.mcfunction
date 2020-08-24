@@ -57,6 +57,11 @@ scoreboard objectives add playerAliveX dummy
 scoreboard objectives add playerAliveY dummy
 scoreboard objectives add playerAliveZ dummy
 
+scoreboard objectives remove playerAliveRot0
+scoreboard objectives remove playerAliveRot1
+scoreboard objectives add playerAliveRot0 dummy
+scoreboard objectives add playerAliveRot1 dummy
+
 scoreboard objectives remove totalKills
 scoreboard objectives add totalKills playerKillCount {"text":"Total Kills","color":"gold"}
 
