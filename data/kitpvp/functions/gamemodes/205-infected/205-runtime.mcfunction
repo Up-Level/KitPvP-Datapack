@@ -1,6 +1,6 @@
-execute as @a[team=uninfected,scores={respawn=0}] store result score @s playerAliveX run data get entity @s Pos[0] 100
-execute as @a[team=uninfected,scores={respawn=0}] store result score @s playerAliveY run data get entity @s Pos[1] 100
-execute as @a[team=uninfected,scores={respawn=0}] store result score @s playerAliveZ run data get entity @s Pos[2] 100
+execute as @a[team=uninfected,scores={respawn=0,dead=0}] unless entity @e[distance=..5,name=spawn] store result score @s playerAliveX run data get entity @s Pos[0] 100
+execute as @a[team=uninfected,scores={respawn=0,dead=0}] unless entity @e[distance=..5,name=spawn] store result score @s playerAliveY run data get entity @s Pos[1] 100
+execute as @a[team=uninfected,scores={respawn=0,dead=0}] unless entity @e[distance=..5,name=spawn] store result score @s playerAliveZ run data get entity @s Pos[2] 100
 
 # Infected Gamemode Runtime
 scoreboard players remove ticks gm_general 1
@@ -16,6 +16,9 @@ execute store result score Players-Infected gm_sidebar if entity @a[team=infecte
 # Select Infected Leader after 10 seconds
 execute if score ticks gm_general matches 5800 as @r[tag=livePlayer] run function kitpvp:gamemodes/205-infected/205-set-infected
 execute if score ticks gm_general matches 5800 as @a[team=infected] run scoreboard players set @s class 102
+execute if score ticks gm_general matches 5800 as @a[team=infected] run scoreboard players set @s playerAliveX 0
+execute if score ticks gm_general matches 5800 as @a[team=infected] run scoreboard players set @s playerAliveY 0
+execute if score ticks gm_general matches 5800 as @a[team=infected] run scoreboard players set @s playerAliveZ 0
 
 execute as @a[team=uninfected,scores={respawn=1}] run function kitpvp:gamemodes/205-infected/205-set-infected
 
