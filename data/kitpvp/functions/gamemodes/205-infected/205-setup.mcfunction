@@ -1,4 +1,4 @@
-# infected Gamemode Setup
+# Infected Gamemode Setup
 function kitpvp:gamemodes/_common/setup
 function kitpvp:gamemodes/_common/teams-setup
 

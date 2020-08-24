@@ -6,7 +6,7 @@ tellraw @a[scores={optIn=1}] {"text":"This gamemode is Lives. Everyone has 3 liv
 scoreboard players set @a[scores={optIn=1}] gm_lives 3
 scoreboard objectives setdisplay list gm_lives
 
-scoreboard objectives setdisplay sidebar gm-kills
+scoreboard objectives setdisplay sidebar gm_kills
 
 team join none @a[scores={optIn=1}]
 

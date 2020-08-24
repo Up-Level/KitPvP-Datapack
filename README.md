@@ -1,5 +1,5 @@
 # KitPvP-Datapack
-A Minecraft KitPvP Datapack by Up-Level and Tet.
+A 1.16.2 Minecraft KitPvP Datapack by Up-Level and Tet.
 
 This datapack is made for a KitPvP Server designed to use the pack. Balanced for 1.9+ combat, while allowing variety and strategy in between classes.
 Eventually, the server may become public if the project goes far enough.
