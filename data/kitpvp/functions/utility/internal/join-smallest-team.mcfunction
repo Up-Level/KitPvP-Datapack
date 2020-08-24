@@ -30,16 +30,16 @@ execute if score teamChoice team matches 0 if score redPlayers team < zero numbe
 # If only red has players, join blue
 execute if score teamChoice team matches 0 if score redPlayers team = zero number if score bluePlayers team < zero number if score greenPlayers team < zero number if score yellowPlayers team < zero number run scoreboard players set teamChoice team 2
 
-# If only other tea,s pn;y have 1, join red
+# If only other teams have none, join red
 execute if score teamChoice team matches 0 if score redPlayers team < zero number if score bluePlayers team = zero number if score greenPlayers team < zero number if score yellowPlayers team < zero number run scoreboard players set teamChoice team 1
 execute if score teamChoice team matches 0 if score redPlayers team < zero number if score bluePlayers team < zero number if score greenPlayers team = zero number if score yellowPlayers team < zero number run scoreboard players set teamChoice team 1
 execute if score teamChoice team matches 0 if score redPlayers team < zero number if score bluePlayers team < zero number if score greenPlayers team < zero number if score yellowPlayers team = zero number run scoreboard players set teamChoice team 1
 
 # Set team to the one with the least players
-execute if score teamChoice team = zero number if score redPlayers team >= zero number run scoreboard players set teamChoice team 1
-execute if score teamChoice team = zero number if score bluePlayers team >= zero number run scoreboard players set teamChoice team 2
-execute if score teamChoice team = zero number if score greenPlayers team >= zero number run scoreboard players set teamChoice team 3
-execute if score teamChoice team = zero number if score yellowPlayers team >= zero number run scoreboard players set teamChoice team 4
+execute if score teamChoice team matches 0 if score redPlayers team matches 0 run scoreboard players set teamChoice team 1
+execute if score teamChoice team matches 0 if score bluePlayers team matches 0 run scoreboard players set teamChoice team 2
+execute if score teamChoice team matches 0 if score greenPlayers team matches 0 run scoreboard players set teamChoice team 3
+execute if score teamChoice team matches 0 if score yellowPlayers team matches 0 run scoreboard players set teamChoice team 4
 
 #tellraw @a[scores={debug=1}] {"score":{"name":"lastTeamChoice","objective":"team"}}
 tellraw @a[scores={debug=1}] {"score":{"name":"teamChoice","objective":"team"}}
