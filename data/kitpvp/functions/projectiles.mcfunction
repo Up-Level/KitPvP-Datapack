@@ -1,15 +1,15 @@
 # Modify newly created and some old projectiles
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=0}] at @s run effect give @a[distance=..3] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=0}] at @s run effect give @a[distance=..3] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=1}] at @s run effect give @a[team=!red,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=2}] at @s run effect give @a[team=!blue,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=3}] at @s run effect give @a[team=!green,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=4}] at @s run effect give @a[team=!yellow,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=1}] at @s run effect give @a[team=!red,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=2}] at @s run effect give @a[team=!blue,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=3}] at @s run effect give @a[team=!green,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=4}] at @s run effect give @a[team=!yellow,distance=..4] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=5}] at @s run effect give @a[team=!juggernautTeam,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=6}] at @s run effect give @a[team=!juggernaut,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=5}] at @s run effect give @a[team=!juggernautTeam,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=6}] at @s run effect give @a[team=!juggernaut,distance=..4] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15}] at @s run particle minecraft:dust 0 0.25 0 1.5 ~ ~ ~ 2 1 2 0.025 500 force
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14}] at @s run particle minecraft:dust 0 0.25 0 1.5 ~ ~ ~ 2 1 2 0.025 500 force
 
 #execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=3}] at @s run say we have landed the ship
 
@@ -49,15 +49,15 @@ execute as @a[team=juggernaut] at @s if score @e[tag=!projectileChecked,tag=proj
 
 scoreboard players set @e[type=arrow,tag=!projectileChecked,tag=projectile] arrowTime 300
 
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=11}] run data modify entity @s NoGravity set value 1
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run data modify entity @s NoGravity set value 1
 
 execute as @e[tag=!projectileChecked,tag=projectile] run execute store result score @s projMotion0 run data get entity @s Motion[0] 1000
 execute as @e[tag=!projectileChecked,tag=projectile] run execute store result score @s projMotion1 run data get entity @s Motion[1] 1000
 execute as @e[tag=!projectileChecked,tag=projectile] run execute store result score @s projMotion2 run data get entity @s Motion[2] 1000
 
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=11}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=11}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=11}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
 
 # execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
 # execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
