@@ -16,7 +16,6 @@ execute if score map settings matches 6 positioned 9000 100 0 run function kitpv
 execute if score map settings matches 7 positioned 10000 100 0 run function kitpvp:maps/07-enchanted-forest
 execute if score map settings matches 8 positioned 12000 64 0 run function kitpvp:maps/08-gulag
 execute if score map settings matches 9 positioned 14000 64 0 run function kitpvp:maps/09-water-treatment
-
 #endregion
 
 # On death, do these commands
@@ -31,6 +30,7 @@ execute if score run gm_general matches 5 run function kitpvp:gamemodes/201-jugg
 execute if score run gm_general matches 6 run function kitpvp:gamemodes/202-gungame/202-runtime
 execute if score run gm_general matches 7 run function kitpvp:gamemodes/203-elimination/203-runtime
 execute if score run gm_general matches 8 run function kitpvp:gamemodes/204-vip/204-runtime
+execute if score run gm_general matches 9 run function kitpvp:gamemodes/205-infected/205-runtime
 #endregion
 
 # Increase timeAlive

@@ -23,3 +23,5 @@ execute as @s[scores={class=20}] run function kitpvp:classes/20-pirate
 
 execute as @s[scores={class=100}] run function kitpvp:classes/100-juggernaut
 execute as @s[scores={class=101}] run function kitpvp:classes/101-vip
+execute as @s[scores={class=102}] run function kitpvp:classes/102-primary-infected
+execute as @s[scores={class=103}] run function kitpvp:classes/103-infected

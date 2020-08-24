@@ -281,6 +281,23 @@ team modify juggernaut seeFriendlyInvisibles true
 team modify juggernaut collisionRule pushOtherTeams
 team modify juggernaut color black
 
+team remove uninfected
+team add uninfected {"text":"Uninfected"}
+team modify uninfected friendlyFire false
+team modify uninfected deathMessageVisibility never
+team modify uninfected nametagVisibility hideForOtherTeams
+team modify uninfected seeFriendlyInvisibles true
+team modify uninfected collisionRule pushOtherTeams
+
+team remove infected
+team add infected {"text":"Infected","color":"dark_green"}
+team modify infected friendlyFire false
+team modify infected deathMessageVisibility never
+team modify infected nametagVisibility hideForOtherTeams
+team modify infected seeFriendlyInvisibles true
+team modify infected collisionRule pushOtherTeams
+team modify infected color dark_green
+
 # Make all players run the on-join function to avoid issues.
 scoreboard players set @a joinBin 1
 

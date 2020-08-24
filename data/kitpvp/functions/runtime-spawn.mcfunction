@@ -11,4 +11,5 @@ execute if score gamemode settings matches 5 if score gamemode-bin settings matc
 execute if score gamemode settings matches 6 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/202-gungame/202-setup
 execute if score gamemode settings matches 7 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/203-elimination/203-setup
 execute if score gamemode settings matches 8 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/204-vip/204-setup
+execute if score gamemode settings matches 9 if score gamemode-bin settings matches 1 run function kitpvp:gamemodes/205-infected/205-setup
 #endregion
