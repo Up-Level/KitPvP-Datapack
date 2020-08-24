@@ -12,7 +12,7 @@ execute at @s[tag=inGame] run playsound minecraft:hostile.oryx_death master @a ~
 
 execute unless score @s class >= zero number run scoreboard players set @s class 0
 scoreboard players reset @s optIn
-team join none @s[team=]
+team join none @s
 execute if entity @s[tag=spectator] run function kitpvp:gamemodes/_common/stop_player
 execute if entity @s[tag=spectator] run tag @s remove spectator
 tag @s remove inGame
