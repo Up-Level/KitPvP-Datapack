@@ -7,7 +7,7 @@ execute store result score greenPlayers team if entity @e[team=green,scores={opt
 execute store result score yellowPlayers team if entity @e[team=yellow,scores={optIn=1}]
 
 # Find which team has the least players
-scoreboard players set lowestTeamCount team 1
+scoreboard players set lowestTeamCount team 2147483647
 execute if score redPlayers team > zero number run scoreboard players operation lowestTeamCount team < redPlayers team
 execute if score bluePlayers team > zero number run scoreboard players operation lowestTeamCount team < bluePlayers team
 execute if score greenPlayers team > zero number run scoreboard players operation lowestTeamCount team < greenPlayers team
