@@ -19,7 +19,15 @@ scoreboard players operation bluePlayers team -= lowestTeamCount team
 scoreboard players operation greenPlayers team -= lowestTeamCount team
 scoreboard players operation yellowPlayers team -= lowestTeamCount team
 
+<<<<<<< HEAD
 scoreboard players set teamChoice team 0
+=======
+# Set team to the one with the least players
+execute if score redPlayers team matches 0 run scoreboard players set teamChoice team 1
+execute if score bluePlayers team matches 0 run scoreboard players set teamChoice team 2
+execute if score greenPlayers team matches 0 run scoreboard players set teamChoice team 3
+execute if score yellowPlayers team matches 0 run scoreboard players set teamChoice team 4
+>>>>>>> f053b43575178d5dedea8dea42eb75b265d56857
 
 # If all teams have the same amount of players, join red
 execute if score teamChoice team matches 0 if score redPlayers team > zero number if score bluePlayers team > zero number if score greenPlayers team > zero number if score yellowPlayers team > zero number run scoreboard players set teamChoice team 1
