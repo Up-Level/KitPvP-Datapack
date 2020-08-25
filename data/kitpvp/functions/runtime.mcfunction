@@ -2,7 +2,7 @@
 execute as @a run execute unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
-kill @e[type=item]
+kill @e[type=item,tag=!dontDelete]
 
 #Im gonna put it here but rewritten
 execute as @a run function kitpvp:utility/internal/give-teleport-book
