@@ -155,6 +155,9 @@ scoreboard objectives add tridentCount dummy
 scoreboard objectives remove hadTridentCount
 scoreboard objectives add hadTridentCount dummy
 
+scoreboard objectives remove blockTime
+scoreboard objectives add blockTime dummy
+
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount
