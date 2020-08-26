@@ -15,6 +15,7 @@ execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned
 execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^5 run function kitpvp:utility/internal/blocks/create-cobblestone
 
 execute if entity @s[scores={carrotStickBin=1}] run scoreboard players remove @s pathCharges 1
+execute if entity @s[scores={carrotStickBin=1}] run clear @s minecraft:carrot_on_a_stick
 
 execute unless score @s pathCharges = pathCharges cooldown run scoreboard players add @s cdPath 1
 
