@@ -1,6 +1,6 @@
 
 replaceitem entity @s armor.feet minecraft:iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
-replaceitem entity @s armor.legs minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:4}]}
+replaceitem entity @s armor.legs minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2}]}
 
 replaceitem entity @s hotbar.0 minecraft:stone_axe{Unbreakable:1}
 
@@ -12,12 +12,12 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick
 execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 execute unless entity @s[scores={cdWall=..0}] run clear @s minecraft:warped_fungus_on_a_stick
 
-execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^ run function kitpvp:utility/internal/blocks/create-cobblestone
-execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^1 run function kitpvp:utility/internal/blocks/create-cobblestone
-execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^2 run function kitpvp:utility/internal/blocks/create-cobblestone
-execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^3 run function kitpvp:utility/internal/blocks/create-cobblestone
-execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^4 run function kitpvp:utility/internal/blocks/create-cobblestone
-execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^5 run function kitpvp:utility/internal/blocks/create-cobblestone
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^0.25 run function kitpvp:utility/internal/blocks/create-cobblestone
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^1.25 run function kitpvp:utility/internal/blocks/create-cobblestone
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^2.25 run function kitpvp:utility/internal/blocks/create-cobblestone
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^3.25 run function kitpvp:utility/internal/blocks/create-cobblestone
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^4.25 run function kitpvp:utility/internal/blocks/create-cobblestone
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^5.25 run function kitpvp:utility/internal/blocks/create-cobblestone
 
 execute if entity @s[scores={carrotStickBin=1}] run scoreboard players remove @s pathCharges 1
 execute if entity @s[scores={carrotStickBin=1}] run clear @s minecraft:carrot_on_a_stick
