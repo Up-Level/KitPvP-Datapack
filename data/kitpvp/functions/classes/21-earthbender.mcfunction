@@ -5,6 +5,7 @@
 
 
 
+execute as @s[scores={carrotStickBin=1},nbt={SelectedItemSlot:1}] at @s positioned ~ ~-1 ~ positioned ^ ^ ^ run function kitpvp:utility/internal/blocks/create-cobblestone
 execute as @s[scores={carrotStickBin=1},nbt={SelectedItemSlot:1}] at @s positioned ~ ~-1 ~ positioned ^ ^ ^1 run function kitpvp:utility/internal/blocks/create-cobblestone
 execute as @s[scores={carrotStickBin=1},nbt={SelectedItemSlot:1}] at @s positioned ~ ~-1 ~ positioned ^ ^ ^2 run function kitpvp:utility/internal/blocks/create-cobblestone
 execute as @s[scores={carrotStickBin=1},nbt={SelectedItemSlot:1}] at @s positioned ~ ~-1 ~ positioned ^ ^ ^3 run function kitpvp:utility/internal/blocks/create-cobblestone
