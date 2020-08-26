@@ -1,6 +1,6 @@
 
 replaceitem entity @s armor.feet minecraft:iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
-replaceitem entity @s armor.legs minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:4}]}
+replaceitem entity @s armor.legs minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2}]}
 
 replaceitem entity @s hotbar.0 minecraft:stone_axe{Unbreakable:1}
 
