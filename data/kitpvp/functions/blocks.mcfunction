@@ -1,4 +1,4 @@
-execute as @e[tag=newBlock] run scoreboard players set @s blockTime 120
+execute as @e[tag=newBlock] run scoreboard players set @s blockTime 100
 execute as @e[tag=newBlock] run tag @s add block
 execute as @e[tag=newBlock,tag=main,type=minecraft:armor_stand] at @s run particle minecraft:block minecraft:cobblestone ~ ~.5 ~ 0.25 0.25 0.25 0.025 30 force
 execute as @e[tag=newBlock,tag=main,type=minecraft:armor_stand] at @s run playsound minecraft:block.stone.place block @a ~ ~ ~ 2 1

@@ -158,10 +158,6 @@ scoreboard objectives add hadTridentCount dummy
 scoreboard objectives remove blockTime
 scoreboard objectives add blockTime dummy
 
-scoreboard objectives remove blockButton
-scoreboard objectives add blockButton dummy
-scoreboard players set count blockButton 0 
-
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
 scoreboard objectives add dead deathCount

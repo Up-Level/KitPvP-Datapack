@@ -12,6 +12,11 @@ scoreboard players set @s cdSpear 0
 # Reset Pirate Scoreboards
 scoreboard players set @s cdBoat 0
 
+# Reset Earthbender Scoreboards
+scoreboard players set @s cdPath 0
+scoreboard players operation @s pathCharges = pathCharges cooldown
+scoreboard players set @s cdWall 0
+
 # Other Scorebaords
 scoreboard players set @s crouchTime 0
 scoreboard players set @s killsSinceDeath 0
