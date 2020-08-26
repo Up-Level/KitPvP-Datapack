@@ -20,6 +20,7 @@ execute if entity @s[scores={carrotStickBin=1}] run clear @s minecraft:carrot_on
 execute unless score @s pathCharges = pathCharges cooldown run scoreboard players add @s cdPath 1
 
 execute if score @s cdPath = path cooldown run scoreboard players add @s pathCharges 1
+execute if score @s cdPath = path cooldown run clear @s minecraft:carrot_on_a_stick
 execute if score @s cdPath = path cooldown run scoreboard players set @s cdPath 0
 
 execute if score @s pathCharges = pathCharges cooldown run scoreboard players set @s cdPath 0
