@@ -1,4 +1,9 @@
 
+replaceitem entity @s armor.feet minecraft:iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
+replaceitem entity @s armor.legs minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:4}]}
+
+replaceitem entity @s hotbar.0 minecraft:stone_axe{Unbreakable:1}
+
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] if entity @s[scores={pathCharges=1}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:2,Unbreakable:1b,display:{Name:'[{"text":"Create Path","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] if entity @s[scores={pathCharges=2}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:3,Unbreakable:1b,display:{Name:'[{"text":"Create Path","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] if entity @s[scores={pathCharges=3..}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:4,Unbreakable:1b,display:{Name:'[{"text":"Create Path","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
