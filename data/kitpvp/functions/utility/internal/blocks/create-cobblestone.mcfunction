@@ -10,5 +10,5 @@ summon minecraft:area_effect_cloud 0 20 2000 {Tags:["newBlock","temp"],WaitTime:
 effect give @e[type=!minecraft:shulker,tag=temp] minecraft:invisibility 99999 0 true
 
 tp @e[type=armor_stand,tag=temp,tag=main] ~ ~ ~
-tp @e[type=armor_stand,tag=temp,tag=!main] ~ ~-0.375 ~
+tp @e[type=area_effect_cloud,tag=temp,tag=!main] ~ ~-0.375 ~
 tag @e remove temp
