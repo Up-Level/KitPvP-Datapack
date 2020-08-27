@@ -7,7 +7,7 @@
 summon minecraft:armor_stand 0 20 2000 {Tags:["newBlock","temp","main"],Invisible:1,NoGravity:1,Marker:1b,Passengers:[{id:"falling_block",BlockState:{Name:"minecraft:cobblestone"},Data:0,Time:1,NoAI:1b,DropItem:0,Tags:["newBlock"],NoGravity:1b,Glowing:0b}]}
 summon minecraft:area_effect_cloud 0 20 2000 {Tags:["newBlock","temp"],WaitTime:0,Duration:5000,Radius:0.1,Particle:"block air",Passengers:[{id:shulker,AttachFace:1,Invulnerable:1,PersistenceRequired:1,NoAI:1,Silent:1,Tags:["newBlock","temp"]}]}
 
-effect give @e[type=!minecraft:shulker,tag=temp] minecraft:invisibility 99999 0 true
+effect give @e[type=minecraft:shulker,tag=temp] minecraft:invisibility 99999 0 true
 
 tp @e[type=armor_stand,tag=temp,tag=main] ~ ~ ~
 tp @e[type=area_effect_cloud,tag=temp,tag=!main] ~ ~-0.375 ~
