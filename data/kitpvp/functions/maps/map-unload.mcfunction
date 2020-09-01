@@ -1,3 +1,5 @@
+kill @e[type=armor_stand,tag=SpawnPoint]
+
 execute if score map settings matches 1 positioned 0 100 0 run function kitpvp:maps/01-four-corners/unload
 execute if score map settings matches 2 positioned 2000 100 0 run function kitpvp:maps/02-sheerdrop/unload
 execute if score map settings matches 3 positioned 4000 100 0 run function kitpvp:maps/03-cargo/unload
