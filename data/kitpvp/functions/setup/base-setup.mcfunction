@@ -16,6 +16,7 @@ scoreboard players set gamemode-bin settings 0
 scoreboard players set gamemode-running settings 0
 scoreboard players set crossbow-arrow-speed-multiplier settings 1
 scoreboard players set fishing-rod-speed-multiplier settings 2
+scoreboard players set spawn-distance settings 15
 
 scoreboard objectives remove number
 scoreboard objectives add number dummy
@@ -157,6 +158,9 @@ scoreboard objectives add hadTridentCount dummy
 
 scoreboard objectives remove blockTime
 scoreboard objectives add blockTime dummy
+
+scoreboard objectives remove temp
+scoreboard objectives add temp Dummy
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
