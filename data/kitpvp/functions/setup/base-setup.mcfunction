@@ -160,7 +160,7 @@ scoreboard objectives remove blockTime
 scoreboard objectives add blockTime dummy
 
 scoreboard objectives remove temp
-scoreboard objectives add temp Dummy
+scoreboard objectives add temp dummy
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead
