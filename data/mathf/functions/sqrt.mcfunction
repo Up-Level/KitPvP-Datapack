@@ -8,4 +8,4 @@ scoreboard players set sqrtCount mData 0
 scoreboard players operation out0 mIO = inp0 mIO
 scoreboard players operation out0 mIO /= #2 const
 
-function mathf:sqrt-loop
+function mathf:private/sqrt-loop
