@@ -6,17 +6,8 @@ execute as @a[scores={optIn=1,respawn=0},gamemode=!spectator] run function kitpv
 execute as @a[scores={dropRedDyeBin=1}] run function kitpvp:on-env-death
 execute as @a[scores={dropRedDyeBin=1}] run kill @s
 
-#region Run map specific commands
-execute if score map settings matches 1 positioned 0 100 0 run function kitpvp:maps/01-four-corners
-execute if score map settings matches 2 positioned 2000 100 0 run function kitpvp:maps/02-sheerdrop
-execute if score map settings matches 3 positioned 4000 100 0 run function kitpvp:maps/03-cargo
-execute if score map settings matches 4 positioned 6000 100 0 run function kitpvp:maps/04-arena
-execute if score map settings matches 5 positioned 8000 100 0 run function kitpvp:maps/05-survival-beginnings
-execute if score map settings matches 6 positioned 9000 100 0 run function kitpvp:maps/06-temple
-execute if score map settings matches 7 positioned 10000 100 0 run function kitpvp:maps/07-enchanted-forest
-execute if score map settings matches 8 positioned 12000 64 0 run function kitpvp:maps/08-gulag
-execute if score map settings matches 9 positioned 14000 64 0 run function kitpvp:maps/09-water-treatment
-#endregion
+# Run map specific commands
+function kitpvp:maps/map-tick
 
 # On death, do these commands
 execute as @a[scores={dead=1}] run function kitpvp:on-death

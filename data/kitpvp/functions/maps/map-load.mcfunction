@@ -1,0 +1,9 @@
+execute if score map settings matches 1 positioned 0 100 0 run function kitpvp:maps/01-four-corners/load
+execute if score map settings matches 2 positioned 2000 100 0 run function kitpvp:maps/02-sheerdrop/load
+execute if score map settings matches 3 positioned 4000 100 0 run function kitpvp:maps/03-cargo/load
+execute if score map settings matches 4 positioned 6000 100 0 run function kitpvp:maps/04-arena/load
+execute if score map settings matches 5 positioned 8000 100 0 run function kitpvp:maps/05-survival-beginnings/load
+execute if score map settings matches 6 positioned 9000 100 0 run function kitpvp:maps/06-temple/load
+execute if score map settings matches 7 positioned 10000 100 0 run function kitpvp:maps/07-enchanted-forest/load
+execute if score map settings matches 8 positioned 12000 64 0 run function kitpvp:maps/08-gulag/load
+execute if score map settings matches 9 positioned 14000 64 0 run function kitpvp:maps/09-water-treatment/load
