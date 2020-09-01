@@ -1,9 +1,0 @@
-forceload remove -79 -78 78 78
-forceload remove 1960 -54 2019 10
-forceload remove 3979 -26 4019 81
-forceload remove 5964 -33 6037 35
-forceload remove 7850 -150 8150 150
-forceload remove 8850 -150 9150 150
-forceload remove 9869 -134 10134 129
-forceload remove 11958 -38 12014 38
-forceload remove 13967 -23 14042 22

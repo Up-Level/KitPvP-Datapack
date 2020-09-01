@@ -1,0 +1,9 @@
+function kitpvp:maps/01-four-corners/unforceload
+function kitpvp:maps/02-sheerdrop/unforceload
+function kitpvp:maps/03-cargo/unforceload
+function kitpvp:maps/04-arena/unforceload
+function kitpvp:maps/05-survival-beginnings/unforceload
+function kitpvp:maps/06-temple/unforceload
+function kitpvp:maps/07-enchanted-forest/unforceload
+function kitpvp:maps/08-gulag/unforceload
+function kitpvp:maps/09-water-treatment/unforceload

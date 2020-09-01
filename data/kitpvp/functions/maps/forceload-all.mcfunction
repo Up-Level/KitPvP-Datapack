@@ -1,0 +1,9 @@
+function kitpvp:maps/01-four-corners/forceload
+function kitpvp:maps/02-sheerdrop/forceload
+function kitpvp:maps/03-cargo/forceload
+function kitpvp:maps/04-arena/forceload
+function kitpvp:maps/05-survival-beginnings/forceload
+function kitpvp:maps/06-temple/forceload
+function kitpvp:maps/07-enchanted-forest/forceload
+function kitpvp:maps/08-gulag/forceload
+function kitpvp:maps/09-water-treatment/forceload
