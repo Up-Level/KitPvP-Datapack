@@ -320,6 +320,10 @@ team modify infected color dark_green
 # Make all players run the on-join function to avoid issues.
 scoreboard players set @a joinBin 1
 
+function kitpvp:maps/forceload-all
 kill @e[name=point-corner]
 kill @e[name=active-point]
+kill @e[tag=SpawnPoint]
+function kitpvp:maps/unforceload-all
+
 bossbar set 0 players

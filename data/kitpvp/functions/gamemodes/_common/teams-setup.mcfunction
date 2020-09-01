@@ -1,6 +1,3 @@
-# Teleport Teams to the Map
-function kitpvp:utility/internal/teams-map-tp
-
 # Initiate Common Teams Gamemode Scoreboards
 scoreboard players set redPlayers gm_general 0
 scoreboard players set bluePlayers gm_general 0
@@ -15,3 +12,6 @@ scoreboard players set yellowKills gm_general 0
 # Put non-team players on the team with the lowest amount of players (that isn't 0)
 scoreboard players set lastTeamChoice team 0
 execute as @a[team=none,scores={optIn=1},sort=random] run function kitpvp:utility/internal/join-smallest-team
+
+# Teleport Teams to the Map
+function kitpvp:utility/internal/map-teleport/4-teams
