@@ -5,11 +5,11 @@ execute as @a if score @s menuTriggers matches 1 run scoreboard players reset @s
 execute as @a if score @s menuTriggers matches 2 run scoreboard players set @s optIn 1
 
 # Select Teams
-execute as @a if score @s menuTriggers matches 4 run function kitpvp:configure/teams/selectred
-execute as @a if score @s menuTriggers matches 5 run function kitpvp:configure/teams/selectblue
-execute as @a if score @s menuTriggers matches 6 run function kitpvp:configure/teams/selectgreen
-execute as @a if score @s menuTriggers matches 7 run function kitpvp:configure/teams/selectyellow
-execute as @a if score @s menuTriggers matches 8 run function kitpvp:configure/teams/selectnone
+execute as @a if score @s menuTriggers matches 4 run team join red
+execute as @a if score @s menuTriggers matches 5 run team join blue
+execute as @a if score @s menuTriggers matches 6 run team join green
+execute as @a if score @s menuTriggers matches 7 run team join yellow
+execute as @a if score @s menuTriggers matches 8 run team join none
 
 # Set SeeEffects setting
 execute as @a if score @s menuTriggers matches 9 run scoreboard players set @s seeEffects 0

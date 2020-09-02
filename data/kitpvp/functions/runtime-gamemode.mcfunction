@@ -9,9 +9,6 @@ execute as @a[scores={dropRedDyeBin=1}] run kill @s
 # Run map specific commands
 function kitpvp:maps/map-tick
 
-# On death, do these commands
-execute as @a[scores={dead=1}] run function kitpvp:on-death
-
 #region Run gamemode runtimes
 execute if score run gm_general matches 1 run function kitpvp:gamemodes/001-lives-s/001-runtime
 execute if score run gm_general matches 3 run function kitpvp:gamemodes/002-deathmatch-s/002-runtime

@@ -1,10 +1,10 @@
 # General runtime commands
-execute as @a run execute unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
+execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
 kill @e[type=item,tag=!dontDelete]
 
-#Im gonna put it here but rewritten
+# Give the teleport book to admins
 execute as @a run function kitpvp:utility/internal/give-teleport-book
 
 # Detect if player is in a liquid or a waterlogged block
@@ -15,7 +15,7 @@ execute as @a at @s if block ~ ~ ~ #kitpvp:liquidblocks run scoreboard players s
 function kitpvp:projectiles
 function kitpvp:blocks
 
-# Keep player position on scoreboard
+# Store player position on scoreboard
 execute as @a store result score @s playerX run data get entity @s Pos[0] 100
 execute as @a store result score @s playerY run data get entity @s Pos[1] 100
 execute as @a store result score @s playerZ run data get entity @s Pos[2] 100
@@ -23,21 +23,21 @@ execute as @a store result score @s playerZ run data get entity @s Pos[2] 100
 # Runtime during gamemode
 execute if score gamemode-running settings matches 1 run function kitpvp:runtime-gamemode
 
-# Runtime not during gamemode
+# Runtime during spawn
 function kitpvp:runtime-spawn
 
-# Give a Player if they have a giveClass value
+# Players with a giveClass score will get their class regardless of a gamemode running
 execute as @a[scores={giveClass=1}] run function kitpvp:class-runtime
 
 # On death, do these commands
-execute unless score gamemode-running settings matches 1 as @a[scores={dead=1}] run function kitpvp:on-death
+execute as @a[scores={dead=1}] run function kitpvp:on-death
 
 # Reset CrouchTime if not crouching
 execute as @a[scores={crouchBin=0}] run scoreboard players set @s crouchTime 0
 
 execute as @a unless entity @s[scores={giveClass=1}] run scoreboard players set @s giveClass 0
 
-# Check if play has joined and run on-join
+# Check if player has joined and run on-join
 tag @a[scores={joinBin=1..}] remove joined
 execute as @a[tag=!joined] run function kitpvp:on-join
 
