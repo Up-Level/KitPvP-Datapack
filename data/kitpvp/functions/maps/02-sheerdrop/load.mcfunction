@@ -21,6 +21,6 @@ execute positioned 2011 93 -21 run function kitpvp:utility/internal/map-teleport
 execute positioned 2011 93 -33 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 2005 93 -39 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 2005 99 -27 run function kitpvp:utility/internal/map-teleport/create-spawn
-execute positioned 2001 93 -5 run function kitpvp:utility/internal/map-teleport/create-spawn
+execute positioned 2003 93 -4 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 1993 105 -27 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 1987 120 -10 run function kitpvp:utility/internal/map-teleport/create-spawn
