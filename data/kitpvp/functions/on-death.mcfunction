@@ -10,7 +10,7 @@ execute as @a[scores={dead=1}] run tellraw @a [{"selector":"@s","color":"red"},{
 
 # If environmental
 execute as @a[scores={dead=1}] if score map settings matches 1 if entity @s[scores={playerY=..0025}] run function kitpvp:on-env-death
-execute as @a[scores={dead=1}] if score map settings matches 2 if entity @s[scores={playerY=..0025}] run function kitpvp:on-env-death
+execute as @a[scores={dead=1}] if score map settings matches 2 if entity @s[scores={playerY=..1325}] run function kitpvp:on-env-death
 execute as @a[scores={dead=1}] if score map settings matches 3 if entity @s[scores={playerY=..7725}] run function kitpvp:on-env-death
 execute as @a[scores={dead=1}] if score map settings matches 4 if entity @s[scores={playerY=..0025}] run function kitpvp:on-env-death
 execute as @a[scores={dead=1}] if score map settings matches 5 if entity @s[scores={playerY=..0025}] run function kitpvp:on-env-death
