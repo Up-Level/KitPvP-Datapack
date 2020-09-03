@@ -22,6 +22,11 @@ execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=jugge
 
 execute if entity @s[team=juggernaut] run tag @a[scores={optIn=1},team=juggernautTeam] add targets_enemy
 
+#Zombie
+execute if entity @s[team=uninfected] run tag @a[scores={optIn=1},team=infected] add targets_enemy
+
+execute if entity @s[team=infected] run tag @a[scores={optIn=1},team=uninfected] add targets_enemy
+
 #Select out lucky winner
 execute at @s run tag @e[tag=targets_enemy,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen_enemy
 
