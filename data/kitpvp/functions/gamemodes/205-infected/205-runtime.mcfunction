@@ -29,6 +29,8 @@ execute unless score Players-Infected gm_sidebar matches 0 run execute as @a[tea
 execute store result score players gm_general if entity @a[tag=livePlayer]
 
 execute if score players gm_general = Players-Infected gm_sidebar if score Players-Remaining gm_sidebar matches 0 run scoreboard players set winner gm_general 1
+
+execute if score Players-Infected gm_general matches 0 run scoreboard players set winner gm_general 2
 execute if score ticks gm_general matches 0 run scoreboard players set winner gm_general 2
 
 execute unless score winner gm_general matches 0 run function kitpvp:gamemodes/205-infected/205-stop
