@@ -8,15 +8,20 @@ tag @s add self
 execute in overworld unless block 0 83 1990 minecraft:shulker_box run setblock 0 83 1990 minecraft:shulker_box
 
 #Teams
-execute if entity @s[team=red] run tag @a[scores={optIn=1},team=red] add targets_friend
-execute if entity @s[team=blue] run tag @a[scores={optIn=1},team=blue] add targets_friend
-execute if entity @s[team=green] run tag @a[scores={optIn=1},team=green] add targets_friend
-execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=yellow] add targets_friend
+execute if entity @s[team=red] run tag @a[scores={optIn=1},team=red,tag=!self] add targets_friend
+execute if entity @s[team=blue] run tag @a[scores={optIn=1},team=blue,tag=!self] add targets_friend
+execute if entity @s[team=green] run tag @a[scores={optIn=1},team=green,tag=!self] add targets_friend
+execute if entity @s[team=yellow] run tag @a[scores={optIn=1},team=yellow,tag=!self] add targets_friend
 
 #Jugg
-execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernautTeam] add targets_friend
+execute if entity @s[team=juggernautTeam] run tag @a[scores={optIn=1},team=juggernautTeam,tag=!self] add targets_friend
 
-execute if entity @s[team=juggernaut] run tag @a[scores={optIn=1},team=juggernaut] add targets_friend
+execute if entity @s[team=juggernaut] run tag @a[scores={optIn=1},team=juggernaut,tag=!self] add targets_friend
+
+#Zombie
+execute if entity @s[team=uninfected] run tag @a[scores={optIn=1},team=uninfected,tag=!self] add targets_friend
+
+execute if entity @s[team=infected] run tag @a[scores={optIn=1},team=infected,tag=!self] add targets_friend
 
 #Select out lucky winner
 execute at @s run tag @e[tag=targets_friend,limit=1,sort=nearest,scores={respawn=0},gamemode=!spectator] add chosen_friend
