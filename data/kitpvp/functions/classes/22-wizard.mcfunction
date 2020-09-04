@@ -37,11 +37,14 @@ execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scor
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] at @s positioned ~ ~3 ~ positioned ^1 ^ ^ run function kitpvp:utility/internal/projectiles/arrow
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] at @s positioned ~ ~3 ~ positioned ^-1 ^ ^ run function kitpvp:utility/internal/projectiles/arrow
 
+#Mobility
 
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run effect give @s minecraft:speed 5 0
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run effect give @s minecraft:slow_falling 5 0
 
 execute if entity @s[scores={carrotStickBin=1}] at @s run tag @e remove owner
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=1}] run scoreboard players add @s classMode 1
-execute if entity @s[scores={carrotStickBin=1,crouchBin=1,classMode=2..}] run scoreboard players set @s classMode 0
+execute if entity @s[scores={carrotStickBin=1,crouchBin=1,classMode=3..}] run scoreboard players set @s classMode 0
 
 attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
