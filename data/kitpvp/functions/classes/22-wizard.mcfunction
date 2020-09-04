@@ -12,9 +12,9 @@ execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players ope
 execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow1 temp = out1 mIO
 execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow2 temp = out2 mIO
 
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot0 temp = out0 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot1 temp = out1 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot2 temp = out2 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation mot0 temp = out0 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation mot1 temp = out1 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation mot2 temp = out2 mIO
 
 execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.5 ~ run function kitpvp:utility/internal/projectiles/fireball
 
