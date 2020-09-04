@@ -16,7 +16,6 @@ scoreboard players operation vecZ mData = inp2 mIO
 
 function mathf:vector/magnitude
 scoreboard players operation magnitude mData = out0 mIO
-tellraw @a ["Magnitude: ",{"score": {"name": "magnitude","objective": "mData"}}]
 
 scoreboard players operation out0 mIO = vecX mData
 scoreboard players operation out0 mIO *= #100 const
