@@ -5,6 +5,7 @@ scoreboard players set #2 const 2
 scoreboard players set #3 const 3
 scoreboard players set #5 const 5
 scoreboard players set #6 const 6
+scoreboard players set #10 const 10
 scoreboard players set #100 const 100
 scoreboard players set #120 const 120
 scoreboard players set #180 const 180
