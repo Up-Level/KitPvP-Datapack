@@ -5,6 +5,7 @@
 #  Credit to https://github.com/ImCoolYeah105/Datapack-Utilities/issues/5#issuecomment-433670044
 
 scoreboard players set sqrtCount mData 0
+scoreboard players set prevSqrtValue mData 0
 scoreboard players operation out0 mIO = inp0 mIO
 scoreboard players operation out0 mIO /= #2 const
 

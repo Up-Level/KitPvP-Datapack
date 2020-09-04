@@ -28,3 +28,8 @@ scoreboard objectives add mData dummy
 
 scoreboard objectives remove mIO
 scoreboard objectives add mIO dummy
+
+scoreboard objectives remove mConfig
+scoreboard objectives add mConfig dummy
+
+scoreboard players set debugInfo mConfig 0
