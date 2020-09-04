@@ -5,28 +5,28 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 
 execute if entity @s[scores={carrotStickBin=1}] at @s run function kitpvp:utility/internal/get-closest-enemy
 
-tag @e[tag=chosen_enemy] add entity1
-tag @s add entity0
-tag @s add owner
+execute if entity @s[scores={carrotStickBin=1}] at @s run tag @e[tag=chosen_enemy] add entity1
+execute if entity @s[scores={carrotStickBin=1}] at @s run tag @s add entity0
+execute if entity @s[scores={carrotStickBin=1}] at @s run tag @s add owner
 
-function mathf:minecraft/vector-between-entities
+execute if entity @s[scores={carrotStickBin=1}] at @s run function mathf:minecraft/vector-between-entities
 
-scoreboard players operation inp0 mIO = out0 mIO
-scoreboard players operation inp1 mIO = out1 mIO
-scoreboard players operation inp2 mIO = out2 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation inp0 mIO = out0 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation inp1 mIO = out1 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation inp2 mIO = out2 mIO
 
-function mathf:vector/normalise
+execute if entity @s[scores={carrotStickBin=1}] at @s run function mathf:vector/normalise
 
-scoreboard players operation mot0 temp = out0 mIO
-scoreboard players operation mot1 temp = out1 mIO
-scoreboard players operation mot2 temp = out2 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation mot0 temp = out0 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation mot1 temp = out1 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation mot2 temp = out2 mIO
 
-scoreboard players operation pow0 temp = out0 mIO
-scoreboard players operation pow1 temp = out1 mIO
-scoreboard players operation pow2 temp = out2 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow0 temp = out0 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow1 temp = out1 mIO
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow2 temp = out2 mIO
 
 execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.65 ~ run function kitpvp:utility/internal/projectiles/fireball
 
-tag @e remove owner
+execute if entity @s[scores={carrotStickBin=1}] at @s run tag @e remove owner
 
 attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
