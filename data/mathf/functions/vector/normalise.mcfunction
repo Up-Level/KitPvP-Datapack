@@ -1,6 +1,6 @@
 
 #> Normalise Vector
-#  Input is as Follows:
+#  Input is as follows:
 #  Vector x (Scale 100) = inp0 mIO
 #  Vector y (Scale 100) = inp1 mIO
 #  Vector z (Scale 100) = inp2 mIO
