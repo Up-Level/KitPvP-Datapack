@@ -16,7 +16,7 @@ scoreboard players set gamemode-bin settings 0
 scoreboard players set gamemode-running settings 0
 scoreboard players set crossbow-arrow-speed-multiplier settings 1
 scoreboard players set fishing-rod-speed-multiplier settings 2
-scoreboard players set spawn-distance settings 1500
+scoreboard players set spawn-distance settings 15
 # ^15 blocks
 
 scoreboard objectives remove number
