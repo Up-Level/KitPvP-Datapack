@@ -3,7 +3,7 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
-execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~ ~ run function function kitpvp:utility/internal/get-closest-enemy
+execute if entity @s[scores={carrotStickBin=1}] at @s run function kitpvp:utility/internal/get-closest-enemy
 tag @e[tag=chosen_enemy] add target
 tag @s add owner
 execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.65 ~ run function kitpvp:utility/internal/projectiles/shulker_bullet
