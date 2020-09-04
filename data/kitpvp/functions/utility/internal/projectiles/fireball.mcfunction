@@ -8,8 +8,8 @@ execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] Motion[
 execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] Motion[1] double 0.01 run scoreboard players get mot1 temp
 execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] Motion[2] double 0.01 run scoreboard players get mot2 temp
 
-execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] power[0] double 0.01 run scoreboard players get pow0 temp
-execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] power[1] double 0.01 run scoreboard players get pow1 temp
-execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] power[2] double 0.01 run scoreboard players get pow2 temp
+execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] power[0] double 0.001 run scoreboard players get pow0 temp
+execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] power[1] double 0.001 run scoreboard players get pow1 temp
+execute store result entity @e[type=minecraft:fireball,limit=1,tag=temp] power[2] double 0.001 run scoreboard players get pow2 temp
 
 tag @e[tag=temp] remove temp
