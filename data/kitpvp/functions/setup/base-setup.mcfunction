@@ -8,6 +8,9 @@ tag @a remove vip
 scoreboard objectives remove class
 scoreboard objectives add class dummy
 
+scoreboard objectives remove classMode
+scoreboard objectives add classMode dummy
+
 scoreboard objectives remove settings
 scoreboard objectives add settings dummy
 scoreboard players set map settings 0
@@ -162,6 +165,7 @@ scoreboard objectives add blockTime dummy
 
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy
+
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead

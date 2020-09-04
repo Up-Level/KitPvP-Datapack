@@ -1,3 +1,5 @@
+scoreboard players set @s classMode 0
+
 # Reset Chef Scoreboards
 scoreboard players set @s cdChefFork 0
 
