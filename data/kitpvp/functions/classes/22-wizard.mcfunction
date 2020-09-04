@@ -3,6 +3,14 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players set pow0 temp 0
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players set pow1 temp -1
+execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players set pow2 temp 0
+
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players set mot0 temp 0
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players set mot1 temp -1
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players set mot2 temp 0
+
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run function kitpvp:utility/internal/get-closest-enemy
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run tag @e[tag=chosen_enemy] add entity1
@@ -15,9 +23,6 @@ execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run function mathf:vector/normalise
 
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot0 temp = out0 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot1 temp = out1 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot2 temp = out2 mIO
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=1}] at @s run function mathf:minecraft/entity-rotation-to-vector
 
@@ -28,7 +33,11 @@ execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players ope
 execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow1 temp = out1 mIO
 execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow2 temp = out2 mIO
 
-execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.65 ~ run function kitpvp:utility/internal/projectiles/fireball
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot0 temp = out0 mIO
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot1 temp = out1 mIO
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot2 temp = out2 mIO
+
+execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.5 ~ run function kitpvp:utility/internal/projectiles/fireball
 
 execute if entity @s[scores={carrotStickBin=1}] at @s run tag @e remove owner
 
