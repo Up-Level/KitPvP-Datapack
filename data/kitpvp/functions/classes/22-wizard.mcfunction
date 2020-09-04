@@ -16,7 +16,7 @@ execute if entity @s[scores={carrotStickBin=1}] run scoreboard players operation
 execute if entity @s[scores={carrotStickBin=1}] run scoreboard players operation mot1 temp = out1 mIO
 execute if entity @s[scores={carrotStickBin=1}] run scoreboard players operation mot2 temp = out2 mIO
 
-execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.5 ~ run function kitpvp:utility/internal/projectiles/fireball
+execute if entity @s[scores={carrotStickBin=1}] at @s positioned ~ ~1.5 ~ run function kitpvp:utility/internal/projectiles/arrow
 
 execute if entity @s[scores={carrotStickBin=1}] at @s run tag @e remove owner
 
