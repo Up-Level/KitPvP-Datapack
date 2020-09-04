@@ -13,6 +13,8 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick
 execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 execute unless entity @s[scores={cdWall=..0}] run clear @s minecraft:warped_fungus_on_a_stick
 
+execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] run scoreboard players set blockTime temp 80
+
 execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^0.25 run function kitpvp:utility/internal/blocks/create-cobblestone
 execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^1.25 run function kitpvp:utility/internal/blocks/create-cobblestone
 execute if entity @s[scores={carrotStickBin=1,pathCharges=1..}] at @s positioned ~ ~-1.1 ~ positioned ^ ^ ^2.25 run function kitpvp:utility/internal/blocks/create-cobblestone
@@ -30,6 +32,8 @@ execute if score @s cdPath = path cooldown run clear @s minecraft:carrot_on_a_st
 execute if score @s cdPath = path cooldown run scoreboard players set @s cdPath 0
 
 execute if score @s pathCharges = pathCharges cooldown run scoreboard players set @s cdPath 0
+
+execute if entity @s[scores={fungusStickBin=1,cdWall=..0}] run scoreboard players set blockTime temp 80
 
 execute if entity @s[scores={fungusStickBin=1,cdWall=..0}] at @s positioned ~ ~1 ~ positioned ^1 ^1 ^3 run function kitpvp:utility/internal/blocks/create-cobblestone
 execute if entity @s[scores={fungusStickBin=1,cdWall=..0}] at @s positioned ~ ~1 ~ positioned ^0 ^1 ^3 run function kitpvp:utility/internal/blocks/create-cobblestone
