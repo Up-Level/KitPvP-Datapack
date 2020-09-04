@@ -6,8 +6,6 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run function kitpvp:utility/internal/get-closest-enemy
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run tag @e[tag=chosen_enemy] add entity1
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run tag @s add entity0
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run tag @s add owner
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run function mathf:minecraft/vector-between-entities
 
@@ -22,6 +20,9 @@ execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0}] at @s run scoreboard players operation mot2 temp = out2 mIO
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=1}] at @s run function mathf:minecraft/entity-rotation-to-vector
+
+execute if entity @s[scores={carrotStickBin=1}] at @s run tag @s add entity0
+execute if entity @s[scores={carrotStickBin=1}] at @s run tag @s add owner
 
 execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow0 temp = out0 mIO
 execute if entity @s[scores={carrotStickBin=1}] at @s run scoreboard players operation pow1 temp = out1 mIO
