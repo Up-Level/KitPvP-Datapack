@@ -3,7 +3,7 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
-execute if entity @s[scores={carrotStickBin=1,crouchBin=1}] at @s run function mathf:minecraft/entity-rotation-to-vector
+execute if entity @s[scores={carrotStickBin=1}] at @s run function mathf:minecraft/entity-rotation-to-vector
 
 execute if entity @s[scores={carrotStickBin=1}] at @s run tag @s add entity0
 execute if entity @s[scores={carrotStickBin=1}] at @s run tag @s add owner
