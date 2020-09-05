@@ -3,31 +3,34 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
+
+function kitpvp:classes/common-functions/regen-resource-tick
+
 # Fireball
+scoreboard players set costAllowed temp 0
+
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players set cost temp 5
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run function kitpvp:classes/common-functions/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/spend-resource
 execute if score costAllowed temp matches 1 at @s positioned ~ ~1.5 ~ run function kitpvp:classes/common-functions/projectile-shoot/fireball-aim
 
+# Arrow
 scoreboard players set costAllowed temp 0
 
-# Arrow
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players set cost temp 2
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run function kitpvp:classes/common-functions/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/spend-resource
 execute if score costAllowed temp matches 1 at @s positioned ~ ~3 ~ positioned ^-1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-aim
 execute if score costAllowed temp matches 1 at @s positioned ~ ~3 ~ positioned ^1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-aim
 
+# Mobility
 scoreboard players set costAllowed temp 0
 
-# Mobility
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run scoreboard players set cost temp 3
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run function kitpvp:classes/common-functions/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/spend-resource
 execute if score costAllowed temp matches 1 run effect give @s minecraft:speed 5 0
 execute if score costAllowed temp matches 1 run effect give @s minecraft:slow_falling 5 0
-
-scoreboard players set costAllowed temp 0
 
 # Switch Mode
 

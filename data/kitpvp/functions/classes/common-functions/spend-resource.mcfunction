@@ -1,2 +1,2 @@
-scoreboard players operation @s classResource -= cost temp
-tellraw @s {"score":{"name":"@s","objective":"classResource"}}
+scoreboard players operation @s resource -= cost temp
+tellraw @s {"score":{"name":"@s","objective":"resource"}}

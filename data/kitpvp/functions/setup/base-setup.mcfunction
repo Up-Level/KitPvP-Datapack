@@ -11,11 +11,11 @@ scoreboard objectives add class dummy
 scoreboard objectives remove classMode
 scoreboard objectives add classMode dummy
 
-scoreboard objectives remove classResource
-scoreboard objectives add classResource dummy
+scoreboard objectives remove resource
+scoreboard objectives add resource dummy
 
-scoreboard objectives remove classResourceR
-scoreboard objectives add classResourceR dummy
+scoreboard objectives remove resourceTime
+scoreboard objectives add resourceTime dummy
 
 scoreboard objectives remove settings
 scoreboard objectives add settings dummy
