@@ -7,4 +7,4 @@ execute if score powerCount mData matches 5 run scoreboard players operation ang
 execute if score powerCount mData matches 7 run scoreboard players operation angPow7 mData = sinPower mData
 execute if score powerCount mData matches 9 run scoreboard players operation angPow9 mData = sinPower mData
 
-execute if score powerCount mData matches ..8 run function mathf:sin/private/sin-loop
+execute if score powerCount mData matches ..8 run function mathf:trig/private/sin-loop

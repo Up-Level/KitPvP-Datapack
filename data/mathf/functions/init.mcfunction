@@ -12,6 +12,7 @@ scoreboard players set #180 const 180
 scoreboard players set #1000 const 1000
 scoreboard players set #1800 const 1800
 scoreboard players set #5040 const 5040
+scoreboard players set #9000 const 9000
 scoreboard players set #10000 const 10000
 scoreboard players set #18000 const 18000
 scoreboard players set #36000 const 36000
