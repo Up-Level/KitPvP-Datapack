@@ -1,3 +1,5 @@
+tag @e remove owner
+
 tag @s add entity0
 tag @s add owner
 
