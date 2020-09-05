@@ -7,9 +7,9 @@ tag @s add owner
 
 function mathf:minecraft/vector-between-entities
 
-scoreboard players operation inp0 temp = out0 mIO
-scoreboard players operation inp1 temp = out1 mIO
-scoreboard players operation inp2 temp = out2 mIO
+scoreboard players operation inp0 mIO = out0 mIO
+scoreboard players operation inp1 mIO = out1 mIO
+scoreboard players operation inp2 mIO = out2 mIO
 
 function mathf:vector/normalise
 
