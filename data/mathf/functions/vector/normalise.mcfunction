@@ -28,3 +28,5 @@ scoreboard players operation out1 mIO /= magnitude mData
 scoreboard players operation out2 mIO = vecZ mData
 scoreboard players operation out2 mIO *= #100 const
 scoreboard players operation out2 mIO /= magnitude mData
+
+execute if score debugInfo mConfig matches 1 run tellraw @a ["Vector: (",{"score":{"name":"out0","objective":"mIO"}},", ", {"score":{"name":"out1","objective":"mIO"}},", ", {"score":{"name":"out2","objective":"mIO"}},")"]
