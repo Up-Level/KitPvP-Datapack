@@ -24,8 +24,8 @@ scoreboard players set costAllowed temp 0
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run scoreboard players set cost temp 3
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run function kitpvp:classes/common-functions/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/spend-resource
-execute if score costAllowed temp matches 1  run effect give @s minecraft:speed 5 0
-execute if score costAllowed temp matches 1  run effect give @s minecraft:slow_falling 5 0
+execute if score costAllowed temp matches 1 run effect give @s minecraft:speed 5 0
+execute if score costAllowed temp matches 1 run effect give @s minecraft:slow_falling 5 0
 
 scoreboard players set costAllowed temp 0
 
