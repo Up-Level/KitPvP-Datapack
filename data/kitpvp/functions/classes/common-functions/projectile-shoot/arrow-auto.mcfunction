@@ -11,7 +11,7 @@ tag @e[tag=temp] add entity0
 tag @e[tag=chosen_enemy,limit=1] add entity1
 tag @s add owner
 
-function mathf:minecraft/vector-between-entities
+function mathf:minecraft/vector-between-entities-eyes
 
 scoreboard players operation inp0 mIO = out0 mIO
 scoreboard players operation inp1 mIO = out1 mIO
