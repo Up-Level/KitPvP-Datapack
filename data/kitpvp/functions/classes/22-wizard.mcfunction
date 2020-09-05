@@ -4,38 +4,12 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] i
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
 # Fireball
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run tag @s add entity0
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run tag @s add owner
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run function mathf:minecraft/entity-rotation-to-vector
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players operation pow0 temp = out0 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players operation pow1 temp = out1 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players operation pow2 temp = out2 mIO
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players operation mot0 temp = out0 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players operation mot1 temp = out1 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scoreboard players operation mot2 temp = out2 mIO
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] at @s positioned ~ ~1.5 ~ run function kitpvp:utility/internal/projectiles/fireball
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] at @s positioned ~ ~1.5 ~ run function kitpvp:classes/common-functions/projectile-shoot/fireball-aim
 
 # Arrow
 
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run tag @s add entity0
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run tag @s add owner
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run function mathf:minecraft/entity-rotation-to-vector
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players operation pow0 temp = out0 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players operation pow1 temp = out1 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players operation pow2 temp = out2 mIO
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players operation mot0 temp = out0 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players operation mot1 temp = out1 mIO
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players operation mot2 temp = out2 mIO
-
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] at @s positioned ~ ~3 ~ positioned ^1 ^ ^ run function kitpvp:utility/internal/projectiles/arrow
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] at @s positioned ~ ~3 ~ positioned ^-1 ^ ^ run function kitpvp:utility/internal/projectiles/arrow
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] at @s positioned ~ ~3 ~ positioned ^-1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-aim
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] at @s positioned ~ ~3 ~ positioned ^1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-aim
 
 #Mobility
 
