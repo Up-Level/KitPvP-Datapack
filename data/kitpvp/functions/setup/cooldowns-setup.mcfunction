@@ -9,8 +9,6 @@ scoreboard players set path cooldown 200
 scoreboard players set pathCharges cooldown 3
 scoreboard players set wall cooldown 200
 
-scoreboard players set blockTime cooldown 80
-
 scoreboard objectives remove cdChefFork
 scoreboard objectives add cdChefFork dummy
 
