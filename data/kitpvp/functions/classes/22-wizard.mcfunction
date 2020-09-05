@@ -20,8 +20,8 @@ scoreboard players set costAllowed temp 0
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players set cost temp 2
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run function kitpvp:classes/common-functions/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/spend-resource
-execute if score costAllowed temp matches 1 at @s positioned ~ ~3 ~ positioned ^-1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-aim
-execute if score costAllowed temp matches 1 at @s positioned ~ ~3 ~ positioned ^1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-aim
+execute if score costAllowed temp matches 1 at @s positioned ~ ~3 ~ positioned ^-1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-auto
+execute if score costAllowed temp matches 1 at @s positioned ~ ~3 ~ positioned ^1 ^ ^ run function kitpvp:classes/common-functions/projectile-shoot/arrow-auto
 
 # Mobility
 scoreboard players set costAllowed temp 0
