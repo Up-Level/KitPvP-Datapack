@@ -14,8 +14,8 @@ scoreboard objectives add classMode dummy
 scoreboard objectives remove classResource
 scoreboard objectives add classResource dummy
 
-scoreboard objectives remove classResourceRate
-scoreboard objectives add classResourceRate dummy
+scoreboard objectives remove classResourceR
+scoreboard objectives add classResourceR dummy
 
 scoreboard objectives remove settings
 scoreboard objectives add settings dummy
