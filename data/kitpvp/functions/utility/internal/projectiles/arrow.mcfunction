@@ -7,6 +7,3 @@ data modify entity @e[type=minecraft:fireball,limit=1,tag=temp] Owner set from e
 execute store result entity @e[type=minecraft:arrow,limit=1,tag=temp] Motion[0] double 0.01 run scoreboard players get mot0 temp
 execute store result entity @e[type=minecraft:arrow,limit=1,tag=temp] Motion[1] double 0.01 run scoreboard players get mot1 temp
 execute store result entity @e[type=minecraft:arrow,limit=1,tag=temp] Motion[2] double 0.01 run scoreboard players get mot2 temp
-
-
-tag @e[tag=temp] remove temp
