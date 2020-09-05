@@ -20,6 +20,7 @@ scoreboard players operation inp2 mIO = out2 mIO
 function mathf:vector/normalise
 
 data modify entity @e[tag=temp,limit=1] NoGravity set value 1
+data modify entity @e[tag=temp,limit=1] PierceLevel set value 3
 
 scoreboard players operation @e[tag=temp] motionO0 = out0 mIO
 scoreboard players operation @e[tag=temp] motionO1 = out1 mIO
