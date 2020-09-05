@@ -7,7 +7,7 @@ tag @s add owner
 
 function mathf:minecraft/vector-between-entities
 
-scoreboard players operation imp0 temp = out0 mIO
+scoreboard players operation inp0 temp = out0 mIO
 scoreboard players operation imp1 temp = out1 mIO
 scoreboard players operation imp2 temp = out2 mIO
 
