@@ -172,6 +172,13 @@ scoreboard objectives add blockTime dummy
 scoreboard objectives remove temp
 scoreboard objectives add temp dummy
 
+scoreboard objectives remove motionO0
+scoreboard objectives remove motionO1
+scoreboard objectives remove motionO2
+
+scoreboard objectives add motionO0 dummy
+scoreboard objectives add motionO1 dummy
+scoreboard objectives add motionO2 dummy
 
 # Binary Scoreboards (1 or 0)
 scoreboard objectives remove dead

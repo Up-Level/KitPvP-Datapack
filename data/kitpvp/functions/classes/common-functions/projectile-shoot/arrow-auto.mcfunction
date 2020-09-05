@@ -19,10 +19,11 @@ scoreboard players operation inp2 mIO = out2 mIO
 
 function mathf:vector/normalise
 
-execute store result entity @e[type=minecraft:arrow,limit=1,tag=temp] Motion[0] double 0.02 run scoreboard players get out0 mIO
-execute store result entity @e[type=minecraft:arrow,limit=1,tag=temp] Motion[1] double 0.02 run scoreboard players get out1 mIO
-execute store result entity @e[type=minecraft:arrow,limit=1,tag=temp] Motion[2] double 0.02 run scoreboard players get out2 mIO
-
 data modify entity @e[tag=temp,limit=1] NoGravity set value 1
 
+scoreboard players operation @e[tag=temp] motionO0 = out0 mIO
+scoreboard players operation @e[tag=temp] motionO1 = out1 mIO
+scoreboard players operation @e[tag=temp] motionO2 = out2 mIO
+
+tag @e[tag=temp] add Override
 tag @e[tag=temp] remove temp

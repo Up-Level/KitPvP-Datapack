@@ -2,6 +2,7 @@
 execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
+execute as @e[type=!player,tag=Override] at @s run function kitpvp:utility/internal/motion-override
 execute as @e[type=minecraft:shulker_bullet,nbt={Steps:1}] at @s unless entity @p[distance=..50] run kill @s
 kill @e[type=item,tag=!dontDelete]
 
