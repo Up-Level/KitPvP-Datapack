@@ -1,5 +1,7 @@
 
 #> Distance between 2 entities
+#  More performant over longer distances as is rounded to int
+#  
 #  First entity should have the tag entity0
 #  Second entity should have the tag entity1
 #  Output will be in out0 mIO

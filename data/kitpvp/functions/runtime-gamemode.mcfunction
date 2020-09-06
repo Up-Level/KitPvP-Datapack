@@ -39,7 +39,3 @@ execute as @a[tag=livePlayer] if score @s throwTrident matches 1 run scoreboard 
 
 execute as @a[tag=livePlayer,scores={respawn=0}] if score @s damageTakenBin matches 0 run scoreboard players add @s sinceTakenDamage 1
 execute as @a[tag=livePlayer] if score @s damageTakenBin > zero number run scoreboard players set @s sinceTakenDamage 0
-
-# Reset KillBin
-scoreboard players set @a[scores={killBin=1..}] killBin 0
-scoreboard players set @a[scores={killBin=..-1}] killBin 0

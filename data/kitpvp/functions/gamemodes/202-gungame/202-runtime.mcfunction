@@ -6,12 +6,12 @@ execute as @a[scores={optIn=1,killBin=1..}] run scoreboard players operation @s 
 execute as @a[scores={optIn=1,killBin=..-1}] run scoreboard players operation @s class += @s killBin
 
 execute as @a[scores={optIn=1,class=..1}] run scoreboard players set @s class 2
-execute as @a[scores={optIn=1,class=23..}] run scoreboard players set @s class 22
+execute as @a[scores={optIn=1,class=21..}] run scoreboard players set @s class 20
 
 clear @a[scores={optIn=1,killBin=1..}]
 effect clear @a[scores={optIn=1,killBin=1..}]
 
-execute if entity @a[scores={optIn=1,class=22}] run function kitpvp:gamemodes/202-gungame/202-stop
+execute if entity @a[scores={optIn=1,class=20}] run function kitpvp:gamemodes/202-gungame/202-stop
 
 execute as @a[scores={optIn=1}] run scoreboard players operation @s gm_displayClass = @s class
 execute as @a[scores={optIn=1}] run scoreboard players operation @s gm_displayClass -= one number

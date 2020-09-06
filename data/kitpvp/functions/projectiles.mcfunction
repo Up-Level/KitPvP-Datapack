@@ -1,19 +1,19 @@
 # Modify newly created and some old projectiles
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=0}] at @s run effect give @a[distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=0}] at @s run effect give @a[distance=..4] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=1}] at @s run effect give @a[team=!red,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=2}] at @s run effect give @a[team=!blue,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=3}] at @s run effect give @a[team=!green,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=4}] at @s run effect give @a[team=!yellow,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=1}] at @s run effect give @a[team=!red,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=2}] at @s run effect give @a[team=!blue,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=3}] at @s run effect give @a[team=!green,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=4}] at @s run effect give @a[team=!yellow,distance=..4] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=5}] at @s run effect give @a[team=!juggernautTeam,distance=..4] minecraft:hunger 5 127
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14,ProjectileTeam=6}] at @s run effect give @a[team=!juggernaut,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=5}] at @s run effect give @a[team=!juggernautTeam,distance=..4] minecraft:hunger 5 127
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=6}] at @s run effect give @a[team=!juggernaut,distance=..4] minecraft:hunger 5 127
 
-execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=14}] at @s run particle minecraft:dust 0 0.25 0 1.5 ~ ~ ~ 2 1 2 0.025 500 force
+execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13}] at @s run particle minecraft:dust 0 0.25 0 1.5 ~ ~ ~ 2 1 2 0.025 500 force
 
-#execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15,ProjectileTeam=3}] at @s run say we have landed the ship
+#execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13,ProjectileTeam=3}] at @s run say we have landed the ship
 
-#execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15}] at @s run data modify entity @e[type=minecraft:potion,limit=1,sort=nearest] Owner set from entity @s Owner
+#execute as @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=13}] at @s run data modify entity @e[type=minecraft:potion,limit=1,sort=nearest] Owner set from entity @s Owner
 #execute as @e[type=minecraft:potion] at @s run data modify entity @s Owner set from entity @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile,scores={classProjectile=15},limit=1,sort=nearest,distance=..3] Owner
 
 kill @e[type=minecraft:trident,nbt={DealtDamage:1b},tag=projectile]
@@ -58,9 +58,9 @@ execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=pr
 execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
 execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
 
-# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
-# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
-# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=15}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
+# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
+# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
+# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
 
 execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion0 *= fishing-rod-speed-multiplier settings
 execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion1 *= fishing-rod-speed-multiplier settings
