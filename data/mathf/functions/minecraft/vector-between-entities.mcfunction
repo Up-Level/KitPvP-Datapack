@@ -6,7 +6,7 @@
 #  
 #  Note that the entity0 and entity1 tags will be removed from the entities afterwards.
 
-# Get the positions of both entites
+# Get the positions of both entities
 execute store result score inp0 mIO as @e[tag=entity0,limit=1] run data get entity @s Pos[0] 100
 execute store result score inp1 mIO as @e[tag=entity0,limit=1] run data get entity @s Pos[1] 100
 execute store result score inp2 mIO as @e[tag=entity0,limit=1] run data get entity @s Pos[2] 100
