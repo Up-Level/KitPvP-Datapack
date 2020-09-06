@@ -5,11 +5,12 @@ scoreboard players set mot0 temp 0
 scoreboard players set mot1 temp 0
 scoreboard players set mot2 temp 0
 
+tag @s add owner
+
 function kitpvp:utility/internal/projectiles/arrow
 
 tag @e[tag=temp] add entity0
 tag @e[tag=chosen_enemy,limit=1] add entity1
-tag @s add owner
 
 function mathf:minecraft/vector-between-entities-eyes
 
