@@ -11,4 +11,4 @@ execute if score timer gamemodeStart matches 20 run playsound minecraft:block.no
 
 execute if score timer gamemodeStart matches 0 run title @a[scores={optIn=1}] title "Go!"
 execute if score timer gamemodeStart matches 0 run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] 0 65 1000 1000000 2 1
-execute if score timer gamemodeStart matches 0 run scoreboard players set gamemode-bin settings 1
+execute if score timer gamemodeStart matches 0 run scoreboard players set gamemodeBin settings 1

@@ -20,7 +20,7 @@ execute as @a[scores={dead=1}] if score map settings matches 8 if entity @s[scor
 execute as @a[scores={dead=1}] if score map settings matches 9 if entity @s[scores={playerY=..0025}] run function kitpvp:on-env-death
 
 # Send player to respawn area if gamemode is running
-execute as @a[scores={dead=1,optIn=1}] if score gamemode-running settings matches 1 run scoreboard players set @s respawn 1
+execute as @a[scores={dead=1,optIn=1}] if score gamemodeRunning settings matches 1 run scoreboard players set @s respawn 1
 scoreboard players set @a[scores={respawn=1,dead=1}] respawnTimer 200
 scoreboard players set @a[scores={dead=1},team=uninfected] respawnTimer 5
 

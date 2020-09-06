@@ -23,7 +23,7 @@ execute as @a store result score @s playerY run data get entity @s Pos[1] 100
 execute as @a store result score @s playerZ run data get entity @s Pos[2] 100
 
 # Runtime during gamemode
-execute if score gamemode-running settings matches 1 run function kitpvp:runtime-gamemode
+execute if score gamemodeRunning settings matches 1 run function kitpvp:runtime-gamemode
 
 # Reset KillBin
 scoreboard players set @a[scores={killBin=1..}] killBin 0

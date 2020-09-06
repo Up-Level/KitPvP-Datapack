@@ -21,11 +21,11 @@ scoreboard objectives remove settings
 scoreboard objectives add settings dummy
 scoreboard players set map settings 0
 scoreboard players set gamemode settings 0
-scoreboard players set gamemode-bin settings 0
-scoreboard players set gamemode-running settings 0
-scoreboard players set crossbow-arrow-speed-multiplier settings 1
-scoreboard players set fishing-rod-speed-multiplier settings 2
-scoreboard players set spawn-distance settings 15
+scoreboard players set gamemodeBin settings 0
+scoreboard players set gamemodeRunning settings 0
+scoreboard players set crossbowArrowSpeedMultiplier settings 1
+scoreboard players set fishingRodSpeedMultiplier settings 2
+scoreboard players set spawnDistance settings 15
 # ^15 blocks
 
 scoreboard objectives remove number

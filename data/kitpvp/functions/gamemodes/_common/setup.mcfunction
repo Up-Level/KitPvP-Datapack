@@ -49,5 +49,5 @@ scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay list
 
 # Set Gamemode to Running
-scoreboard players set gamemode-running settings 1
-scoreboard players set gamemode-bin settings 0
+scoreboard players set gamemodeRunning settings 1
+scoreboard players set gamemodeBin settings 0

@@ -54,17 +54,17 @@ execute as @e[tag=!projectileChecked,tag=projectile] run execute store result sc
 execute as @e[tag=!projectileChecked,tag=projectile] run execute store result score @s projMotion1 run data get entity @s Motion[1] 1000
 execute as @e[tag=!projectileChecked,tag=projectile] run execute store result score @s projMotion2 run data get entity @s Motion[2] 1000
 
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
-execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion0 *= crossbowArrowSpeedMultiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion1 *= crossbowArrowSpeedMultiplier settings
+execute as @e[type=arrow,nbt={ShotFromCrossbow:1b},tag=!projectileChecked,tag=projectile,scores={classProjectile=10}] run scoreboard players operation @s projMotion2 *= crossbowArrowSpeedMultiplier settings
 
-# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion0 *= crossbow-arrow-speed-multiplier settings
-# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion1 *= crossbow-arrow-speed-multiplier settings
-# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion2 *= crossbow-arrow-speed-multiplier settings
+# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion0 *= crossbowArrowSpeedMultiplier settings
+# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion1 *= crossbowArrowSpeedMultiplier settings
+# execute as @e[type=trident,tag=!projectileChecked,tag=projectile,scores={classProjectile=13}] run scoreboard players operation @s projMotion2 *= crossbowArrowSpeedMultiplier settings
 
-execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion0 *= fishing-rod-speed-multiplier settings
-execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion1 *= fishing-rod-speed-multiplier settings
-execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion2 *= fishing-rod-speed-multiplier settings
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion0 *= fishingRodSpeedMultiplier settings
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion1 *= fishingRodSpeedMultiplier settings
+execute as @e[type=fishing_bobber,tag=!projectileChecked,tag=projectile] run scoreboard players operation @s projMotion2 *= fishingRodSpeedMultiplier settings
 
 
 execute as @e[type=!potion,tag=!projectileChecked,tag=projectile] store result entity @s Motion[0] double 0.001 run scoreboard players get @s projMotion0

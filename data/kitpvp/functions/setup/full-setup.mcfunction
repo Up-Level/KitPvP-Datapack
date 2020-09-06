@@ -1,6 +1,3 @@
-# Hard Restart Resets everything, coordinate armor stands will have to be moved again.
-tellraw @a {"text":"KitPvP Datapack has been Fully Setup.","color":"gold"}
-
 function kitpvp:setup/base-setup
 
 # Gamerules
@@ -45,3 +42,6 @@ summon armor_stand 9000.5 72.00 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName
 summon armor_stand 10045.5 78.00 24.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-07"}'}
 summon armor_stand 11986.5 64.00 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-08"}'}
 summon armor_stand 14023.5 53.00 15.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-09"}'}
+
+scoreboard players set fullSetup settings 1
+tellraw @a {"text":"KitPvP Datapack has been Fully Setup.","color":"gold"}

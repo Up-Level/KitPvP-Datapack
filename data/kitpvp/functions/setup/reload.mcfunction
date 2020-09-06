@@ -1,4 +1,6 @@
 # Runs when the Datapack is reloaded.
-tellraw @a {"text":"KitPvP Datapack has Reloaded.","color":"gold"}
 
-function kitpvp:setup/base-setup
+execute if score fullSetup settings matches 1 run function kitpvp:setup/base-setup
+execute unless score fullSetup settings matches 1 run function kitpvp:setup/full-setup
+
+tellraw @a {"text":"KitPvP Datapack has Reloaded.","color":"gold"}
