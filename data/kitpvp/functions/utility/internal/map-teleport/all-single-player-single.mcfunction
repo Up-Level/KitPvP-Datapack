@@ -1,7 +1,7 @@
 
 tag @e[tag=GoodSpawn,limit=1,sort=random] add temp
 
-execute store success score tele-succ temp run tp @s @e[tag=temp]
+execute store success score tele-succ temp run tp @s @e[tag=temp,limit=1]
 tag @e[tag=temp] rmove GoodSpawn
 
 # Force(if we dont find a spawn just use any old one)
