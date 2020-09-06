@@ -236,16 +236,7 @@ scoreboard objectives add usedCrossbowBin minecraft.used:crossbow
 scoreboard objectives remove usedTridentBin
 scoreboard objectives add usedTridentBin minecraft.used:minecraft.trident
 
-scoreboard objectives remove opped
 scoreboard objectives add opped dummy
-
-scoreboard players set TetTheGreedy opped 1
-scoreboard players set UpLevel opped 1
-scoreboard players set HourLongZero opped 1
-scoreboard players set Leo_is_a_Legend opped 1
-scoreboard players set CloudJumper607 opped 1
-scoreboard players set WhiteLightninJa opped 1
-scoreboard players set Blackbird7342 opped 1
 
 scoreboard objectives remove debug
 scoreboard objectives add debug dummy

@@ -23,6 +23,10 @@ difficulty normal
 scoreboard objectives remove wins
 scoreboard objectives add wins dummy
 
+# Add opped scoreboard (here to not reset after every reload)
+scoreboard objectives remove opped
+scoreboard objectives add opped dummy
+
 # Add Coordinate Stands
 function kitpvp:maps/forceload-all
 kill @e[type=minecraft:armor_stand,nbt={Marker:1b}]
