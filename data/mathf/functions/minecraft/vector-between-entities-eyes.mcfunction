@@ -3,11 +3,11 @@
 #  First entity should have the tag entity0
 #  Second entity should have the tag entity1
 #  Output will be in out0 mIO (Scale 100)
-#  
+#
 #  Note that the entity0 and entity1 tags will be removed from the entities afterwards.
 
-execute at @e[tag=entity0,limit=1] anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["dummy","aec0"]}
-execute at @e[tag=entity1,limit=1] anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["dummy","aec1"]}
+execute at @e[tag=entity0,limit=1] as @s anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["dummy","aec0"]}
+execute at @e[tag=entity1,limit=1] as @s anchored eyes run summon minecraft:area_effect_cloud ^ ^ ^ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["dummy","aec1"]}
 
 # Get the positions of both entities
 execute store result score inp0 mIO as @e[tag=aec0,limit=1] run data get entity @s Pos[0] 100
