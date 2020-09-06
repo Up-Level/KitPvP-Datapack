@@ -37,4 +37,6 @@ execute if score costAllowed temp matches 1 run effect give @s minecraft:slow_fa
 execute if entity @s[scores={carrotStickBin=1,crouchBin=1}] run scoreboard players add @s classMode 1
 execute if entity @s[scores={carrotStickBin=1,crouchBin=1,classMode=3..}] run scoreboard players set @s classMode 0
 
+function kitpvp:classes/common-functions/class-display/mana
+
 attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
