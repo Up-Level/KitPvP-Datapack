@@ -1,5 +1,7 @@
 function kitpvp:maps/05-survival-beginnings/forceload
 
+scoreboard players set spawnDistance settings 15
+
 time set 12000
 
 execute positioned 8033 73 43 run function kitpvp:utility/internal/map-teleport/create-spawn

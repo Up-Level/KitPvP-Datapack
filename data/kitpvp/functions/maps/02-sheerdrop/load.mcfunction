@@ -1,5 +1,7 @@
 function kitpvp:maps/02-sheerdrop/forceload
 
+scoreboard players set spawnDistance settings 10
+
 time set 13500
 
 execute positioned 1969 111 -33 run function kitpvp:utility/internal/map-teleport/create-spawn

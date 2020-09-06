@@ -1,5 +1,7 @@
 function kitpvp:maps/01-four-corners/forceload
 
+scoreboard players set spawnDistance settings 25
+
 gamerule fallDamage false
 time set 6000
 

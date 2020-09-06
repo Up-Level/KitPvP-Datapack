@@ -1,5 +1,9 @@
 function kitpvp:maps/08-gulag/forceload
 
+scoreboard players set spawnDistance settings 10
+
+time set 696969
+
 execute positioned 11972 64 24 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 11986 64 24 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 11999 64 24 run function kitpvp:utility/internal/map-teleport/create-spawn
