@@ -1,6 +1,5 @@
 # Infected Gamemode Setup
 function kitpvp:gamemodes/_common/setup
-function kitpvp:gamemodes/_common/teams-setup
 
 execute as @a[scores={optIn=1}] run function kitpvp:utility/internal/map-teleport/single-player
 

@@ -1,6 +1,5 @@
 # Juggernaut Gamemode Setup
 function kitpvp:gamemodes/_common/setup
-function kitpvp:gamemodes/_common/teams-setup
 
 tellraw @a[scores={optIn=1}] {"text":"This gamemode is Juggernaut. One player is randomly chosen to be the Juggernaut, who has to kill every other person on the map. Everybody else has to try to kill the Juggernaut.","color":"gold"}
 
