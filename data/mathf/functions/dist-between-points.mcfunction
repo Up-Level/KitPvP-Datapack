@@ -36,5 +36,3 @@ scoreboard players operation distSquared mData += zDiff mData
 # Sqrt the distSquared to get the overall distance
 scoreboard players operation inp0 mIO = distSquared mData
 function mathf:sqrt
-
-summon chest_minecart ~ ~ ~ {CustomDisplayTile:1b,Items:[{Slot:0,Count:1,id:"command_block"}]}
