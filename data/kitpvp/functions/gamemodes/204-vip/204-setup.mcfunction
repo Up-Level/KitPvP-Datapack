@@ -31,3 +31,6 @@ scoreboard players set redEliminated gm_general 0
 scoreboard players set blueEliminated gm_general 0
 scoreboard players set greenEliminated gm_general 0
 scoreboard players set yellowEliminated gm_general 0
+
+# Teleport Teams to the Map
+function kitpvp:utility/internal/map-teleport/4-teams

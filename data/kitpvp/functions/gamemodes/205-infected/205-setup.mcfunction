@@ -21,3 +21,6 @@ scoreboard players operation ticks gm_general = seconds gm_general
 scoreboard players operation ticks gm_general *= twenty number
 
 function kitpvp:gamemodes/_common/bossbar
+
+tag @a[scores={optIn=1},team=none] add group
+function kitpvp:utility/internal/map-teleport/all-single-player

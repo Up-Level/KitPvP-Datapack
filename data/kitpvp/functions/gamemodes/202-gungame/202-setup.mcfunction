@@ -15,3 +15,6 @@ scoreboard players set @a[scores={optIn=1}] gm_sidebar 1
 scoreboard objectives setdisplay sidebar gm_sidebar
 
 scoreboard players set run gm_general 6
+
+tag @a[scores={optIn=1},team=none] add group
+function kitpvp:utility/internal/map-teleport/all-single-player

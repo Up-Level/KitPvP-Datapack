@@ -2,8 +2,8 @@
 clear @a[scores={optIn=1}]
 effect clear @a[scores={optIn=1}]
 
-# Teleport Players to the Map
-execute as @a[scores={optIn=1},team=none] run function kitpvp:utility/internal/map-teleport/single-player
+# Teleport Players to the Map, Moved this because its waisting needed preformance
+#execute as @a[scores={optIn=1},team=none] run function kitpvp:utility/internal/map-teleport/single-player
 
 # Set up spectators
 scoreboard players reset @a[tag=spectator] optIn

@@ -25,3 +25,6 @@ scoreboard players operation ticks gm_general = seconds gm_general
 scoreboard players operation ticks gm_general *= twenty number
 
 function kitpvp:gamemodes/_common/bossbar
+
+# Teleport Teams to the Map
+function kitpvp:utility/internal/map-teleport/4-teams

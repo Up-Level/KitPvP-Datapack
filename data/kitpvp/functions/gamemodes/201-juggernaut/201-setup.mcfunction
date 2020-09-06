@@ -23,9 +23,6 @@ scoreboard objectives setdisplay list gm_kills
 scoreboard players set playersTeam gm_general 0
 scoreboard players set playersJuggernaut gm_general 0
 
-tag @a[team=juggernautTeam,scores={optIn=1}] add group
-function kitpvp:utility/internal/map-teleport/multi-player
-
 scoreboard players set seconds gm_general 500
 scoreboard players set run gm_general 5
 scoreboard players set winner gm_general 0
@@ -34,3 +31,9 @@ scoreboard players operation ticks gm_general = seconds gm_general
 scoreboard players operation ticks gm_general *= twenty number
 
 function kitpvp:gamemodes/_common/bossbar
+
+tag @a[team=juggernaut,scores={optIn=1}] add group
+function kitpvp:utility/internal/map-teleport/multi-player
+
+tag @a[team=juggernautTeam,scores={optIn=1}] add group
+function kitpvp:utility/internal/map-teleport/multi-player

@@ -10,3 +10,6 @@ scoreboard objectives setdisplay sidebar gm_kills
 
 scoreboard players set winner gm_general 0
 scoreboard players set run gm_general 2
+
+# Teleport Teams to the Map
+function kitpvp:utility/internal/map-teleport/4-teams
