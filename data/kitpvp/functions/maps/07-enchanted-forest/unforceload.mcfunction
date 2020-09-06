@@ -1,1 +1,2 @@
-forceload remove 9869 -134 10134 129
+forceload remove 9869 -134 10000 129
+forceload remove 10000 -134 10134 129
