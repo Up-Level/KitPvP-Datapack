@@ -1,8 +1,6 @@
 # Infected Gamemode Setup
 function kitpvp:gamemodes/_common/setup
 
-execute as @a[scores={optIn=1}] run function kitpvp:utility/internal/map-teleport/single-player
-
 tellraw @a[scores={optIn=1}] {"text":"This gamemode is Infected. One player is randomly chosen to be Infected after 10 seconds, who has to infect every other person on the map. All uninfected players must try to survive until the time runs out.","color":"gold"}
 
 team join uninfected @a[scores={optIn=1}]
