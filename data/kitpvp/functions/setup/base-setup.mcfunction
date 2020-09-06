@@ -1,7 +1,5 @@
 # Generic Setup to be ran in other restart functions.
 
-playsound minecraft:block.note_block.pling master @a 0 65 1000 10000 1 1
-
 tag @a remove vip
 
 # Integer Scoreboards
@@ -17,7 +15,6 @@ scoreboard objectives add resource dummy
 scoreboard objectives remove resourceTime
 scoreboard objectives add resourceTime dummy
 
-scoreboard objectives remove settings
 scoreboard objectives add settings dummy
 scoreboard players set map settings 0
 scoreboard players set gamemode settings 0
