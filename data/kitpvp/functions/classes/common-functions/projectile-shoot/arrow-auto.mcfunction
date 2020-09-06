@@ -11,7 +11,7 @@ tag @e[tag=temp] add entity0
 tag @e[tag=chosen_enemy,limit=1] add entity1
 tag @s add owner
 
-function mathf:minecraft/vector-between-entities
+function mathf:minecraft/vector-between-entities-eyes
 
 scoreboard players operation inp0 mIO = out0 mIO
 scoreboard players operation inp1 mIO = out1 mIO
@@ -20,6 +20,7 @@ scoreboard players operation inp2 mIO = out2 mIO
 function mathf:vector/normalise
 
 data modify entity @e[tag=temp,limit=1] NoGravity set value 1
+data modify entity @e[tag=temp,limit=1] PierceLevel set value 3
 
 scoreboard players operation @e[tag=temp] motionO0 = out0 mIO
 scoreboard players operation @e[tag=temp] motionO1 = out1 mIO
