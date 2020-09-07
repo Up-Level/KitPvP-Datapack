@@ -1,5 +1,5 @@
 # General runtime commands
-execute as @a unless entity @s[nbt={Inventory:[{id:"minecraft:golden_carrot"}]}] run replaceitem entity @s[gamemode=adventure] hotbar.8 minecraft:golden_carrot
+execute as @a[gamemode=adventure] run replaceitem entity @s hotbar.8 minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
 execute as @e[type=!player,tag=Override] at @s run function kitpvp:utility/internal/motion-override
