@@ -43,7 +43,7 @@ scoreboard players set costAllowed temp 0
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=3}] run scoreboard players set cost temp 3
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=3}] run function kitpvp:classes/common-functions/resource/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:utility/internal/get-closest-enemy
-execute if score costAllowed temp matches 1 unless entity @e[tag=targets_enemy,distance=..15] run scoreboard players set costAllowed temp 0
+execute if score costAllowed temp matches 1 at @s unless entity @e[tag=targets_enemy,distance=..10] run scoreboard players set costAllowed temp 0
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/resource/spend-resource
 execute if score costAllowed temp matches 1 run tag @s add owner
 execute if score costAllowed temp matches 1 as @e[tag=targets_enemy] at @s run function kitpvp:utility/internal/projectiles/fang
