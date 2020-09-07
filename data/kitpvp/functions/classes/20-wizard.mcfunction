@@ -1,7 +1,7 @@
 
 replaceitem entity @s[scores={classMode=0}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:5,Unbreakable:1b,display:{Name:'[{"text":"Wand of Fire (5)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
 replaceitem entity @s[scores={classMode=1}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:6,Unbreakable:1b,display:{Name:'[{"text":"Wand of Air (7)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
-replaceitem entity @s[scores={classMode=2}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:8,Unbreakable:1b,display:{Name:'[{"text":"Wand of Holy Light (7)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
+replaceitem entity @s[scores={classMode=2}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:8,Unbreakable:1b,display:{Name:'[{"text":"Wand of Light (10)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
@@ -27,7 +27,7 @@ execute if score costAllowed temp matches 1 run effect give @s minecraft:speed 5
 execute if score costAllowed temp matches 1 run effect give @s minecraft:slow_falling 5 0
 execute if score costAllowed temp matches 1 run effect give @s minecraft:jump_boost 5 1
 
-# Mobility
+# Regen
 scoreboard players set costAllowed temp 0
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run scoreboard players set cost temp 10
@@ -36,10 +36,22 @@ execute if score costAllowed temp matches 1 run function kitpvp:classes/common-f
 execute if score costAllowed temp matches 1 run effect give @s minecraft:saturation 5 0
 execute if score costAllowed temp matches 1 run effect give @s minecraft:regeneration 6 1
 
+# Fang
+scoreboard players set costAllowed temp 0
+
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=3}] run scoreboard players set cost temp 3
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=3}] run function kitpvp:classes/common-functions/resource/check-resource
+execute if score costAllowed temp matches 1 run function kitpvp:utility/internal/get-closest-enemy
+execute if score costAllowed temp matches 1 unless entity @e[tag=chosen_enemy,distance=..15] run scoreboard players set costAllowed temp 0
+execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/resource/spend-resource
+execute if score costAllowed temp matches 1 run tag @s owner
+execute if score costAllowed temp matches 1 at @e[tag=chosen_enemy] run function kitpvp:utility/internal/projectiles/fang
+execute if score costAllowed temp matches 1 run tag @s remove owner
+
 # Switch Mode
 
 execute if entity @s[scores={carrotStickBin=1,crouchBin=1}] run scoreboard players add @s classMode 1
-execute if entity @s[scores={carrotStickBin=1,crouchBin=1,classMode=3..}] run scoreboard players set @s classMode 0
+execute if entity @s[scores={carrotStickBin=1,crouchBin=1,classMode=4..}] run scoreboard players set @s classMode 0
 
 function kitpvp:classes/common-functions/resource/display/mana
 
