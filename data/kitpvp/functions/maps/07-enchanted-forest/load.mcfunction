@@ -1,5 +1,7 @@
 function kitpvp:maps/07-enchanted-forest/forceload
 
+scoreboard players set spawnDistance settings 20
+
 time set 18000
 
 execute positioned 9976 80 0 run function kitpvp:utility/internal/map-teleport/create-spawn

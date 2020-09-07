@@ -1,5 +1,7 @@
 function kitpvp:maps/03-cargo/forceload
 
+scoreboard players set spawnDistance settings 15
+
 time set 0
 
 execute positioned 4000 102 -7 run function kitpvp:utility/internal/map-teleport/create-spawn

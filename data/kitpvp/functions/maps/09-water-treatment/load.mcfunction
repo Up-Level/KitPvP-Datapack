@@ -1,5 +1,9 @@
 function kitpvp:maps/09-water-treatment/forceload
 
+scoreboard players set spawnDistance settings 10
+
+time set 177013
+
 execute positioned 13987 56 7 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 14007 53 1 run function kitpvp:utility/internal/map-teleport/create-spawn
 execute positioned 14007 53 13 run function kitpvp:utility/internal/map-teleport/create-spawn
