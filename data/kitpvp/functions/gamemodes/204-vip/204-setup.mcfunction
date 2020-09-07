@@ -33,4 +33,6 @@ scoreboard players set greenEliminated gm_general 0
 scoreboard players set yellowEliminated gm_general 0
 
 # Teleport Teams to the Map
+tag @a remove group
+
 function kitpvp:utility/internal/map-teleport/4-teams

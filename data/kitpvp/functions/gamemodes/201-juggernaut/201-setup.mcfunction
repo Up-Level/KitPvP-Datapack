@@ -32,6 +32,8 @@ scoreboard players operation ticks gm_general *= twenty number
 
 function kitpvp:gamemodes/_common/bossbar
 
+tag @a remove group
+
 tag @a[team=juggernaut,scores={optIn=1}] add group
 function kitpvp:utility/internal/map-teleport/multi-player
 

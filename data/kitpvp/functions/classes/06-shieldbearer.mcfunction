@@ -1,7 +1,7 @@
 # Class 6 - Shieldbearer
 
 replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
-replaceitem entity @s weapon.offhand minecraft:shield{Unbreakable:1b}
+execute unless entity @s[nbt={Inventory:[{id:"shield"}]}] run replaceitem entity @s weapon.offhand minecraft:shield{Unbreakable:1b}
 replaceitem entity @s armor.head iron_helmet{Unbreakable:1b}
 replaceitem entity @s armor.chest iron_chestplate{Unbreakable:1b}
 replaceitem entity @s armor.legs iron_leggings{Unbreakable:1b}

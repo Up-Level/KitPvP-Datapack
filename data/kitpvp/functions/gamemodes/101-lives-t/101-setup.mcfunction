@@ -12,4 +12,6 @@ scoreboard players set winner gm_general 0
 scoreboard players set run gm_general 2
 
 # Teleport Teams to the Map
+tag @a remove group
+
 function kitpvp:utility/internal/map-teleport/4-teams

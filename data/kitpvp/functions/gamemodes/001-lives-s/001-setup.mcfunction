@@ -12,5 +12,7 @@ team join none @a[scores={optIn=1}]
 
 scoreboard players set run gm_general 1
 
+tag @a remove group
+
 tag @a[scores={optIn=1},team=none] add group
 function kitpvp:utility/internal/map-teleport/all-single-player

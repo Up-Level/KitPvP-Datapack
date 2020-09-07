@@ -22,5 +22,7 @@ scoreboard players operation ticks gm_general *= twenty number
 
 function kitpvp:gamemodes/_common/bossbar
 
+tag @a remove group
+
 tag @a[scores={optIn=1},team=uninfected] add group
 function kitpvp:utility/internal/map-teleport/all-single-player

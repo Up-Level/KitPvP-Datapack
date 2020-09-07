@@ -3,7 +3,7 @@
 replaceitem entity @s hotbar.0 minecraft:netherite_sword{Unbreakable:1b}
 replaceitem entity @s hotbar.1 minecraft:iron_axe{Unbreakable:1b}
 replaceitem entity @s hotbar.2 bow{Unbreakable:1b}
-replaceitem entity @s weapon.offhand minecraft:shield{Unbreakable:1b}
+execute unless entity @s[nbt={Inventory:[{id:"shield"}]}] run replaceitem entity @s weapon.offhand minecraft:shield{Unbreakable:1b}
 replaceitem entity @s inventory.8 arrow
 
 replaceitem entity @s armor.head netherite_helmet{Unbreakable:1b}
