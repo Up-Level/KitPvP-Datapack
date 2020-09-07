@@ -1,7 +1,7 @@
 # Class 18 - Seeker
 
 replaceitem entity @s hotbar.0 bow{Unbreakable:1b}
-eplaceitem entity @s hotbar.1 minecraft:stone_sword{Unbreakable:1b}
+replaceitem entity @s hotbar.1 minecraft:stone_sword{Unbreakable:1b}
 replaceitem entity @s inventory.8 spectral_arrow
 replaceitem entity @s armor.chest chainmail_chestplate{Unbreakable:1}
 replaceitem entity @s armor.legs leather_leggings{Unbreakable:1}
