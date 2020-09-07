@@ -46,7 +46,7 @@ execute if score costAllowed temp matches 1 run function kitpvp:utility/internal
 execute if score costAllowed temp matches 1 unless entity @e[tag=targets_enemy,distance=..15] run scoreboard players set costAllowed temp 0
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/resource/spend-resource
 execute if score costAllowed temp matches 1 run tag @s add owner
-execute if score costAllowed temp matches 1 as @e[tag=chosen_enemy] at @s run function kitpvp:utility/internal/projectiles/fang
+execute if score costAllowed temp matches 1 as @e[tag=targets_enemy] at @s run function kitpvp:utility/internal/projectiles/fang
 execute if score costAllowed temp matches 1 run tag @s remove owner
 
 # Switch Mode
