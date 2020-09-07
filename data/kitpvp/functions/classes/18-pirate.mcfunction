@@ -4,10 +4,10 @@ replaceitem entity @s armor.chest iron_chestplate{Unbreakable:1b}
 replaceitem entity @s armor.legs chainmail_leggings{Unbreakable:1b}
 replaceitem entity @s armor.feet iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:iron_sword"}]}] run replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
+replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
 
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"}]}] if entity @s[scores={cdBoat=..-1}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Create Boat","italic":false}]',Lore:['[{"text":"Creates a boat for you to ride.","italic":false,"color":"gray"}]']}}
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:warped_fungus_on_a_stick"}]}] run replaceitem entity @s hotbar.2 minecraft:warped_fungus_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Destroy Boat","italic":false}]',Lore:['[{"text":"Destory your previous boat.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={cdBoat=..-1}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Create Boat","italic":false}]',Lore:['[{"text":"Creates a boat for you to ride.","italic":false,"color":"gray"}]']}}
+execute run replaceitem entity @s hotbar.2 minecraft:warped_fungus_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Destroy Boat","italic":false}]',Lore:['[{"text":"Destory your previous boat.","italic":false,"color":"gray"}]']}}
 
 execute unless entity @s[scores={cdBoat=..-1}] run clear @s minecraft:carrot_on_a_stick
 

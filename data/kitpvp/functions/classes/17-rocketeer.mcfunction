@@ -1,6 +1,6 @@
 # Class 20 - Rocketeer
 
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:stone_axe"}]}] run replaceitem entity @s hotbar.0 minecraft:stone_axe{Unbreakable:1b}
+replaceitem entity @s hotbar.0 minecraft:stone_axe{Unbreakable:1b}
 
 replaceitem entity @s[scores={canUseElytra=0}] armor.chest chainmail_chestplate{Unbreakable:1b}
 replaceitem entity @s[scores={canUseElytra=1}] armor.chest elytra{Unbreakable:1b}
