@@ -6,7 +6,7 @@ replaceitem entity @s[scores={classMode=3}] hotbar.0 minecraft:carrot_on_a_stick
 
 replaceitem entity @s armor.chest minecraft:leather_chestplate{display:{color:5225699}}
 replaceitem entity @s armor.legs minecraft:leather_leggings{display:{color:5225699}}
-replaceitem entity @s armor.feet minecraft:leather_boots{display:{color:5225699}}
+replaceitem entity @s armor.feet minecraft:leather_boots{display:{color:5225699},Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
