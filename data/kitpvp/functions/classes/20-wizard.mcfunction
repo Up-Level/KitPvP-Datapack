@@ -1,7 +1,7 @@
 
 replaceitem entity @s[scores={classMode=0}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:5,Unbreakable:1b,display:{Name:'[{"text":"Wand of Fire (5)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
-replaceitem entity @s[scores={classMode=1}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:6,Unbreakable:1b,display:{Name:'[{"text":"Wand of Air (7)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
-replaceitem entity @s[scores={classMode=2}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:8,Unbreakable:1b,display:{Name:'[{"text":"Wand of Light (10)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
+replaceitem entity @s[scores={classMode=1}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:6,Unbreakable:1b,display:{Name:'[{"text":"Wand of Air (5)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
+replaceitem entity @s[scores={classMode=2}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:8,Unbreakable:1b,display:{Name:'[{"text":"Wand of Light (5)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
 replaceitem entity @s[scores={classMode=3}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:9,Unbreakable:1b,display:{Name:'[{"text":"Wand of Dark (3)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
 
 replaceitem entity @s armor.chest minecraft:leather_chestplate{display:{color:5225699}}
@@ -25,7 +25,7 @@ execute if score costAllowed temp matches 1 at @s positioned ~ ~1.5 ~ run functi
 # Mobility
 scoreboard players set costAllowed temp 0
 
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players set cost temp 7
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run scoreboard players set cost temp 5
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=1}] run function kitpvp:classes/common-functions/resource/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/resource/spend-resource
 execute if score costAllowed temp matches 1 run effect give @s minecraft:speed 5 1
@@ -35,7 +35,7 @@ execute if score costAllowed temp matches 1 run effect give @s minecraft:jump_bo
 # Regen
 scoreboard players set costAllowed temp 0
 
-execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run scoreboard players set cost temp 10
+execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run scoreboard players set cost temp 5
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=2}] run function kitpvp:classes/common-functions/resource/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/resource/spend-resource
 execute if score costAllowed temp matches 1 run effect give @s minecraft:saturation 5 0
