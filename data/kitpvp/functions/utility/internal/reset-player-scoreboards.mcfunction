@@ -23,7 +23,10 @@ scoreboard players set @s cdWall 0
 
 # Other Scorebaords
 scoreboard players set @s crouchTime 0
+
 scoreboard players set @s killsSinceDeath 0
+scoreboard players set @s dmgDealtAlive 0
+
 scoreboard players set @s sinceDealtDamage 0
 scoreboard players set @s sinceTakenDamage 0
 

@@ -101,6 +101,9 @@ scoreboard objectives add arrowTime dummy
 scoreboard objectives remove killsSinceDeath
 scoreboard objectives add killsSinceDeath playerKillCount
 
+scoreboard objectives remove dmgDealtAlive
+scoreboard objectives add dmgDealtAlive minecraft.custom:minecraft.damage_dealt
+
 scoreboard objectives remove classProjectile
 scoreboard objectives add classProjectile dummy
 
@@ -232,6 +235,9 @@ scoreboard objectives add usedCrossbowBin minecraft.used:crossbow
 
 scoreboard objectives remove usedTridentBin
 scoreboard objectives add usedTridentBin minecraft.used:minecraft.trident
+
+scoreboard objectives remove usedTotemBin
+scoreboard objectives add usedTotemBin minecraft.used:minecraft.totem_of_undying
 
 scoreboard objectives add opped dummy
 
