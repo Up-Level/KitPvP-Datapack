@@ -4,9 +4,9 @@ replaceitem entity @s[scores={classMode=1}] hotbar.0 minecraft:carrot_on_a_stick
 replaceitem entity @s[scores={classMode=2}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:8,Unbreakable:1b,display:{Name:'[{"text":"Wand of Light (5)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
 replaceitem entity @s[scores={classMode=3}] hotbar.0 minecraft:carrot_on_a_stick{CustomModelData:9,Unbreakable:1b,display:{Name:'[{"text":"Wand of Dark (3)","italic":false}]',Lore:['[{"text":"Shift+Right Click to swap spells.","italic":false,"color":"gray"}]']}}
 
-replaceitem entity @s armor.chest minecraft:leather_chestplate{display:{color:5225699}}
-replaceitem entity @s armor.legs minecraft:leather_leggings{display:{color:5225699}}
-replaceitem entity @s armor.feet minecraft:leather_boots{display:{color:5225699},Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
+replaceitem entity @s armor.chest minecraft:leather_chestplate{display:{color:5225699},Unbreakable:1b}
+replaceitem entity @s armor.legs minecraft:leather_leggings{display:{color:5225699},Unbreakable:1b}
+replaceitem entity @s armor.feet minecraft:leather_boots{display:{color:5225699},Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
 # execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 
