@@ -20,7 +20,7 @@ execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run scor
 execute if entity @s[scores={carrotStickBin=1,crouchBin=0,classMode=0}] run function kitpvp:classes/common-functions/resource/check-resource
 execute if score costAllowed temp matches 1 run function kitpvp:classes/common-functions/resource/spend-resource
 execute if score costAllowed temp matches 1 at @s positioned ~ ~1.5 ~ run function kitpvp:classes/common-functions/projectile-shoot/fireball-aim
-
+execute if score costAllowed temp matches 1 run scoreboard players set @s sinceDealtDamage 0
 
 # Mobility
 scoreboard players set costAllowed temp 0
@@ -53,6 +53,7 @@ execute if score costAllowed temp matches 1 run tag @s add owner
 execute if score costAllowed temp matches 1 at @s as @e[tag=targets_enemy,distance=..10] at @s run function kitpvp:utility/internal/projectiles/fang
 execute if score costAllowed temp matches 1 run tag @e remove temp
 execute if score costAllowed temp matches 1 run tag @s remove owner
+execute if score costAllowed temp matches 1 run scoreboard players set @s sinceDealtDamage 0
 
 # Switch Mode
 

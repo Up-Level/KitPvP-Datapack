@@ -25,7 +25,7 @@ tag @e[type=snowball,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=egg,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=ender_pearl,tag=!projectileChecked,tag=!projectile] add projectile
 tag @e[type=firework_rocket,tag=!projectileChecked,tag=!projectile] add projectile
-tag @e[type=fishing_bobber,tag=!projectileChecked,tag=!projectile] add projectile
+#tag @e[type=fishing_bobber,tag=!projectileChecked,tag=!projectile] add projectile
 
 execute as @e[tag=!projectileChecked,tag=projectile] store result score @s ProjectileUUID0 run data get entity @s Owner[0]
 execute as @e[tag=!projectileChecked,tag=projectile] store result score @s ProjectileUUID1 run data get entity @s Owner[1]
