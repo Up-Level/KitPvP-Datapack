@@ -1,5 +1,5 @@
 
-replaceitem @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
+replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
 
 execute if entity @s[scores={usedTotemBin=0,classMode=1..}] unless entity @s[nbt={Inventory:[{id:"minecraft:totem_of_undying"}]}] run replaceitem entity @s weapon.offhand minecraft:totem_of_undying 1
 execute if score @s usedTotemBin matches 1.. run clear @s minecraft:totem_of_undying 177013
