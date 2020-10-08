@@ -1,8 +1,13 @@
+#> mathf:debug/print-vector
+# 
+# Prints an input vector into chat.
+# 
+# @input
+#   score i0 mathf.io Vector X.
+#   score i1 mathf.io Vector Y.
+#   score i2 mathf.io Vector Z.
+# 
+# @public
+# @context any
 
-#> Print Vector
-#  Input is as follows:
-#  Input Vector x (Scale 100) = inp1 mIO
-#  Input Vector y (Scale 100) = inp2 mIO
-#  Input Vector z (Scale 100) = inp3 mIO
-
-tellraw @a ["Vector: (",{"score":{"name":"inp0","objective":"mIO"}},", ", {"score":{"name":"inp1","objective":"mIO"}},", ", {"score":{"name":"inp2","objective":"mIO"}},")"]
+tellraw @a ["Vector: (",{"score":{"name":"i0","objective":"mathf.io"}},", ", {"score":{"name":"i1","objective":"mathf.io"}},", ", {"score":{"name":"i2","objective":"mathf.io"}},")"]

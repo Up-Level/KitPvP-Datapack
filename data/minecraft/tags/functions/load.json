@@ -1,6 +1,6 @@
 {
 	"values":[
-		"mathf:init",
+		"mathf:internal/init",
 		"kitpvp:setup/reload"
 	]
 }

@@ -1,23 +1,28 @@
+#> mathf:vector/get-vector-between-points
+# 
+# Gets the vector (scale 100) between 2 coordinates.
+# 
+# @input
+#   score i0 mathf.io Initial X coordinate.
+#   score i1 mathf.io Initial Y coordinate.
+#   score i2 mathf.io Initial Z coordinate.
+#   score i3 mathf.io Terminal X coordinate.
+#   score i4 mathf.io Terminal Y coordinate.
+#   score i5 mathf.io Terminal Z coordinate.
+# 
+# @output
+#   score o0 mathf.io Vector X (Scale 100).
+#   score o1 mathf.io Vector Y (Scale 100).
+#   score o2 mathf.io Vector Z (Scale 100).
+# 
+# @public
+# @context any
 
-#> Get Vector between Points
-#  Input is as follows:
-#  Initial point x (Scale 100) = inp0 mIO
-#  Initial point y (Scale 100) = inp1 mIO
-#  Initial point z (Scale 100) = inp2 mIO
-#  Terminal point x (Scale 100) = inp3 mIO
-#  Terminal point y (Scale 100) = inp4 mIO
-#  Terminal point z (Scale 100) = inp5 mIO
-#  
-#  Output is as follows:
-#  Vector x (Scale 100) = out0 mIO
-#  Vector y (Scale 100) = out1 mIO
-#  Vector z (Scale 100) = out2 mIO
+scoreboard players operation o0 mathf.io = i3 mathf.io
+scoreboard players operation o0 mathf.io -= i0 mathf.io
 
-scoreboard players operation out0 mIO = inp3 mIO
-scoreboard players operation out0 mIO -= inp0 mIO
+scoreboard players operation o1 mathf.io = i4 mathf.io
+scoreboard players operation o1 mathf.io -= i1 mathf.io
 
-scoreboard players operation out1 mIO = inp4 mIO
-scoreboard players operation out1 mIO -= inp1 mIO
-
-scoreboard players operation out2 mIO = inp5 mIO
-scoreboard players operation out2 mIO -= inp2 mIO
+scoreboard players operation o2 mathf.io = i5 mathf.io
+scoreboard players operation o2 mathf.io -= i2 mathf.io

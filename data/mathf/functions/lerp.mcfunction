@@ -1,22 +1,30 @@
+#> mathf:lerp
+# 
+# Lerp (Linearly Interpolate)
+# @input
+#   score i0 mathf.io The start point.
+#   score i1 mathf.io The end point.
+#   score i2 mathf.io The interpolant.
+# 
+# @output
+#   score o0 mathf.io The result.
+# 
+# @public
+# @context any
 
-#> Lerp (Linearly Interpolate)
-#  Input:
-#  Start = inp0 mIO
-#  End = inp1 mIO
-#  Interpolant (Clamped from 0-100) = inp2 mIO
-#  
-#  Output:
-#  Value = out0 mIO
+# Throw warning if interpolant is not between 0 and 100.
+execute unless score i2 mathf.io matches 0..100 run data modify storage mathf:throw warning set value "Interpolant was clamped from 0-100. (mathf:lerp)"
+execute unless score i2 mathf.io matches 0..100 run scoreboard players operation i0 mathf.io %= #100 mathf.const
 
-scoreboard players operation start mData = inp0 mIO
-scoreboard players operation end mData = inp1 mIO
+scoreboard players operation start mathf.data = i0 mathf.io
+scoreboard players operation end mathf.data = i1 mathf.io
 
-scoreboard players operation range mData = end mData
-scoreboard players operation range mData -= start mData
+scoreboard players operation range mathf.data = end mathf.data
+scoreboard players operation range mathf.data -= start mathf.data
 
-scoreboard players operation interpolant mData = inp2 mIO
-scoreboard players operation interpolant mData *= range mData
-scoreboard players operation interpolant mData /= #100 const
-scoreboard players operation interpolant mData += start mData
+scoreboard players operation interpolant mathf.data = i2 mathf.io
+scoreboard players operation interpolant mathf.data *= range mathf.data
+scoreboard players operation interpolant mathf.data /= #100 mathf.const
+scoreboard players operation interpolant mathf.data += start mathf.data
 
-scoreboard players operation out0 mIO = interpolant mData
+scoreboard players operation o0 mathf.io = interpolant mathf.data

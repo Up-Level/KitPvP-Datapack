@@ -1,29 +1,29 @@
 
 #> Magnitude
 #  Input is as follows:
-#  Vector (Scale 100) x = inp0 mIO
-#  Vector (Scale 100) y = inp1 mIO
-#  Vector (Scale 100) z = inp2 mIO
+#  Vector (Scale 100) x = i0 mathf.io
+#  Vector (Scale 100) y = i1 mathf.io
+#  Vector (Scale 100) z = i2 mathf.io
 #  
 #  Output is as follows:
-#  Magnitude (Scale 100) = out0 mIO
+#  Magnitude (Scale 100) = o0 mathf.io
 #  
 #  Credit to https://gaming.stackexchange.com/a/348985
 
-scoreboard players operation xDiff mData = inp0 mIO
-scoreboard players operation yDiff mData = inp1 mIO
-scoreboard players operation zDiff mData = inp2 mIO
+scoreboard players operation xDiff mathf.data = i0 mathf.io
+scoreboard players operation yDiff mathf.data = i1 mathf.io
+scoreboard players operation zDiff mathf.data = i2 mathf.io
 
 # Square all differences
-scoreboard players operation xDiff mData *= xDiff mData
-scoreboard players operation yDiff mData *= yDiff mData
-scoreboard players operation zDiff mData *= zDiff mData
+scoreboard players operation xDiff mathf.data *= xDiff mathf.data
+scoreboard players operation yDiff mathf.data *= yDiff mathf.data
+scoreboard players operation zDiff mathf.data *= zDiff mathf.data
 
 # Add distances together
-scoreboard players operation distSquared mData = xDiff mData
-scoreboard players operation distSquared mData += yDiff mData
-scoreboard players operation distSquared mData += zDiff mData
+scoreboard players operation distSquared mathf.data = xDiff mathf.data
+scoreboard players operation distSquared mathf.data += yDiff mathf.data
+scoreboard players operation distSquared mathf.data += zDiff mathf.data
 
 # Sqrt the distSquared to get the overall distance
-scoreboard players operation inp0 mIO = distSquared mData
+scoreboard players operation i0 mathf.io = distSquared mathf.data
 function mathf:sqrt

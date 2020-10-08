@@ -1,10 +1,13 @@
-scoreboard players add powerCount mData 1
-scoreboard players operation sinPower mData *= temp mData
-scoreboard players operation sinPower mData /= #1000 const
+#> mathf:trig/private/sin-loop
+# @within function mathf:trig/sin
 
-execute if score powerCount mData matches 3 run scoreboard players operation angPow3 mData = sinPower mData
-execute if score powerCount mData matches 5 run scoreboard players operation angPow5 mData = sinPower mData
-execute if score powerCount mData matches 7 run scoreboard players operation angPow7 mData = sinPower mData
-execute if score powerCount mData matches 9 run scoreboard players operation angPow9 mData = sinPower mData
+scoreboard players add powerCount mathf.data 1
+scoreboard players operation sinPower mathf.data *= temp mathf.data
+scoreboard players operation sinPower mathf.data /= #1000 mathf.const
 
-execute if score powerCount mData matches ..8 run function mathf:trig/private/sin-loop
+execute if score powerCount mathf.data matches 3 run scoreboard players operation angPow3 mathf.data = sinPower mathf.data
+execute if score powerCount mathf.data matches 5 run scoreboard players operation angPow5 mathf.data = sinPower mathf.data
+execute if score powerCount mathf.data matches 7 run scoreboard players operation angPow7 mathf.data = sinPower mathf.data
+execute if score powerCount mathf.data matches 9 run scoreboard players operation angPow9 mathf.data = sinPower mathf.data
+
+execute if score powerCount mathf.data matches ..8 run function mathf:trig/private/sin-loop

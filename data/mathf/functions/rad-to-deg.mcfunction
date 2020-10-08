@@ -1,11 +1,16 @@
+#> mathf:rad-to-deg
+# 
+# Converts from radians (at scale 1000) to degrees (at scale 100)
+# 
+# @input score i0 mathf.io Input in radians (scale 1000).
+# @output score o0 mathf.io Output in degrees (scale 100).
+# 
+# @public
+# @context any
 
-#> Radians to Degrees
-#  Input (Scale 1000) = inp0 mIO
-#  Output (Scale 100) = out0 mIO
+scoreboard players operation temp mathf.data = i0 mathf.io
 
-scoreboard players operation temp mData = inp0 mIO
+scoreboard players operation temp mathf.data *= #1800 mathf.const
+scoreboard players operation temp mathf.data /= #pi mathf.const_2dp
 
-scoreboard players operation temp mData *= #1800 const
-scoreboard players operation temp mData /= #pi const_S100
-
-scoreboard players operation out0 mIO = temp mData
+scoreboard players operation o0 mathf.io = temp mathf.data

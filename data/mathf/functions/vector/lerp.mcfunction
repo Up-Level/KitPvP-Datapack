@@ -1,43 +1,43 @@
 
 #> Lerp (Linearly Interpolate)
 #  Input is as follows:
-#  Interpolant (Scale 100) = inp0 mIO
-#  Input Vector x (Scale 100) = inp1 mIO
-#  Input Vector y (Scale 100) = inp2 mIO
-#  Input Vector z (Scale 100) = inp3 mIO
+#  Interpolant (Scale 100) = i0 mathf.io
+#  Input Vector x (Scale 100) = i1 mathf.io
+#  Input Vector y (Scale 100) = i2 mathf.io
+#  Input Vector z (Scale 100) = i3 mathf.io
 #  
 #  Output is as follows:
-#  Vector x (Scale 100) = out0 mIO
-#  Vector y (Scale 100) = out1 mIO
-#  Vector z (Scale 100) = out2 mIO
+#  Vector x (Scale 100) = o0 mathf.io
+#  Vector y (Scale 100) = o1 mathf.io
+#  Vector z (Scale 100) = o2 mathf.io
 
-scoreboard players operation vectorInterpolant mData = inp0 mIO
+scoreboard players operation vectorInterpolant mathf.data = i0 mathf.io
 
-scoreboard players operation endX mData = inp1 mIO
-scoreboard players operation endY mData = inp2 mIO
-scoreboard players operation endZ mData = inp3 mIO
+scoreboard players operation endX mathf.data = i1 mathf.io
+scoreboard players operation endY mathf.data = i2 mathf.io
+scoreboard players operation endZ mathf.data = i3 mathf.io
 
-scoreboard players operation inp2 mIO = vectorInterpolant mData
+scoreboard players operation i2 mathf.io = vectorInterpolant mathf.data
 
 
-scoreboard players set inp0 mIO 0
-scoreboard players operation inp1 mIO = endX mData
+scoreboard players set i0 mathf.io 0
+scoreboard players operation i1 mathf.io = endX mathf.data
 function mathf:lerp
-scoreboard players operation xLerp mData = out0 mIO
+scoreboard players operation xLerp mathf.data = o0 mathf.io
 
-scoreboard players set inp0 mIO 0
-scoreboard players operation inp1 mIO = endY mData
+scoreboard players set i0 mathf.io 0
+scoreboard players operation i1 mathf.io = endY mathf.data
 function mathf:lerp
-scoreboard players operation yLerp mData = out0 mIO
+scoreboard players operation yLerp mathf.data = o0 mathf.io
 
-scoreboard players set inp0 mIO 0
-scoreboard players operation inp1 mIO = endZ mData
+scoreboard players set i0 mathf.io 0
+scoreboard players operation i1 mathf.io = endZ mathf.data
 function mathf:lerp
-scoreboard players operation zLerp mData = out0 mIO
+scoreboard players operation zLerp mathf.data = o0 mathf.io
 
 
-scoreboard players operation out0 mIO = xLerp mData
-scoreboard players operation out1 mIO = yLerp mData
-scoreboard players operation out2 mIO = zLerp mData
+scoreboard players operation o0 mathf.io = xLerp mathf.data
+scoreboard players operation o1 mathf.io = yLerp mathf.data
+scoreboard players operation o2 mathf.io = zLerp mathf.data
 
-execute if score debugInfo mConfig matches 1 run tellraw @a ["Vector: (",{"score":{"name":"out0","objective":"mIO"}},", ", {"score":{"name":"out1","objective":"mIO"}},", ", {"score":{"name":"out2","objective":"mIO"}},")"]
+execute if score debugInfo mathf.config matches 1 run tellraw @a ["Vector: (",{"score":{"name":"o0","objective":"mathf.io"}},", ", {"score":{"name":"o1","objective":"mathf.io"}},", ", {"score":{"name":"o2","objective":"mathf.io"}},")"]

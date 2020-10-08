@@ -1,5 +1,6 @@
 {
 	"values":[
+		"mathf:internal/tick",
 		"kitpvp:runtime"
 	]
 }

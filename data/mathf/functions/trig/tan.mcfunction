@@ -1,22 +1,28 @@
-
-#> Tangent
-#  Input (degrees at Scale 100) = inp0 mIO
-#  Output (number at Scale 1000) = out0 mIO
+#> mathf:trig/tan
+# 
+# Returns the tangent of the angle input (in degrees).
+# Note that this function is very inaccurate past 80 degrees.
+# 
+# @input score i0 mathf.io Angle in degrees (Scale 100).
+# @output score o0 mathf.io Number between 0 and 1 (Scale 1000).
+# 
+# @public
+# @context any
 
 function mathf:trig/sin
-scoreboard players operation sine mData = out0 mIO
+scoreboard players operation sine mathf.data = o0 mathf.io
 
-scoreboard players operation sineSquared mData = sine mData
-scoreboard players operation sineSquared mData *= sine mData
-scoreboard players operation sineSquared mData /= #100 const
+scoreboard players operation sineSquared mathf.data = sine mathf.data
+scoreboard players operation sineSquared mathf.data *= sine mathf.data
+scoreboard players operation sineSquared mathf.data /= #100 mathf.const
 
-scoreboard players set denominator mData 10000
-scoreboard players operation denominator mData -= sineSquared mData
-scoreboard players operation inp0 mIO = denominator mData
+scoreboard players set denominator mathf.data 10000
+scoreboard players operation denominator mathf.data -= sineSquared mathf.data
+scoreboard players operation i0 mathf.io = denominator mathf.data
 function mathf:sqrt
-scoreboard players operation denominator mData = out0 mIO
-scoreboard players operation denominator mData *= #10 const
+scoreboard players operation denominator mathf.data = o0 mathf.io
+scoreboard players operation denominator mathf.data *= #10 mathf.const
 
-scoreboard players operation out0 mIO = sine mData
-scoreboard players operation out0 mIO *= #1000 const
-scoreboard players operation out0 mIO /= denominator mData
+scoreboard players operation o0 mathf.io = sine mathf.data
+scoreboard players operation o0 mathf.io *= #1000 mathf.const
+scoreboard players operation o0 mathf.io /= denominator mathf.data
