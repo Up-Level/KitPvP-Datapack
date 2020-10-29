@@ -193,6 +193,9 @@ scoreboard objectives add respawn dummy
 scoreboard objectives remove crouchBin
 scoreboard objectives add crouchBin minecraft.custom:minecraft.sneak_time
 
+scoreboard objectives remove jumpBin
+scoreboard objectives add jumpBin minecraft.custom:minecraft.jump
+
 scoreboard objectives remove dropTrident
 scoreboard objectives add dropTrident minecraft.dropped:minecraft.trident
 

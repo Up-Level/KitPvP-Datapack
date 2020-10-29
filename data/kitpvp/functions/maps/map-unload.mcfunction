@@ -9,3 +9,4 @@ execute if score map settings matches 6 positioned 9000 100 0 run function kitpv
 execute if score map settings matches 7 positioned 10000 100 0 run function kitpvp:maps/07-enchanted-forest/unload
 execute if score map settings matches 8 positioned 12000 64 0 run function kitpvp:maps/08-gulag/unload
 execute if score map settings matches 9 positioned 14000 64 0 run function kitpvp:maps/09-water-treatment/unload
+execute if score map settings matches 10 positioned 18000 64 0 run function kitpvp:maps/10-house/unload

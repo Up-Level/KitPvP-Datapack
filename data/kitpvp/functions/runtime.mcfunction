@@ -50,6 +50,7 @@ execute as @a[tag=!joined] run function kitpvp:on-join
 #region Reset Binary Scoreboards
 scoreboard players set @a joinBin 0
 scoreboard players set @a crouchBin 0
+scoreboard players set @a jumpBin 0
 scoreboard players set @a inLiquid 0
 scoreboard players set @a carrotStickBin 0
 scoreboard players set @a fungusStickBin 0

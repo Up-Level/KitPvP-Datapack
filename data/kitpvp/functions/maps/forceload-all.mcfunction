@@ -7,3 +7,4 @@ function kitpvp:maps/06-temple/forceload
 function kitpvp:maps/07-enchanted-forest/forceload
 function kitpvp:maps/08-gulag/forceload
 function kitpvp:maps/09-water-treatment/forceload
+function kitpvp:maps/10-house/forceload
