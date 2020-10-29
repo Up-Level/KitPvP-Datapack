@@ -216,7 +216,7 @@ House
 17999 53 5
 17976 52 14
 
-Old KitPvP
+KitPvP Classic
 
 20022 67 -4
 19971 66 15

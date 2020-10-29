@@ -15,9 +15,9 @@ kill @e[name=point-corner]
 kill @e[name=active-point]
 
 # Teleport Teams to the Map
-function kitpvp:utility/internal/teams-map-tp
+function kitpvp:utility/internal/map-teleport/4-teams
 
-function kitpvp:utility/internal/delete-entites
+function kitpvp:utility/internal/delete-entities
 
 scoreboard players set ticks gm_general 3000
 bossbar set 0 color blue

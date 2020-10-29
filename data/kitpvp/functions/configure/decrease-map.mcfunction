@@ -11,3 +11,4 @@ execute if score map settings matches 7 run tellraw @a {"text":"Map 7 - Enchante
 execute if score map settings matches 8 run tellraw @a {"text":"Map 8 - Gulag selected. (Small)", "color":"gold"}
 execute if score map settings matches 9 run tellraw @a {"text":"Map 9 - Water Treatment selected. (Small)", "color":"gold"}
 execute if score map settings matches 10 run tellraw @a {"text":"Map 10 - House selected. (Small)", "color":"gold"}
+execute if score map settings matches 11 run tellraw @a {"text":"Map 11 - KitPvP Classic selected. (Massive x 4)", "color":"gold"}
