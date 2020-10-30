@@ -8,4 +8,5 @@ execute if score map settings matches 7 positioned 10000 100 0 run function kitp
 execute if score map settings matches 8 positioned 12000 64 0 run function kitpvp:maps/08-gulag/tick
 execute if score map settings matches 9 positioned 14000 64 0 run function kitpvp:maps/09-water-treatment/tick
 execute if score map settings matches 10 positioned 18000 64 0 run function kitpvp:maps/10-house/tick
-execute if score map settings matches 10 positioned 20000 64 0 run function kitpvp:maps/11-kitpvp-classic/tick
+execute if score map settings matches 11 positioned 20000 64 0 run function kitpvp:maps/11-kitpvp-classic/tick
+execute if score map settings matches 12 positioned 21000 64 0 run function kitpvp:maps/12-hangar/tick

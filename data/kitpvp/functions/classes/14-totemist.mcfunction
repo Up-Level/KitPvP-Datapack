@@ -1,3 +1,4 @@
+# Class 14 - Totemist
 
 replaceitem entity @s hotbar.0 minecraft:iron_axe{Unbreakable:1b}
 

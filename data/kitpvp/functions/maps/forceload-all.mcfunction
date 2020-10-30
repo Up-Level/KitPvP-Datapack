@@ -9,3 +9,4 @@ function kitpvp:maps/08-gulag/forceload
 function kitpvp:maps/09-water-treatment/forceload
 function kitpvp:maps/10-house/forceload
 function kitpvp:maps/11-kitpvp-classic/forceload
+function kitpvp:maps/12-hangar/forceload

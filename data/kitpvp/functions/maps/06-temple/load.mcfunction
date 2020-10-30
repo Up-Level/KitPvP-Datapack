@@ -1,6 +1,6 @@
 function kitpvp:maps/06-temple/forceload
 
-scoreboard players set spawnDistance settings 10
+scoreboard players set spawnDistance settings 5
 
 time set 13000
 

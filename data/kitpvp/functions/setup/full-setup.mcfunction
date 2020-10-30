@@ -44,7 +44,7 @@ summon armor_stand 11986.5 64.00 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomNam
 summon armor_stand 14023.5 53.00 15.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-09"}'}
 summon armor_stand 17995.5 59.00 8.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-10"}'}
 summon armor_stand 20015.5 67.00 -2.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-11"}'}
-
+summon armor_stand 20980.5 64.00 0.5 {Invisible:1,NoGravity:1,Marker:1,CustomName:'{"text":"point-12"}'}
 
 scoreboard objectives remove settings
 scoreboard objectives add settings dummy
