@@ -10,7 +10,7 @@ replaceitem entity @s armor.head minecraft:golden_helmet{Unbreakable:1b}
 replaceitem entity @s armor.legs minecraft:golden_leggings{Unbreakable:1b}
 replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
 
-execute if score @s dmgDealtAlive matches 800.. run scoreboard players add @s classMode 1
-execute if score @s dmgDealtAlive matches 800.. run scoreboard players set @s dmgDealtAlive 0
+execute if score @s dmgDealtAlive matches 300.. run scoreboard players add @s classMode 1
+execute if score @s dmgDealtAlive matches 300.. run scoreboard players set @s dmgDealtAlive 0
 
 attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
