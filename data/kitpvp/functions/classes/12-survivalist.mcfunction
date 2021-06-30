@@ -1,8 +1,8 @@
 # Class 13 - Survivalist
 
-replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
-replaceitem entity @s armor.chest iron_chestplate{Unbreakable:1b}
-replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
+item replace entity @s hotbar.0 with minecraft:iron_sword{Unbreakable: 1b}
+item replace entity @s armor.chest with iron_chestplate{Unbreakable: 1b}
+item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable: 1b, Enchantments: [{id: "minecraft:feather_falling", lvl: 2}]}
 
 execute if entity @s[scores={killsSinceDeath=0}] run attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "SpeedClass" 0 multiply_base
 

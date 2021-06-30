@@ -1,6 +1,6 @@
 execute if score timer gamemodeStart > negative-one number run function kitpvp:configure/start-timer
 
-execute at @e[name=spawn] as @a[distance=..150] run function kitpvp:runtime-spawn-player
+execute at @e[name="spawn"] as @a[distance=..150] run function kitpvp:runtime-spawn-player
 
 # Load map
 execute if score gamemodeBin settings matches 1 run function kitpvp:maps/map-load

@@ -17,10 +17,10 @@ kill @s[scores={playerY=..0}]
 scoreboard players set @s[scores={class=0}] class 6
 
 # Players can spectate by being near an armor stand
-execute at @e[name=spectate-spot] run tellraw @s[tag=!spectator,distance=..2] {"text":"You are now a spectator.","color":"gold"}
-execute at @e[name=spectate-spot] run tellraw @s[tag=spectator,distance=2..] {"text":"You will no longer spectate.","color":"gold"}
+execute at @e[name="spectate-spot"] run tellraw @s[tag=!spectator,distance=..2] {"text":"You are now a spectator.","color":"gold"}
+execute at @e[name="spectate-spot"] run tellraw @s[tag=spectator,distance=2..] {"text":"You will no longer spectate.","color":"gold"}
 
-execute at @e[name=spectate-spot] run tag @s[tag=!spectator,distance=..2] add spectator
-execute at @e[name=spectate-spot] run tag @s[tag=spectator,distance=2..] remove spectator
+execute at @e[name="spectate-spot"] run tag @s[tag=!spectator,distance=..2] add spectator
+execute at @e[name="spectate-spot"] run tag @s[tag=spectator,distance=2..] remove spectator
 
 scoreboard players reset @a[tag=spectator] optIn

@@ -1,8 +1,8 @@
-execute store result score onPoint gm_general at @e[name=active-point] if entity @a[distance=..3,scores={gm_lives=1..}]
-execute store result score redOnPoint gm_general at @e[name=active-point] if entity @a[distance=..3,scores={gm_lives=1..},team=red]
-execute store result score blueOnPoint gm_general at @e[name=active-point] if entity @a[distance=..3,scores={gm_lives=1..},team=blue]
-execute store result score greenOnPoint gm_general at @e[name=active-point] if entity @a[distance=..3,scores={gm_lives=1..},team=green]
-execute store result score yellowOnPoint gm_general at @e[name=active-point] if entity @a[distance=..3,scores={gm_lives=1..},team=yellow]
+execute store result score onPoint gm_general at @e[name="active-point"] if entity @a[distance=..3,scores={gm_lives=1..}]
+execute store result score redOnPoint gm_general at @e[name="active-point"] if entity @a[distance=..3,scores={gm_lives=1..},team=red]
+execute store result score blueOnPoint gm_general at @e[name="active-point"] if entity @a[distance=..3,scores={gm_lives=1..},team=blue]
+execute store result score greenOnPoint gm_general at @e[name="active-point"] if entity @a[distance=..3,scores={gm_lives=1..},team=green]
+execute store result score yellowOnPoint gm_general at @e[name="active-point"] if entity @a[distance=..3,scores={gm_lives=1..},team=yellow]
 
 scoreboard players set teamCapturing gm_general 0
 
@@ -24,16 +24,16 @@ execute if score teamCapturing gm_general matches 2 run bossbar set 0 color blue
 execute if score teamCapturing gm_general matches 3 run bossbar set 0 color green
 execute if score teamCapturing gm_general matches 4 run bossbar set 0 color yellow
 
-execute if score teamCapturing gm_general matches 0 run replaceitem entity @e[name=point-corner] armor.head white_stained_glass
-execute if score teamCapturing gm_general matches 1 if score captureTime gm_general matches 1 run replaceitem entity @e[name=point-corner] armor.head red_stained_glass
-execute if score teamCapturing gm_general matches 2 if score captureTime gm_general matches 1 run replaceitem entity @e[name=point-corner] armor.head blue_stained_glass
-execute if score teamCapturing gm_general matches 3 if score captureTime gm_general matches 1 run replaceitem entity @e[name=point-corner] armor.head lime_stained_glass
-execute if score teamCapturing gm_general matches 4 if score captureTime gm_general matches 1 run replaceitem entity @e[name=point-corner] armor.head yellow_stained_glass
+execute if score teamCapturing gm_general matches 0 run item replace entity @e[name="point-corner"] armor.head with white_stained_glass
+execute if score teamCapturing gm_general matches 1 if score captureTime gm_general matches 1 run item replace entity @e[name="point-corner"] armor.head with red_stained_glass
+execute if score teamCapturing gm_general matches 2 if score captureTime gm_general matches 1 run item replace entity @e[name="point-corner"] armor.head with blue_stained_glass
+execute if score teamCapturing gm_general matches 3 if score captureTime gm_general matches 1 run item replace entity @e[name="point-corner"] armor.head with lime_stained_glass
+execute if score teamCapturing gm_general matches 4 if score captureTime gm_general matches 1 run item replace entity @e[name="point-corner"] armor.head with yellow_stained_glass
 
-execute if score captureTime gm_general matches 1 at @e[name=active-point] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
-execute if score captureTime gm_general matches 20 at @e[name=active-point] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
-execute if score captureTime gm_general matches 40 at @e[name=active-point] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
-execute if score captureTime gm_general matches 60 at @e[name=active-point] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
-execute if score captureTime gm_general matches 80 at @e[name=active-point] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
+execute if score captureTime gm_general matches 1 at @e[name="active-point"] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
+execute if score captureTime gm_general matches 20 at @e[name="active-point"] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
+execute if score captureTime gm_general matches 40 at @e[name="active-point"] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
+execute if score captureTime gm_general matches 60 at @e[name="active-point"] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
+execute if score captureTime gm_general matches 80 at @e[name="active-point"] run playsound minecraft:block.note_block.bit master @a[scores={optIn=1}] ~ ~ ~ 1000000 1 1
 
 execute if score captureTime gm_general = timeToCapture gm_general run function kitpvp:gamemodes/203-elimination/203-end-capture

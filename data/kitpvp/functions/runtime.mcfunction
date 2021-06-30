@@ -1,5 +1,5 @@
 # General runtime commands
-execute as @a[gamemode=adventure] run replaceitem entity @s hotbar.8 minecraft:golden_carrot
+execute as @a[gamemode=adventure] run item replace entity @s hotbar.8 with minecraft:golden_carrot
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
 execute as @e[type=!player,tag=Override] at @s run function kitpvp:utility/internal/motion-override

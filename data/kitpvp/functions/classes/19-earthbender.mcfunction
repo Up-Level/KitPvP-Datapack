@@ -1,14 +1,14 @@
 
-replaceitem entity @s armor.feet minecraft:iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2},{id:"minecraft:protection",lvl:2}]}
-replaceitem entity @s armor.legs minecraft:leather_leggings{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2}]}
+item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable: 1b, Enchantments: [{id: "minecraft:feather_falling", lvl: 2}, {id: "minecraft:protection", lvl: 2}]}
+item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable: 1b, Enchantments: [{id: "minecraft:protection", lvl: 2}]}
 
-replaceitem entity @s hotbar.0 minecraft:stone_sword{Unbreakable:1,display:{Lore:['[{"text":"Some say there was a war fought because of this weapon...","color":"gray"}]']}}
+item replace entity @s hotbar.0 with minecraft:stone_sword{Unbreakable: 1, display: {Lore: ['[{"text":"Some say there was a war fought because of this weapon...","color":"gray"}]']}}
 
-execute if entity @s[scores={pathCharges=1}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:2,Unbreakable:1b,display:{Name:'[{"text":"Create Path (1)","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
-execute if entity @s[scores={pathCharges=2}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:3,Unbreakable:1b,display:{Name:'[{"text":"Create Path (2)","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
-execute if entity @s[scores={pathCharges=3}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:4,Unbreakable:1b,display:{Name:'[{"text":"Create Path (3)","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
-execute if entity @s[scores={pathCharges=4..}] run replaceitem entity @s hotbar.1 minecraft:carrot_on_a_stick{CustomModelData:4,Unbreakable:1b,display:{Name:'[{"text":"Create Path (3+)","italic":false}]',Lore:['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
-execute if entity @s[scores={cdWall=..0}] run replaceitem entity @s hotbar.2 minecraft:warped_fungus_on_a_stick{CustomModelData:2,Unbreakable:1b,display:{Name:'[{"text":"Create Wall","italic":false}]',Lore:['[{"text":"Create a wall of stone.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={pathCharges=1}] run item replace entity @s hotbar.1 with minecraft:carrot_on_a_stick{CustomModelData: 2, Unbreakable: 1b, display: {Name: '[{"text":"Create Path (1)","italic":false}]', Lore: ['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={pathCharges=2}] run item replace entity @s hotbar.1 with minecraft:carrot_on_a_stick{CustomModelData: 3, Unbreakable: 1b, display: {Name: '[{"text":"Create Path (2)","italic":false}]', Lore: ['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={pathCharges=3}] run item replace entity @s hotbar.1 with minecraft:carrot_on_a_stick{CustomModelData: 4, Unbreakable: 1b, display: {Name: '[{"text":"Create Path (3)","italic":false}]', Lore: ['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={pathCharges=4..}] run item replace entity @s hotbar.1 with minecraft:carrot_on_a_stick{CustomModelData: 4, Unbreakable: 1b, display: {Name: '[{"text":"Create Path (3+)","italic":false}]', Lore: ['[{"text":"Creates a path of stone for you to climb.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={cdWall=..0}] run item replace entity @s hotbar.2 with minecraft:warped_fungus_on_a_stick{CustomModelData: 2, Unbreakable: 1b, display: {Name: '[{"text":"Create Wall","italic":false}]', Lore: ['[{"text":"Create a wall of stone.","italic":false,"color":"gray"}]']}}
 
 execute unless entity @s[scores={pathCharges=1..}] run clear @s minecraft:carrot_on_a_stick
 execute unless entity @s[scores={cdWall=..0}] run clear @s minecraft:warped_fungus_on_a_stick

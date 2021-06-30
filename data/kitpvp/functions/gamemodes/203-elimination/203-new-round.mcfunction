@@ -11,8 +11,8 @@ execute if score winnerOfRound gm_general matches 4 run tellraw @a[scores={optIn
 
 scoreboard players set winnerOfRound gm_general 0
 
-kill @e[name=point-corner]
-kill @e[name=active-point]
+kill @e[name="point-corner"]
+kill @e[name="active-point"]
 
 # Teleport Teams to the Map
 function kitpvp:utility/internal/map-teleport/4-teams

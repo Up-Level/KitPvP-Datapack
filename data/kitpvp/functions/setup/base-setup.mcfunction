@@ -336,8 +336,8 @@ team modify infected color dark_green
 scoreboard players set @a joinBin 1
 
 function kitpvp:maps/forceload-all
-kill @e[name=point-corner]
-kill @e[name=active-point]
+kill @e[name="point-corner"]
+kill @e[name="active-point"]
 kill @e[tag=SpawnPoint]
 function kitpvp:maps/unforceload-all
 

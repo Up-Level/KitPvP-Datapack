@@ -1,14 +1,14 @@
 # Class 22 - Pirate
 
-replaceitem entity @s armor.chest iron_chestplate{Unbreakable:1b}
-replaceitem entity @s armor.legs chainmail_leggings{Unbreakable:1b}
-replaceitem entity @s armor.feet iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}]}
+item replace entity @s armor.chest with iron_chestplate{Unbreakable: 1b}
+item replace entity @s armor.legs with chainmail_leggings{Unbreakable: 1b}
+item replace entity @s armor.feet with iron_boots{Unbreakable: 1b, Enchantments: [{id: "minecraft:feather_falling", lvl: 2}]}
 
-replaceitem entity @s hotbar.0 minecraft:iron_sword{Unbreakable:1b}
-replaceitem entity @s hotbar.1 minecraft:fishing_rod{Unbreakable:1b}
+item replace entity @s hotbar.0 with minecraft:iron_sword{Unbreakable: 1b}
+item replace entity @s hotbar.1 with minecraft:fishing_rod{Unbreakable: 1b}
 
-execute if entity @s[scores={cdBoat=..-1}] run replaceitem entity @s hotbar.2 minecraft:carrot_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Create Boat","italic":false}]',Lore:['[{"text":"Creates a boat for you to ride.","italic":false,"color":"gray"}]']}}
-execute run replaceitem entity @s hotbar.3 minecraft:warped_fungus_on_a_stick{CustomModelData:1,Unbreakable:1b,display:{Name:'[{"text":"Destroy Boat","italic":false}]',Lore:['[{"text":"Destory your previous boat.","italic":false,"color":"gray"}]']}}
+execute if entity @s[scores={cdBoat=..-1}] run item replace entity @s hotbar.2 with minecraft:carrot_on_a_stick{CustomModelData: 1, Unbreakable: 1b, display: {Name: '[{"text":"Create Boat","italic":false}]', Lore: ['[{"text":"Creates a boat for you to ride.","italic":false,"color":"gray"}]']}}
+execute run item replace entity @s hotbar.3 with minecraft:warped_fungus_on_a_stick{CustomModelData: 1, Unbreakable: 1b, display: {Name: '[{"text":"Destroy Boat","italic":false}]', Lore: ['[{"text":"Destory your previous boat.","italic":false,"color":"gray"}]']}}
 
 execute unless entity @s[scores={cdBoat=..-1}] run clear @s minecraft:carrot_on_a_stick
 

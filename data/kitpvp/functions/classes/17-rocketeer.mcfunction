@@ -1,10 +1,10 @@
 # Class 20 - Rocketeer
 
-replaceitem entity @s hotbar.0 minecraft:stone_axe{Unbreakable:1b}
+item replace entity @s hotbar.0 with minecraft:stone_axe{Unbreakable: 1b}
 
-replaceitem entity @s[scores={canUseElytra=0}] armor.chest chainmail_chestplate{Unbreakable:1b}
-replaceitem entity @s[scores={canUseElytra=1}] armor.chest elytra{Unbreakable:1b}
-replaceitem entity @s armor.feet minecraft:netherite_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:feather_falling",lvl:2}],display:{Name:'[{"text":"Rocket Boots","italic":false}]'}}
+item replace entity @s[scores={canUseElytra=0}] armor.chest with chainmail_chestplate{Unbreakable: 1b}
+item replace entity @s[scores={canUseElytra=1}] armor.chest with elytra{Unbreakable: 1b}
+item replace entity @s armor.feet with minecraft:netherite_boots{Unbreakable: 1b, Enchantments: [{id: "minecraft:feather_falling", lvl: 2}], display: {Name: '[{"text":"Rocket Boots","italic":false}]'}}
 
 execute if entity @s[scores={inLiquid=1}] run scoreboard players set @s rbFizzleTimer 40
 
