@@ -31,4 +31,4 @@ execute if entity @s[scores={carrotStickBin=1..,cdBoat=..-1}] run scoreboard pla
 
 scoreboard players remove @s[scores={cdBoat=0..}] cdBoat 1
 
-attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "SpeedClass" 0 multiply_base

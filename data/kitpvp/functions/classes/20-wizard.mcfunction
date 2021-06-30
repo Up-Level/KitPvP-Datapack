@@ -62,4 +62,4 @@ execute if entity @s[scores={carrotStickBin=1,crouchBin=1,classMode=3..}] run sc
 
 function kitpvp:classes/common-functions/resource/display/mana
 
-attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "SpeedClass" 0 multiply_base

@@ -48,4 +48,4 @@ execute if entity @s[scores={fungusStickBin=1,cdWall=..0}] at @s positioned ~ ~1
 execute if entity @s[scores={fungusStickBin=1}] run scoreboard players operation @s cdWall = wall cooldown
 execute if entity @s[scores={cdWall=0..}] run scoreboard players remove @s cdWall 1
 
-attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "SpeedClass" 0 multiply_base

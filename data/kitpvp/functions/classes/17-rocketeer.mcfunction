@@ -39,4 +39,4 @@ scoreboard players remove @s[scores={rocketBootsTimer=0..}] rocketBootsTimer 1
 scoreboard players remove @s[scores={cdRocketBoots=0..}] cdRocketBoots 1
 scoreboard players remove @s[scores={rbFizzleTimer=0..}] rbFizzleTimer 1
 
-attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "SpeedClass" 0 multiply_base

@@ -13,4 +13,4 @@ replaceitem entity @s armor.feet minecraft:leather_boots{Unbreakable:1b,Enchantm
 execute if score @s dmgDealtAlive matches 350.. run scoreboard players add @s classMode 1
 execute if score @s dmgDealtAlive matches 350.. run scoreboard players set @s dmgDealtAlive 0
 
-attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 SpeedClass 0 multiply_base
+attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "SpeedClass" 0 multiply_base
